@@ -1,1 +1,1159 @@
-Hello Benfica
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Painel Assumir Responsabilidades</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #b1b3b6;
+      --panel: #0d1118;
+      --panel-2: #111720;
+      --line: #202938;
+      --line-soft: #182130;
+      --text: #eef3f8;
+      --muted: #8492a6;
+      --muted-2: #5e6b7d;
+      --slb: #ed1c24;
+      --scp: #008047;
+      --fcp: #0072bc;
+      --outros: #ffd400;
+      --shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+      --font-title: "Oswald", "Segoe UI", sans-serif;
+      --font-text: "Barlow", "Segoe UI", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        linear-gradient(180deg, rgba(177, 179, 182, 0.92), var(--bg) 320px),
+        var(--bg);
+      color: var(--text);
+      font-family: var(--font-text);
+      font-weight: 300;
+      font-size: 14px;
+      letter-spacing: 0;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    .shell {
+      width: min(1440px, calc(100vw - 32px));
+      margin: 0 auto;
+      padding: 24px 0 34px;
+    }
+
+    .app-header {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 18px;
+      align-items: end;
+      padding-bottom: 0;
+      justify-items: center;
+      text-align: center;
+    }
+
+    h1,
+    h2,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      color: var(--text);
+      font-size: clamp(40px, 5vw, 68px);
+      line-height: 1.02;
+      font-weight: 800;
+      font-family: var(--font-title);
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
+    }
+
+    .title-initial {
+      font-size: 1.28em;
+      line-height: 0.9;
+    }
+
+    .source {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .header-count {
+      min-width: 178px;
+      padding: 11px 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(13, 17, 24, 0.82);
+      text-align: right;
+      box-shadow: var(--shadow);
+    }
+
+    .header-count span,
+    .metric span,
+    .filter-group-label {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .header-count strong {
+      display: block;
+      margin-top: 4px;
+      color: var(--text);
+      font-size: 28px;
+      line-height: 1;
+    }
+
+    .notice {
+      display: none;
+      margin: 18px 0;
+      padding: 14px 15px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      color: var(--muted);
+      box-shadow: var(--shadow);
+    }
+
+    .notice strong {
+      color: var(--text);
+    }
+
+    .hero-panel,
+    .panel,
+    .metric {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(13, 17, 24, 0.92);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-panel {
+      margin-top: 18px;
+      overflow: hidden;
+    }
+
+    .hero-head {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 16px;
+      align-items: start;
+      padding: 18px;
+      border-bottom: 1px solid var(--line-soft);
+      background: rgba(17, 23, 32, 0.74);
+    }
+
+    .hero-head h2 {
+      font-size: clamp(18px, 2vw, 26px);
+      line-height: 1.15;
+      font-weight: 800;
+      font-family: var(--font-title);
+      letter-spacing: 0.01em;
+    }
+
+    .hero-head p {
+      margin-top: 6px;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    .hero-main {
+      min-width: 0;
+    }
+
+    .hero-title-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 12px;
+      align-items: start;
+    }
+
+    .hero-title-block p {
+      margin-top: 6px;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    .legend {
+      display: flex;
+      gap: 10px;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      max-width: 420px;
+    }
+
+    .legend-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      min-height: 26px;
+      padding: 3px 8px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--text);
+      background: rgba(7, 9, 13, 0.58);
+      font-weight: 800;
+      font-size: 12px;
+    }
+
+    .swatch {
+      width: 10px;
+      height: 10px;
+      flex: 0 0 10px;
+      border-radius: 999px;
+      background: var(--muted);
+    }
+
+    .chart-stage {
+      padding: 14px 14px 8px;
+    }
+
+    .line-chart {
+      width: 100%;
+      height: 420px;
+      display: block;
+    }
+
+    .chart-grid {
+      stroke: rgba(132, 146, 166, 0.18);
+      stroke-width: 1;
+      shape-rendering: crispEdges;
+    }
+
+    .chart-axis {
+      stroke: rgba(132, 146, 166, 0.42);
+      stroke-width: 1;
+      shape-rendering: crispEdges;
+    }
+
+    .chart-label {
+      fill: var(--muted);
+      font-size: 15px;
+      font-weight: 800;
+    }
+
+    .chart-value {
+      fill: var(--text);
+      font-size: 11px;
+      font-weight: 800;
+      paint-order: stroke;
+      stroke: var(--panel);
+      stroke-width: 4px;
+      stroke-linejoin: round;
+    }
+
+    .series-line {
+      fill: none;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .series-point {
+      stroke: var(--panel);
+      stroke-width: 3;
+    }
+
+    .filters {
+      display: grid;
+      gap: 12px;
+      padding: 14px 18px 18px;
+      border-top: 1px solid var(--line-soft);
+      background: rgba(7, 9, 13, 0.42);
+    }
+
+    .filter-row {
+      display: grid;
+      grid-template-columns: 116px minmax(0, 1fr);
+      gap: 12px;
+      align-items: center;
+    }
+
+    .season-filter-row {
+      align-items: start;
+    }
+
+    .season-filter-row .filter-group-label {
+      margin-top: 17px;
+    }
+
+    .filter-group-label {
+      font-size: 14px;
+      line-height: 1;
+    }
+
+    .pill-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .season-range {
+      position: relative;
+      width: min(760px, 100%);
+      padding: 16px 0 22px;
+    }
+
+    .season-track {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 20px;
+      height: 6px;
+      border-radius: 999px;
+      background: rgba(132, 146, 166, 0.26);
+    }
+
+    .season-track-active {
+      position: absolute;
+      top: 0;
+      height: 6px;
+      border-radius: 999px;
+      background: #eaf2ff;
+    }
+
+    .season-range input[type="range"] {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 12px;
+      width: 100%;
+      margin: 0;
+      appearance: none;
+      background: transparent;
+      pointer-events: none;
+    }
+
+    .season-range input[type="range"]::-webkit-slider-thumb {
+      appearance: none;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      border: 2px solid #0b1018;
+      background: #f5f9ff;
+      box-shadow: 0 0 0 1px rgba(219, 232, 249, 0.8);
+      pointer-events: auto;
+      cursor: pointer;
+    }
+
+    .season-range input[type="range"]::-moz-range-thumb {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      border: 2px solid #0b1018;
+      background: #f5f9ff;
+      box-shadow: 0 0 0 1px rgba(219, 232, 249, 0.8);
+      pointer-events: auto;
+      cursor: pointer;
+    }
+
+    .season-range input[type="range"]::-webkit-slider-runnable-track {
+      height: 6px;
+      background: transparent;
+    }
+
+    .season-range input[type="range"]::-moz-range-track {
+      height: 6px;
+      background: transparent;
+      border: 0;
+    }
+
+    .season-range-labels {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 22px;
+      color: var(--text);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .pill {
+      min-height: 34px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: rgba(17, 23, 32, 0.84);
+      color: var(--muted);
+      padding: 0 13px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .pill:hover {
+      border-color: #3a4658;
+      color: var(--text);
+    }
+
+    .pill.is-active {
+      border-color: #dbe8f9;
+      background: #eaf2ff;
+      color: #0b1018;
+      font-weight: 600;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin: 12px 0;
+    }
+
+    .metric {
+      min-height: 108px;
+      padding: 15px;
+    }
+
+    .metric strong {
+      display: block;
+      margin-top: 12px;
+      color: var(--text);
+      font-size: 30px;
+      line-height: 1;
+    }
+
+    .metric small {
+      display: block;
+      margin-top: 10px;
+      color: var(--muted);
+      line-height: 1.35;
+    }
+
+    .panel-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 12px;
+    }
+
+    .panel {
+      overflow: hidden;
+    }
+
+    .panel.wide {
+      grid-column: 1 / -1;
+    }
+
+    .panel-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 14px 15px 12px;
+      border-bottom: 1px solid var(--line-soft);
+      background: rgba(17, 23, 32, 0.76);
+    }
+
+    .panel-header h2 {
+      font-size: 15px;
+      line-height: 1.2;
+      font-family: var(--font-title);
+      letter-spacing: 0.01em;
+    }
+
+    .panel-header span {
+      color: var(--muted);
+      font-size: 12px;
+      white-space: nowrap;
+    }
+
+    .panel-body {
+      padding: 15px;
+    }
+
+    .bar-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .bar-row {
+      display: grid;
+      grid-template-columns: minmax(100px, 142px) 1fr minmax(72px, auto);
+      gap: 10px;
+      align-items: center;
+    }
+
+    .bar-label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-width: 0;
+      color: var(--text);
+      font-weight: 800;
+    }
+
+    .bar-track {
+      height: 8px;
+      border: 1px solid rgba(132, 146, 166, 0.18);
+      border-radius: 999px;
+      background: rgba(7, 9, 13, 0.9);
+      overflow: hidden;
+    }
+
+    .bar-fill {
+      height: 100%;
+      min-width: 2px;
+      border-radius: 999px;
+    }
+
+    .bar-value {
+      color: var(--muted);
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      min-width: 760px;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--line-soft);
+      text-align: left;
+      white-space: nowrap;
+    }
+
+    th {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      background: rgba(17, 23, 32, 0.82);
+    }
+
+    tbody tr:hover {
+      background: rgba(53, 167, 255, 0.06);
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      min-height: 24px;
+      padding: 3px 8px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(7, 9, 13, 0.72);
+      color: var(--text);
+      font-weight: 800;
+    }
+
+    .empty {
+      color: var(--muted);
+      padding: 18px 0;
+    }
+
+    .footer {
+      margin-top: 14px;
+      color: var(--muted-2);
+      font-size: 12px;
+    }
+
+    @media (max-width: 1100px) {
+      .stats-grid,
+      .panel-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .hero-head {
+        grid-template-columns: 1fr;
+      }
+
+      .legend {
+        justify-content: flex-start;
+      }
+
+    }
+
+    @media (max-width: 720px) {
+      .shell {
+        width: min(100vw - 20px, 720px);
+        padding-top: 12px;
+      }
+
+      .app-header,
+      .stats-grid,
+      .panel-grid,
+      .filter-row {
+        grid-template-columns: 1fr;
+      }
+
+      .header-count {
+        text-align: left;
+      }
+
+      .line-chart {
+        height: 330px;
+      }
+
+      .filter-row {
+        gap: 7px;
+      }
+
+      .bar-row {
+        grid-template-columns: minmax(90px, 112px) 1fr minmax(54px, auto);
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="app-header">
+      <div>
+        <h1><span class="title-initial">A</span>ssumir <span class="title-initial">R</span>esponsabilidades</h1>
+      </div>
+    </header>
+
+    <div class="notice" id="notice"></div>
+
+    <section class="hero-panel">
+      <div class="hero-head">
+        <div class="hero-main">
+          <div class="hero-title-row">
+            <div class="hero-title-block">
+              <h2>Percentagem de Competições Ganhas por Época</h2>
+              <p id="chartCaption">Cada linha mostra a percentagem de competições filtradas ganhas por clube em cada época.</p>
+            </div>
+            <div class="header-count">
+              <span>Entradas visíveis</span>
+              <strong id="visibleCount">0</strong>
+            </div>
+          </div>
+        </div>
+        <div class="legend" id="legend"></div>
+      </div>
+      <div class="chart-stage">
+        <svg class="line-chart" id="mainChart" role="img" aria-label="Percentagem de vitórias por competição e por época"></svg>
+      </div>
+      <div class="filters" id="filters"></div>
+    </section>
+
+    <section class="stats-grid" aria-label="Dashboard totals">
+      <article class="metric">
+        <span>Quota SLB</span>
+        <strong id="statSlbShare">0%</strong>
+        <small id="statSlbSub">0 em 0 vitórias visíveis</small>
+      </article>
+      <article class="metric">
+        <span>Linha líder</span>
+        <strong id="statLeader">-</strong>
+        <small id="statLeaderSub">Sem entradas visíveis</small>
+      </article>
+      <article class="metric">
+        <span>Pico por época</span>
+        <strong id="statPeak">-</strong>
+        <small id="statPeakSub">Sem dados por época</small>
+      </article>
+      <article class="metric">
+        <span>Âmbito filtrado</span>
+        <strong id="statScope">0</strong>
+        <small id="statScopeSub">Competições em vista</small>
+      </article>
+    </section>
+
+    <section class="panel-grid">
+      <article class="panel">
+        <div class="panel-header">
+          <h2>Distribuição de Vencedores</h2>
+          <span>Entradas visíveis</span>
+        </div>
+        <div class="panel-body">
+          <div class="bar-list" id="winnerBars"></div>
+        </div>
+      </article>
+
+      <article class="panel">
+        <div class="panel-header">
+          <h2>Distribuição por Desporto</h2>
+          <span>Quota SLB por desporto</span>
+        </div>
+        <div class="panel-body">
+          <div class="bar-list" id="sportBars"></div>
+        </div>
+      </article>
+
+      <article class="panel wide">
+        <div class="panel-header">
+          <h2>Matriz de Resultados</h2>
+          <span id="matrixCount">0 entradas</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Época</th>
+                <th>Género</th>
+                <th>Desporto</th>
+                <th>Competição</th>
+                <th>Vencedor</th>
+              </tr>
+            </thead>
+            <tbody id="matrixBody"></tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+
+    <div class="footer">Fonte: data.csv</div>
+  </main>
+
+  <script>
+    const state = {
+      gender: "All",
+      sports: ["All"],
+      competitions: ["All"],
+      football: "include",
+      seasonStart: 0,
+      seasonEnd: 0
+    };
+
+    let rows = [];
+
+    const $ = (selector) => document.querySelector(selector);
+    const clubOrder = ["SLB", "FCP", "SCP", "OUTROS"];
+    const genderOrder = ["Masculino", "Feminino"];
+    const competitionOrder = ["Campeonato", "Taca Portugal", "Taca Liga", "Supertaca", "Europa"];
+    const colors = {
+      SLB: "#ed1c24",
+      FCP: "#0072bc",
+      SCP: "#008047",
+      OUTROS: "#ffd400"
+    };
+
+    function cleanText(value) {
+      return String(value || "").trim();
+    }
+
+    function normalize(value) {
+      return cleanText(value)
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "_")
+        .replace(/^_|_$/g, "");
+    }
+
+    function csvToRows(text) {
+      const parsed = [];
+      let row = [];
+      let field = "";
+      let inQuotes = false;
+
+      for (let index = 0; index < text.length; index += 1) {
+        const char = text[index];
+        const next = text[index + 1];
+
+        if (char === '"' && inQuotes && next === '"') {
+          field += '"';
+          index += 1;
+        } else if (char === '"') {
+          inQuotes = !inQuotes;
+        } else if (char === "," && !inQuotes) {
+          row.push(field);
+          field = "";
+        } else if ((char === "\n" || char === "\r") && !inQuotes) {
+          if (char === "\r" && next === "\n") index += 1;
+          row.push(field);
+          if (row.some((value) => value !== "")) parsed.push(row);
+          row = [];
+          field = "";
+        } else {
+          field += char;
+        }
+      }
+
+      row.push(field);
+      if (row.some((value) => value !== "")) parsed.push(row);
+      return parsed;
+    }
+
+    function normalizeCsv(text) {
+      const table = csvToRows(text.replace(/^\uFEFF/, ""));
+      const headers = table[0].map(normalize);
+      const index = {
+        gender: headers.indexOf("genero"),
+        season: headers.indexOf("epoca"),
+        sport: headers.indexOf("desporto"),
+        competition: headers.indexOf("competicao"),
+        winner: headers.indexOf("vencedor")
+      };
+
+      if (Object.values(index).some((value) => value === -1)) {
+        throw new Error("data.csv tem de incluir colunas Género, Época, Desporto, Competição e Vencedor.");
+      }
+
+      return table.slice(1).map((line) => ({
+        gender: cleanText(line[index.gender]),
+        season: cleanText(line[index.season]),
+        sport: cleanText(line[index.sport]),
+        competition: cleanText(line[index.competition]),
+        winner: cleanText(line[index.winner]).toUpperCase()
+      })).filter((row) => clubOrder.includes(row.winner));
+    }
+
+    function unique(values) {
+      return [...new Set(values)].filter(Boolean);
+    }
+
+    function sortByOrder(values, order) {
+      return [...values].sort((a, b) => {
+        const ai = order.findIndex((item) => normalize(item) === normalize(a));
+        const bi = order.findIndex((item) => normalize(item) === normalize(b));
+        if (ai !== -1 || bi !== -1) return (ai === -1 ? 999 : ai) - (bi === -1 ? 999 : bi);
+        return a.localeCompare(b);
+      });
+    }
+
+    function percent(value) {
+      return Number.isFinite(value) ? `${Math.round(value * 100)}%` : "-";
+    }
+
+    function shortSeason(value) {
+      return value.replace("20", "").replace("/20", "/");
+    }
+
+    function orderedSeasons(items) {
+      return unique(items.map((row) => row.season)).sort((a, b) => {
+        const ay = Number((a || "").split("/")[0]) || 9999;
+        const by = Number((b || "").split("/")[0]) || 9999;
+        return ay - by || a.localeCompare(b);
+      });
+    }
+
+    function chip(winner) {
+      return `<span class="chip"><span class="swatch" style="background:${colors[winner] || "#8492a6"}"></span>${winner}</span>`;
+    }
+
+    function filteredRows() {
+      const seasonsAll = orderedSeasons(rows);
+      return rows.filter((row) => {
+        if (state.gender !== "All" && row.gender !== state.gender) return false;
+        if (!state.sports.includes("All") && !state.sports.includes(row.sport)) return false;
+        if (!state.competitions.includes("All") && !state.competitions.includes(row.competition)) return false;
+        if (state.football === "exclude" && row.sport === "Futebol") return false;
+        const idx = seasonsAll.indexOf(row.season);
+        if (idx === -1) return false;
+        if (idx < state.seasonStart || idx > state.seasonEnd) return false;
+        return true;
+      });
+    }
+
+    function groupBy(items, keyFn) {
+      return items.reduce((groups, item) => {
+        const key = keyFn(item);
+        groups[key] = groups[key] || [];
+        groups[key].push(item);
+        return groups;
+      }, {});
+    }
+
+    function topWinner(items) {
+      return Object.entries(groupBy(items, (row) => row.winner))
+        .map(([winner, winnerRows]) => ({winner, count: winnerRows.length}))
+        .sort((a, b) => b.count - a.count || clubOrder.indexOf(a.winner) - clubOrder.indexOf(b.winner))[0];
+    }
+
+    function seriesFor(items, seasonsList) {
+      return clubOrder.map((club) => ({
+        club,
+        color: colors[club],
+        points: seasonsList.map((season) => {
+          const seasonRows = items.filter((row) => row.season === season);
+          const wins = seasonRows.filter((row) => row.winner === club).length;
+          return {
+            season,
+            wins,
+            total: seasonRows.length,
+            share: seasonRows.length ? wins / seasonRows.length : NaN
+          };
+        })
+      }));
+    }
+
+    function renderLegend() {
+      $("#legend").innerHTML = clubOrder.map((club) => `
+        <span class="legend-item"><span class="swatch" style="background:${colors[club]}"></span>${club}</span>
+      `).join("");
+    }
+
+    function toggleMultiSelection(current, value, allValues) {
+      if (value === "All") return ["All"];
+
+      const selected = new Set(current.includes("All") ? [] : current);
+      if (selected.has(value)) selected.delete(value);
+      else selected.add(value);
+
+      if (!selected.size) return ["All"];
+
+      const picked = allValues.filter((item) => selected.has(item));
+      if (picked.length === allValues.length) return ["All"];
+      return picked;
+    }
+
+    function renderFilters() {
+      const seasonsAll = orderedSeasons(rows);
+      const seasonMax = Math.max(0, seasonsAll.length - 1);
+      if (state.seasonStart < 0 || state.seasonStart > seasonMax) state.seasonStart = 0;
+      if (state.seasonEnd < 0 || state.seasonEnd > seasonMax) state.seasonEnd = seasonMax;
+      if (state.seasonStart > state.seasonEnd) state.seasonStart = state.seasonEnd;
+
+      const sportValues = sortByOrder(unique(rows.map((row) => row.sport)), ["Futebol", "Basquetebol", "Voleibol", "Hoquei", "Andebol", "Futsal"]);
+      const competitionValues = sortByOrder(unique(rows.map((row) => row.competition)), competitionOrder);
+      const groups = [
+        {label: "Género", key: "gender", values: ["All", ...genderOrder], names: {All: "Todos", Masculino: "Masculino", Feminino: "Feminino"}, multi: false},
+        {label: "Desporto", key: "sports", values: ["All", ...sportValues], names: {All: "Todos"}, multi: true, allValues: sportValues},
+        {label: "Competição", key: "competitions", values: ["All", ...competitionValues], names: {All: "Todas"}, multi: true, allValues: competitionValues},
+        {label: "Futebol", key: "football", values: ["include", "exclude"], names: {include: "Incluir", exclude: "Excluir"}, multi: false}
+      ];
+
+      const leftPct = seasonMax ? (state.seasonStart / seasonMax) * 100 : 0;
+      const rightPct = seasonMax ? (state.seasonEnd / seasonMax) * 100 : 100;
+      const seasonBlock = `
+        <div class="filter-row season-filter-row">
+          <div class="filter-group-label">Época</div>
+          <div class="season-range">
+            <div class="season-track"><div class="season-track-active" style="left:${leftPct}%;width:${Math.max(0, rightPct - leftPct)}%"></div></div>
+            <input id="seasonStart" type="range" min="0" max="${seasonMax}" step="1" value="${state.seasonStart}">
+            <input id="seasonEnd" type="range" min="0" max="${seasonMax}" step="1" value="${state.seasonEnd}">
+            <div class="season-range-labels">
+              <span>${shortSeason(seasonsAll[state.seasonStart] || "")}</span>
+              <span>${shortSeason(seasonsAll[state.seasonEnd] || "")}</span>
+            </div>
+          </div>
+        </div>`;
+
+      $("#filters").innerHTML = groups.map((group) => `
+        <div class="filter-row">
+          <div class="filter-group-label">${group.label}</div>
+          <div class="pill-row">
+            ${group.values.map((value) => `
+              <button class="pill ${
+                group.multi
+                  ? (state[group.key].includes(value) ? "is-active" : "")
+                  : (state[group.key] === value ? "is-active" : "")
+              }" type="button" data-filter="${group.key}" data-value="${value}">
+                ${group.names[value] || value}
+              </button>
+            `).join("")}
+          </div>
+        </div>
+      `).join("") + seasonBlock;
+
+      document.querySelectorAll("[data-filter]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const key = button.dataset.filter;
+          const value = button.dataset.value;
+          const group = groups.find((item) => item.key === key);
+          if (group && group.multi) state[key] = toggleMultiSelection(state[key], value, group.allValues);
+          else state[key] = value;
+          render();
+        });
+      });
+
+      const startInput = $("#seasonStart");
+      const endInput = $("#seasonEnd");
+      startInput.addEventListener("input", () => {
+        const next = Number(startInput.value);
+        state.seasonStart = Math.min(next, state.seasonEnd);
+        render();
+      });
+      endInput.addEventListener("input", () => {
+        const next = Number(endInput.value);
+        state.seasonEnd = Math.max(next, state.seasonStart);
+        render();
+      });
+    }
+
+    function renderLineChart(items) {
+      const svg = $("#mainChart");
+      const width = 1120;
+      const height = 420;
+      const padding = {top: 34, right: 38, bottom: 46, left: 52};
+      const seasonsList = orderedSeasons(items);
+      const plotW = width - padding.left - padding.right;
+      const plotH = height - padding.top - padding.bottom;
+      const xInset = 44;
+      const effectiveW = Math.max(1, plotW - (xInset * 2));
+      const x = (index) => padding.left + xInset + (seasonsList.length === 1 ? effectiveW / 2 : (index / (seasonsList.length - 1)) * effectiveW);
+      const y = (share) => padding.top + plotH - (Math.max(0, Math.min(1, share || 0)) * plotH);
+      const yTicks = [0, 0.25, 0.5, 0.75, 1];
+      const data = seriesFor(items, seasonsList);
+
+      const grid = yTicks.map((tick) => `
+        <line class="chart-grid" x1="${padding.left}" x2="${width - padding.right}" y1="${y(tick)}" y2="${y(tick)}"></line>
+        <text class="chart-label" x="14" y="${y(tick) + 4}">${percent(tick)}</text>
+      `).join("");
+
+      const xLabels = seasonsList.map((season, index) => `
+        <line class="chart-axis" x1="${x(index)}" x2="${x(index)}" y1="${padding.top}" y2="${height - padding.bottom}"></line>
+        <text class="chart-label" x="${x(index)}" y="${height - 16}" text-anchor="middle">${shortSeason(season)}</text>
+      `).join("");
+
+      const series = data.map((line) => {
+        const valid = line.points.filter((point) => Number.isFinite(point.share));
+        if (!valid.length) return "";
+        const d = line.points
+          .map((point, index) => ({...point, index}))
+          .filter((point) => Number.isFinite(point.share))
+          .map((point, index) => {
+            const command = index === 0 ? "M" : "L";
+            return `${command}${x(point.index).toFixed(1)},${y(point.share).toFixed(1)}`;
+          }).join(" ");
+        const points = line.points.map((point, index) => {
+          if (!Number.isFinite(point.share)) return "";
+          return `
+            <circle class="series-point" cx="${x(index)}" cy="${y(point.share)}" r="5" fill="${line.color}"></circle>
+            <text class="chart-value" x="${x(index)}" y="${y(point.share) - 12}" text-anchor="middle">${percent(point.share)}</text>
+          `;
+        }).join("");
+        return `
+          <path class="series-line" d="${d}" stroke="${line.color}"></path>
+          ${points}
+        `;
+      }).join("");
+
+      svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
+      svg.innerHTML = `
+        <rect x="0" y="0" width="${width}" height="${height}" fill="transparent"></rect>
+        ${grid}
+        ${xLabels}
+        <line class="chart-axis" x1="${padding.left}" x2="${width - padding.right}" y1="${height - padding.bottom}" y2="${height - padding.bottom}"></line>
+        ${series || `<text class="chart-label" x="${width / 2}" y="${height / 2}" text-anchor="middle">Sem entradas para estes filtros</text>`}
+      `;
+
+      $("#chartCaption").textContent = `${items.length} competições filtradas. Percentagens representam quota de vitórias em cada época.`;
+    }
+
+    function renderStats(items) {
+      const slbWins = items.filter((row) => row.winner === "SLB").length;
+      const leader = topWinner(items);
+      const seasonsList = orderedSeasons(items);
+      const data = seriesFor(items, seasonsList).flatMap((line) => line.points.map((point) => ({...point, club: line.club})));
+      const peak = data
+        .filter((point) => Number.isFinite(point.share))
+        .sort((a, b) => b.share - a.share || b.wins - a.wins)[0];
+
+      $("#visibleCount").textContent = items.length;
+      $("#statSlbShare").textContent = percent(items.length ? slbWins / items.length : NaN);
+      $("#statSlbSub").textContent = `${slbWins} em ${items.length} vitórias visíveis`;
+      $("#statLeader").textContent = leader ? leader.winner : "-";
+      $("#statLeaderSub").textContent = leader ? `${leader.count} vitórias no filtro atual` : "Sem entradas visíveis";
+      $("#statPeak").textContent = peak ? peak.club : "-";
+      $("#statPeakSub").textContent = peak ? `${percent(peak.share)} em ${shortSeason(peak.season)} (${peak.wins}/${peak.total})` : "Sem dados por época";
+      $("#statScope").textContent = unique(items.map((row) => `${row.season}|${row.gender}|${row.sport}|${row.competition}`)).length;
+      $("#statScopeSub").textContent = `${unique(items.map((row) => row.sport)).length} desportos, ${unique(items.map((row) => row.competition)).length} competições`;
+    }
+
+    function renderBarList(container, bars, valueKey, formatter) {
+      const max = Math.max(...bars.map((row) => row[valueKey]), 1);
+      container.innerHTML = bars.length ? bars.map((row) => {
+        const width = Math.max(2, Math.round((row[valueKey] / max) * 100));
+        return `
+          <div class="bar-row">
+            <div class="bar-label"><span class="swatch" style="background:${row.color}"></span><span>${row.label}</span></div>
+            <div class="bar-track"><div class="bar-fill" style="width:${width}%;background:${row.color}"></div></div>
+            <div class="bar-value">${formatter(row)}</div>
+          </div>`;
+      }).join("") : `<div class="empty">Sem entradas para estes filtros.</div>`;
+    }
+
+    function renderWinnerBreakdown(items) {
+      const bars = clubOrder.map((club) => {
+        const count = items.filter((row) => row.winner === club).length;
+        return {label: club, color: colors[club], count, share: items.length ? count / items.length : 0};
+      }).sort((a, b) => b.count - a.count || clubOrder.indexOf(a.label) - clubOrder.indexOf(b.label));
+      renderBarList($("#winnerBars"), bars, "count", (row) => `${percent(row.share)} (${row.count})`);
+    }
+
+    function renderSportBreakdown(items) {
+      const bars = Object.entries(groupBy(items, (row) => row.sport)).map(([sport, sportRows]) => {
+        const wins = sportRows.filter((row) => row.winner === "SLB").length;
+        return {
+          label: sport,
+          color: colors.SLB,
+          share: sportRows.length ? wins / sportRows.length : 0,
+          wins,
+          total: sportRows.length
+        };
+      }).sort((a, b) => b.share - a.share || b.wins - a.wins || a.label.localeCompare(b.label));
+      renderBarList($("#sportBars"), bars, "share", (row) => `${percent(row.share)} (${row.wins}/${row.total})`);
+    }
+
+    function renderMatrix(items) {
+      const seasonsList = orderedSeasons(rows);
+      const sorted = [...items].sort((a, b) => {
+        const seasonDiff = seasonsList.indexOf(a.season) - seasonsList.indexOf(b.season);
+        if (seasonDiff) return seasonDiff;
+        const genderDiff = genderOrder.indexOf(a.gender) - genderOrder.indexOf(b.gender);
+        if (genderDiff) return genderDiff;
+        const sportDiff = a.sport.localeCompare(b.sport);
+        if (sportDiff) return sportDiff;
+        const ai = competitionOrder.findIndex((item) => normalize(item) === normalize(a.competition));
+        const bi = competitionOrder.findIndex((item) => normalize(item) === normalize(b.competition));
+        return (ai === -1 ? 999 : ai) - (bi === -1 ? 999 : bi);
+      });
+
+      $("#matrixCount").textContent = `${sorted.length} entradas`;
+      $("#matrixBody").innerHTML = sorted.map((row) => `
+        <tr>
+          <td>${row.season}</td>
+          <td>${row.gender}</td>
+          <td>${row.sport}</td>
+          <td>${row.competition}</td>
+          <td>${chip(row.winner)}</td>
+        </tr>`).join("");
+    }
+
+    function render() {
+      const items = filteredRows();
+      renderLegend();
+      renderFilters();
+      renderLineChart(items);
+      renderStats(items);
+      renderWinnerBreakdown(items);
+      renderSportBreakdown(items);
+      renderMatrix(items);
+    }
+
+    function showNotice(message, strong = "Não foi possível carregar data.csv") {
+      const notice = $("#notice");
+      notice.style.display = "block";
+      notice.innerHTML = `<strong>${strong}</strong><br>${message}`;
+    }
+
+    async function boot() {
+      try {
+        const response = await fetch(`data.csv?v=${Date.now()}`, {cache: "no-store"});
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        rows = normalizeCsv(await response.text());
+        const seasonsAll = orderedSeasons(rows);
+        state.seasonStart = 0;
+        state.seasonEnd = Math.max(0, seasonsAll.length - 1);
+        render();
+      } catch (error) {
+        showNotice("Arranca esta pasta num servidor web local e abre o URL localhost. Esta página usa data.csv diretamente e a maioria dos browsers bloqueia leitura CSV em file://.");
+      }
+    }
+
+    boot();
+  </script>
+</body>
+</html>

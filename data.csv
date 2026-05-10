@@ -1,0 +1,230 @@
+Género,Época,Desporto,Competição,Vencedor
+Masculino,2021/2022,Futebol,Campeonato,FCP
+Masculino,2021/2022,Basquetebol,Campeonato,SLB
+Masculino,2021/2022,Voleibol,Campeonato,SLB
+Masculino,2021/2022,Hoquei,Campeonato,SLB
+Masculino,2021/2022,Andebol,Campeonato,FCP
+Masculino,2021/2022,Futsal,Campeonato,SCP
+Feminino,2021/2022,Futebol,Campeonato,SLB
+Feminino,2021/2022,Basquetebol,Campeonato,SLB
+Feminino,2021/2022,Voleibol,Campeonato,FCP
+Feminino,2021/2022,Hoquei,Campeonato,SLB
+Feminino,2021/2022,Andebol,Campeonato,SLB
+Feminino,2021/2022,Futsal,Campeonato,SLB
+Masculino,2021/2022,Futebol,Taça Portugal,FCP
+Masculino,2021/2022,Basquetebol,Taça Portugal,SCP
+Masculino,2021/2022,Voleibol,Taça Portugal,SLB
+Masculino,2021/2022,Hoquei,Taça Portugal,SCP
+Masculino,2021/2022,Andebol,Taça Portugal,SCP
+Masculino,2021/2022,Futsal,Taça Portugal,SCP
+Feminino,2021/2022,Futebol,Taça Portugal,SCP
+Feminino,2021/2022,Basquetebol,Taça Portugal,SLB
+Feminino,2021/2022,Voleibol,Taça Portugal,OUTROS
+Feminino,2021/2022,Hoquei,Taça Portugal,SLB
+Feminino,2021/2022,Andebol,Taça Portugal,SLB
+Feminino,2021/2022,Futsal,Taça Portugal,OUTROS
+Masculino,2021/2022,Futebol,Taça Liga,SCP
+Masculino,2021/2022,Basquetebol,Taça Liga,SCP
+Masculino,2021/2022,Hoquei,Taça Liga,SLB
+Masculino,2021/2022,Futsal,Taça Liga,SCP
+Feminino,2021/2022,Futebol,Taça Liga,OUTROS
+Feminino,2021/2022,Basquetebol,Taça Liga,SLB
+Feminino,2021/2022,Hoquei,Taça Liga,SLB
+Feminino,2021/2022,Futsal,Taça Liga,OUTROS
+Masculino,2021/2022,Futebol,Supertaça,SCP
+Masculino,2021/2022,Basquetebol,Supertaça,SCP
+Masculino,2021/2022,Voleibol,Supertaça,SLB
+Masculino,2021/2022,Hoquei,Supertaça,SLB
+Masculino,2021/2022,Andebol,Supertaça,FCP
+Masculino,2021/2022,Futsal,Supertaça,SCP
+Feminino,2021/2022,Futebol,Supertaça,SCP
+Feminino,2021/2022,Basquetebol,Supertaça,SLB
+Feminino,2021/2022,Voleibol,Supertaça,FCP
+Feminino,2021/2022,Hoquei,Supertaça,SLB
+Feminino,2021/2022,Andebol,Supertaça,OUTROS
+Feminino,2021/2022,Futsal,Supertaça,SLB
+Masculino,2021/2022,Andebol,Europa,SLB
+Masculino,2022/2023,Futebol,Campeonato,SLB
+Masculino,2022/2023,Basquetebol,Campeonato,SLB
+Masculino,2022/2023,Voleibol,Campeonato,SLB
+Masculino,2022/2023,Hoquei,Campeonato,SLB
+Masculino,2022/2023,Andebol,Campeonato,FCP
+Masculino,2022/2023,Futsal,Campeonato,SCP
+Feminino,2022/2023,Futebol,Campeonato,SLB
+Feminino,2022/2023,Basquetebol,Campeonato,OUTROS
+Feminino,2022/2023,Voleibol,Campeonato,OUTROS
+Feminino,2022/2023,Hoquei,Campeonato,SLB
+Feminino,2022/2023,Andebol,Campeonato,SLB
+Feminino,2022/2023,Futsal,Campeonato,SLB
+Masculino,2022/2023,Futebol,Taça Portugal,FCP
+Masculino,2022/2023,Basquetebol,Taça Portugal,SLB
+Masculino,2022/2023,Voleibol,Taça Portugal,SLB
+Masculino,2022/2023,Hoquei,Taça Portugal,OUTROS
+Masculino,2022/2023,Andebol,Taça Portugal,SCP
+Masculino,2022/2023,Futsal,Taça Portugal,SLB
+Feminino,2022/2023,Futebol,Taça Portugal,OUTROS
+Feminino,2022/2023,Basquetebol,Taça Portugal,OUTROS
+Feminino,2022/2023,Voleibol,Taça Portugal,SCP
+Feminino,2022/2023,Hoquei,Taça Portugal,SLB
+Feminino,2022/2023,Andebol,Taça Portugal,SLB
+Feminino,2022/2023,Futsal,Taça Portugal,SLB
+Masculino,2022/2023,Futebol,Taça Liga,FCP
+Masculino,2022/2023,Basquetebol,Taça Liga,SCP
+Masculino,2022/2023,Hoquei,Taça Liga,FCP
+Masculino,2022/2023,Futsal,Taça Liga,SLB
+Feminino,2022/2023,Futebol,Taça Liga,SLB
+Feminino,2022/2023,Basquetebol,Taça Liga,SLB
+Feminino,2022/2023,Hoquei,Taça Liga,SLB
+Feminino,2022/2023,Andebol,Taça Liga,OUTROS
+Feminino,2022/2023,Futsal,Taça Liga,SLB
+Masculino,2022/2023,Futebol,Supertaça,FCP
+Masculino,2022/2023,Basquetebol,Supertaça,SCP
+Masculino,2022/2023,Voleibol,Supertaça,OUTROS
+Masculino,2022/2023,Hoquei,Supertaça,SLB
+Masculino,2022/2023,Andebol,Supertaça,SLB
+Masculino,2022/2023,Futsal,Supertaça,SCP
+Feminino,2022/2023,Futebol,Supertaça,SLB
+Feminino,2022/2023,Basquetebol,Supertaça,SLB
+Feminino,2022/2023,Voleibol,Supertaça,OUTROS
+Feminino,2022/2023,Hoquei,Supertaça,SLB
+Feminino,2022/2023,Andebol,Supertaça,SLB
+Feminino,2022/2023,Futsal,Supertaça,SLB
+Masculino,2022/2023,Hoquei,Europa,FCP
+Feminino,2022/2023,Basquetebol,Europa,SLB
+Masculino,2023/2024,Futebol,Campeonato,SCP
+Masculino,2023/2024,Basquetebol,Campeonato,SLB
+Masculino,2023/2024,Voleibol,Campeonato,SLB
+Masculino,2023/2024,Hoquei,Campeonato,FCP
+Masculino,2023/2024,Andebol,Campeonato,SCP
+Masculino,2023/2024,Futsal,Campeonato,SCP
+Feminino,2023/2024,Futebol,Campeonato,SLB
+Feminino,2023/2024,Basquetebol,Campeonato,SLB
+Feminino,2023/2024,Voleibol,Campeonato,FCP
+Feminino,2023/2024,Hoquei,Campeonato,SLB
+Feminino,2023/2024,Andebol,Campeonato,SLB
+Feminino,2023/2024,Futsal,Campeonato,SLB
+Masculino,2023/2024,Futebol,Taça Portugal,FCP
+Masculino,2023/2024,Basquetebol,Taça Portugal,FCP
+Masculino,2023/2024,Voleibol,Taça Portugal,SCP
+Masculino,2023/2024,Hoquei,Taça Portugal,FCP
+Masculino,2023/2024,Andebol,Taça Portugal,SCP
+Masculino,2023/2024,Futsal,Taça Portugal,OUTROS
+Feminino,2023/2024,Futebol,Taça Portugal,SLB
+Feminino,2023/2024,Basquetebol,Taça Portugal,SLB
+Feminino,2023/2024,Voleibol,Taça Portugal,SLB
+Feminino,2023/2024,Hoquei,Taça Portugal,SLB
+Feminino,2023/2024,Andebol,Taça Portugal,OUTROS
+Feminino,2023/2024,Futsal,Taça Portugal,SLB
+Masculino,2023/2024,Futebol,Taça Liga,OUTROS
+Masculino,2023/2024,Basquetebol,Taça Liga,SLB
+Masculino,2023/2024,Hoquei,Taça Liga,SLB
+Masculino,2023/2024,Futsal,Taça Liga,SCP
+Feminino,2023/2024,Futebol,Taça Liga,SLB
+Feminino,2023/2024,Basquetebol,Taça Liga,OUTROS
+Feminino,2023/2024,Hoquei,Taça Liga,SLB
+Feminino,2023/2024,Andebol,Taça Liga,SLB
+Feminino,2023/2024,Futsal,Taça Liga,OUTROS
+Masculino,2023/2024,Futebol,Supertaça,SLB
+Masculino,2023/2024,Basquetebol,Supertaça,SLB
+Masculino,2023/2024,Voleibol,Supertaça,SLB
+Masculino,2023/2024,Hoquei,Supertaça,SLB
+Masculino,2023/2024,Andebol,Supertaça,SCP
+Masculino,2023/2024,Futsal,Supertaça,SLB
+Feminino,2023/2024,Futebol,Supertaça,SLB
+Feminino,2023/2024,Basquetebol,Supertaça,OUTROS
+Feminino,2023/2024,Voleibol,Supertaça,OUTROS
+Feminino,2023/2024,Hoquei,Supertaça,SLB
+Feminino,2023/2024,Andebol,Supertaça,SLB
+Feminino,2023/2024,Futsal,Supertaça,SLB
+Masculino,2023/2024,Hoquei,Europa,FCP
+Masculino,2023/2024,Hoquei,Europa,SCP
+Feminino,2023/2024,Basquetebol,Europa,SLB
+Feminino,2023/2024,Futsal,Europa,SLB
+Masculino,2024/2025,Futebol,Campeonato,SCP
+Masculino,2024/2025,Basquetebol,Campeonato,SLB
+Masculino,2024/2025,Voleibol,Campeonato,SCP
+Masculino,2024/2025,Hoquei,Campeonato,FCP
+Masculino,2024/2025,Andebol,Campeonato,SCP
+Masculino,2024/2025,Futsal,Campeonato,SLB
+Feminino,2024/2025,Futebol,Campeonato,SLB
+Feminino,2024/2025,Basquetebol,Campeonato,SLB
+Feminino,2024/2025,Voleibol,Campeonato,SLB
+Feminino,2024/2025,Hoquei,Campeonato,SLB
+Feminino,2024/2025,Andebol,Campeonato,SLB
+Feminino,2024/2025,Futsal,Campeonato,OUTROS
+Masculino,2024/2025,Futebol,Taça Portugal,SCP
+Masculino,2024/2025,Basquetebol,Taça Portugal,FCP
+Masculino,2024/2025,Voleibol,Taça Portugal,SLB
+Masculino,2024/2025,Hoquei,Taça Portugal,SCP
+Masculino,2024/2025,Andebol,Taça Portugal,SCP
+Masculino,2024/2025,Futsal,Taça Portugal,SCP
+Feminino,2024/2025,Futebol,Taça Portugal,OUTROS
+Feminino,2024/2025,Basquetebol,Taça Portugal,OUTROS
+Feminino,2024/2025,Voleibol,Taça Portugal,SCP
+Feminino,2024/2025,Hoquei,Taça Portugal,SLB
+Feminino,2024/2025,Andebol,Taça Portugal,SLB
+Feminino,2024/2025,Futsal,Taça Portugal,SLB
+Masculino,2024/2025,Futebol,Taça Liga,SLB
+Masculino,2024/2025,Basquetebol,Taça Liga,OUTROS
+Masculino,2024/2025,Hoquei,Taça Liga,SLB
+Masculino,2024/2025,Futsal,Taça Liga,SCP
+Feminino,2024/2025,Futebol,Taça Liga,SLB
+Feminino,2024/2025,Basquetebol,Taça Liga,OUTROS
+Feminino,2024/2025,Hoquei,Taça Liga,SLB
+Feminino,2024/2025,Futsal,Taça Liga,SLB
+Masculino,2024/2025,Futebol,Supertaça,FCP
+Masculino,2024/2025,Basquetebol,Supertaça,FCP
+Masculino,2024/2025,Voleibol,Supertaça,SCP
+Masculino,2024/2025,Hoquei,Supertaça,OUTROS
+Masculino,2024/2025,Andebol,Supertaça,SCP
+Masculino,2024/2025,Futsal,Supertaça,OUTROS
+Feminino,2024/2025,Futebol,Supertaça,SCP
+Feminino,2024/2025,Basquetebol,Supertaça,SLB
+Feminino,2024/2025,Voleibol,Supertaça,SLB
+Feminino,2024/2025,Hoquei,Supertaça,SLB
+Feminino,2024/2025,Andebol,Supertaça,OUTROS
+Feminino,2024/2025,Futsal,Supertaça,SLB
+Masculino,2024/2025,Hoquei,Europa,OUTROS
+Feminino,2024/2025,Basquetebol,Europa,SLB
+Feminino,2025/2026,Andebol,Campeonato,
+Feminino,2025/2026,Andebol,Supertaça,SLB
+Feminino,2025/2026,Andebol,Taça Portugal,
+Feminino,2025/2026,Basquetebol,Campeonato,
+Feminino,2025/2026,Basquetebol,Supertaça,OUTROS
+Feminino,2025/2026,Basquetebol,Taça Liga,SLB
+Feminino,2025/2026,Basquetebol,Taça Portugal,SLB
+Feminino,2025/2026,Futebol,Campeonato,SLB
+Feminino,2025/2026,Futebol,Supertaça,OUTROS
+Feminino,2025/2026,Futebol,Taça Liga,OUTROS
+Feminino,2025/2026,Futebol,Taça Portugal,
+Feminino,2025/2026,Futsal,Campeonato,
+Feminino,2025/2026,Futsal,Supertaça,OUTROS
+Feminino,2025/2026,Futsal,Taça Liga,OUTROS
+Feminino,2025/2026,Futsal,Taça Portugal,SLB
+Feminino,2025/2026,Hoquei,Campeonato,SLB
+Feminino,2025/2026,Hoquei,Supertaça,SLB
+Feminino,2025/2026,Hoquei,Taça Portugal,SLB
+Feminino,2025/2026,Voleibol,Campeonato,
+Feminino,2025/2026,Voleibol,Supertaça,SLB
+Feminino,2025/2026,Voleibol,Taça Portugal,FCP
+Masculino,2025/2026,Andebol,Campeonato,
+Masculino,2025/2026,Andebol,Supertaça,SCP
+Masculino,2025/2026,Andebol,Taça Portugal,
+Masculino,2025/2026,Basquetebol,Campeonato,
+Masculino,2025/2026,Basquetebol,Supertaça,SLB
+Masculino,2025/2026,Basquetebol,Taça Liga,SCP
+Masculino,2025/2026,Basquetebol,Taça Portugal,SCP
+Masculino,2025/2026,Futebol,Campeonato,FCP
+Masculino,2025/2026,Futebol,Supertaça,SLB
+Masculino,2025/2026,Futebol,Taça Liga,OUTROS
+Masculino,2025/2026,Futebol,Taça Portugal,
+Masculino,2025/2026,Futsal,Campeonato,
+Masculino,2025/2026,Futsal,Supertaça,SCP
+Masculino,2025/2026,Futsal,Taça Liga,SLB
+Masculino,2025/2026,Futsal,Taça Portugal,SLB
+Masculino,2025/2026,Hoquei,Campeonato,
+Masculino,2025/2026,Hoquei,Supertaça,SCP
+Masculino,2025/2026,Hoquei,Taça Portugal,SCP
+Masculino,2025/2026,Voleibol,Campeonato,
+Masculino,2025/2026,Voleibol,Supertaça,SCP
+Masculino,2025/2026,Voleibol,Taça Portugal,SCP
