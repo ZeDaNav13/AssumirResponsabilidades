@@ -787,20 +787,24 @@
 
     function normalizeCsv(text) {
       const table = csvToRows(text.replace(/^\uFEFF/, ""));
+      if (!table.length) return [];
+
       const headers = table[0].map(normalize);
-      const index = {
+      const headerIndex = {
         gender: headers.indexOf("genero"),
         season: headers.indexOf("epoca"),
         sport: headers.indexOf("desporto"),
         competition: headers.indexOf("competicao"),
         winner: headers.indexOf("vencedor")
       };
+      const hasHeader = Object.values(headerIndex).every((value) => value !== -1);
 
-      if (Object.values(index).some((value) => value === -1)) {
-        throw new Error("data.csv tem de incluir colunas Género, Época, Desporto, Competição e Vencedor.");
-      }
+      const index = hasHeader
+        ? headerIndex
+        : {gender: 0, season: 1, sport: 2, competition: 3, winner: 4};
 
-      return table.slice(1).map((line) => ({
+      const startAt = hasHeader ? 1 : 0;
+      return table.slice(startAt).map((line) => ({
         gender: cleanText(line[index.gender]),
         season: cleanText(line[index.season]),
         sport: cleanText(line[index.sport]),
