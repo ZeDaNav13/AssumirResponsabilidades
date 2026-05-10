@@ -1139,11 +1139,38 @@
       notice.innerHTML = `<strong>${strong}</strong><br>${message}`;
     }
 
+    function csvCandidateUrls() {
+      const origin = window.location.origin;
+      const href = window.location.href;
+      const pathParts = window.location.pathname.split("/").filter(Boolean);
+      const project = pathParts[0] || "";
+      const urls = [
+        new URL("data.csv", href).href,
+        new URL("./data.csv", href).href
+      ];
+      if (project) urls.push(new URL(`/${project}/data.csv`, origin).href);
+      urls.push(new URL("/data.csv", origin).href);
+      return [...new Set(urls)];
+    }
+
+    async function fetchCsvText() {
+      const stamp = Date.now();
+      for (const base of csvCandidateUrls()) {
+        const sep = base.includes("?") ? "&" : "?";
+        const url = `${base}${sep}v=${stamp}`;
+        try {
+          const response = await fetch(url, {cache: "no-store"});
+          if (response.ok) return await response.text();
+        } catch (error) {
+          // Try next candidate path.
+        }
+      }
+      throw new Error("CSV not reachable in candidate paths.");
+    }
+
     async function boot() {
       try {
-        const response = await fetch(`data.csv?v=${Date.now()}`, {cache: "no-store"});
-        if (!response.ok) throw new Error(`HTTP ${response.status}`);
-        rows = normalizeCsv(await response.text());
+        rows = normalizeCsv(await fetchCsvText());
         const seasonsAll = orderedSeasons(rows);
         state.seasonStart = 0;
         state.seasonEnd = Math.max(0, seasonsAll.length - 1);
