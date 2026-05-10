@@ -624,15 +624,15 @@
 
     @media (min-width: 1101px) {
       body {
-        overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: auto;
       }
 
       .shell {
-        height: 100vh;
+        min-height: 100vh;
+        height: auto;
         padding: 12px 0;
-        display: grid;
-        grid-template-rows: auto auto auto 1fr auto;
-        gap: 10px;
+        display: block;
       }
 
       .hero-panel,
@@ -643,25 +643,15 @@
       }
 
       .hero-panel {
-        margin-top: 0;
+        margin-top: 18px;
       }
 
       .stats-grid {
-        margin: 0;
-      }
-
-      .panel {
-        display: grid;
-        grid-template-rows: auto 1fr;
-      }
-
-      .panel-body,
-      .table-wrap {
-        overflow: auto;
+        margin: 12px 0;
       }
 
       .footer {
-        margin-top: 0;
+        margin-top: 14px;
       }
     }
 
