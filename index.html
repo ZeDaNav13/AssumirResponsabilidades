@@ -9,11 +9,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #b1b3b6;
-      --panel: #0d1118;
-      --panel-2: #111720;
-      --line: #202938;
-      --line-soft: #182130;
+      --bg: #ed1c24;
+      --panel: #293241;
+      --panel-2: #293241;
+      --line: #293241;
+      --line-soft: #293241;
       --text: #eef3f8;
       --muted: #8492a6;
       --muted-2: #5e6b7d;
@@ -34,7 +34,7 @@
       margin: 0;
       min-height: 100vh;
       background:
-        linear-gradient(180deg, rgba(177, 179, 182, 0.92), var(--bg) 320px),
+        linear-gradient(180deg, rgba(237, 28, 36, 0.92), var(--bg) 320px),
         var(--bg);
       color: var(--text);
       font-family: var(--font-text);
@@ -54,13 +54,19 @@
     }
 
     .app-header {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr);
-      gap: 18px;
-      align-items: end;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
       padding-bottom: 0;
-      justify-items: center;
-      text-align: center;
+      min-height: 108px;
+      text-align: left;
+    }
+
+    .app-title-block {
+      display: grid;
+      gap: 6px;
+      justify-items: start;
     }
 
     h1,
@@ -84,23 +90,31 @@
       line-height: 0.9;
     }
 
+    .app-subtitle {
+      color: var(--text);
+      font-family: var(--font-title);
+      font-size: clamp(17px, 2vw, 24px);
+      line-height: 1.05;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
+    }
+
+    .header-logo {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: clamp(74px, 8vw, 110px);
+      height: auto;
+    }
+
     .source {
       margin-top: 8px;
       color: var(--muted);
       font-size: 13px;
     }
 
-    .header-count {
-      min-width: 178px;
-      padding: 11px 12px;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      background: rgba(13, 17, 24, 0.82);
-      text-align: right;
-      box-shadow: var(--shadow);
-    }
-
-    .header-count span,
     .metric span,
     .filter-group-label {
       color: var(--muted);
@@ -108,14 +122,6 @@
       font-weight: 800;
       letter-spacing: 0.08em;
       text-transform: uppercase;
-    }
-
-    .header-count strong {
-      display: block;
-      margin-top: 4px;
-      color: var(--text);
-      font-size: 28px;
-      line-height: 1;
     }
 
     .notice {
@@ -138,7 +144,7 @@
     .metric {
       border: 1px solid var(--line);
       border-radius: 8px;
-      background: rgba(13, 17, 24, 0.92);
+      background: rgba(41, 50, 65, 0.92);
       box-shadow: var(--shadow);
     }
 
@@ -149,12 +155,12 @@
 
     .hero-head {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) auto;
-      gap: 16px;
+      grid-template-columns: 1fr;
+      gap: 12px;
       align-items: start;
       padding: 18px;
       border-bottom: 1px solid var(--line-soft);
-      background: rgba(17, 23, 32, 0.74);
+      background: rgba(41, 50, 65, 0.74);
     }
 
     .hero-head h2 {
@@ -176,16 +182,21 @@
     }
 
     .hero-title-row {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) auto;
-      gap: 12px;
-      align-items: start;
+      display: block;
     }
 
-    .hero-title-block p {
-      margin-top: 6px;
-      color: var(--muted);
-      line-height: 1.45;
+    .hero-controls {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 8px;
+    }
+
+    .hero-controls-left {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
     }
 
     .legend {
@@ -193,7 +204,31 @@
       gap: 10px;
       justify-content: flex-end;
       flex-wrap: wrap;
-      max-width: 420px;
+      max-width: min(62%, 740px);
+    }
+
+    .chart-switch {
+      display: inline-flex;
+      gap: 6px;
+      align-items: center;
+    }
+
+    .chart-switch-btn {
+      min-height: 30px;
+      padding: 0 10px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #000000;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .chart-switch-btn.is-active {
+      border-color: #dbe8f9;
+      background: #eaf2ff;
+      color: #0b1018;
     }
 
     .legend-item {
@@ -205,7 +240,7 @@
       border: 1px solid var(--line);
       border-radius: 999px;
       color: var(--text);
-      background: rgba(7, 9, 13, 0.58);
+      background: rgba(41, 50, 65, 0.58);
       font-weight: 800;
       font-size: 12px;
     }
@@ -220,11 +255,12 @@
 
     .chart-stage {
       padding: 14px 14px 8px;
+      background: #000000;
     }
 
     .line-chart {
       width: 100%;
-      height: 420px;
+      height: clamp(250px, 34vh, 380px);
       display: block;
     }
 
@@ -241,18 +277,18 @@
     }
 
     .chart-label {
-      fill: var(--muted);
+      fill: var(--text);
       font-size: 15px;
       font-weight: 800;
     }
 
     .chart-value {
       fill: var(--text);
-      font-size: 11px;
+      font-size: 15px;
       font-weight: 800;
       paint-order: stroke;
       stroke: var(--panel);
-      stroke-width: 4px;
+      stroke-width: 5px;
       stroke-linejoin: round;
     }
 
@@ -273,7 +309,7 @@
       gap: 12px;
       padding: 14px 18px 18px;
       border-top: 1px solid var(--line-soft);
-      background: rgba(7, 9, 13, 0.42);
+      background: rgba(41, 50, 65, 0.42);
     }
 
     .filter-row {
@@ -281,14 +317,6 @@
       grid-template-columns: 116px minmax(0, 1fr);
       gap: 12px;
       align-items: center;
-    }
-
-    .season-filter-row {
-      align-items: start;
-    }
-
-    .season-filter-row .filter-group-label {
-      margin-top: 17px;
     }
 
     .filter-group-label {
@@ -304,15 +332,16 @@
 
     .season-range {
       position: relative;
-      width: min(760px, 100%);
-      padding: 16px 0 22px;
+      width: 100%;
+      padding: 0;
+      height: 34px;
     }
 
     .season-track {
       position: absolute;
       left: 0;
       right: 0;
-      top: 20px;
+      top: 14px;
       height: 6px;
       border-radius: 999px;
       background: rgba(132, 146, 166, 0.26);
@@ -330,62 +359,88 @@
       position: absolute;
       left: 0;
       right: 0;
-      top: 12px;
+      top: 0;
       width: 100%;
+      height: 38px;
       margin: 0;
       appearance: none;
       background: transparent;
       pointer-events: none;
     }
 
+    .season-handle {
+      position: absolute;
+      top: 0;
+      transform: translateX(-50%);
+      min-width: 56px;
+      min-height: 34px;
+      padding: 0 13px;
+      border: 1px solid #dbe8f9;
+      border-radius: 10px;
+      background: #eaf2ff;
+      color: #0b1018;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 600;
+      white-space: nowrap;
+      pointer-events: none;
+      z-index: 3;
+    }
+
+    .season-handle.start.same {
+      transform: translateX(-104%);
+    }
+
+    .season-handle.end.same {
+      transform: translateX(4%);
+    }
+
+    .season-handle.start.at-min {
+      transform: translateX(0);
+    }
+
+    .season-handle.end.at-max {
+      transform: translateX(-100%);
+    }
+
     .season-range input[type="range"]::-webkit-slider-thumb {
       appearance: none;
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      border: 2px solid #0b1018;
-      background: #f5f9ff;
-      box-shadow: 0 0 0 1px rgba(219, 232, 249, 0.8);
+      width: 56px;
+      height: 34px;
+      border: 0;
+      background: transparent;
       pointer-events: auto;
       cursor: pointer;
     }
 
     .season-range input[type="range"]::-moz-range-thumb {
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      border: 2px solid #0b1018;
-      background: #f5f9ff;
-      box-shadow: 0 0 0 1px rgba(219, 232, 249, 0.8);
+      width: 56px;
+      height: 34px;
+      border: 0;
+      border-radius: 10px;
+      background: transparent;
       pointer-events: auto;
       cursor: pointer;
     }
 
     .season-range input[type="range"]::-webkit-slider-runnable-track {
-      height: 6px;
+      height: 34px;
       background: transparent;
     }
 
     .season-range input[type="range"]::-moz-range-track {
-      height: 6px;
+      height: 34px;
       background: transparent;
       border: 0;
-    }
-
-    .season-range-labels {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 22px;
-      color: var(--text);
-      font-size: 13px;
-      font-weight: 700;
     }
 
     .pill {
       min-height: 34px;
       border: 1px solid var(--line);
       border-radius: 10px;
-      background: rgba(17, 23, 32, 0.84);
+      background: #000000;
       color: var(--muted);
       padding: 0 13px;
       cursor: pointer;
@@ -451,7 +506,7 @@
       gap: 10px;
       padding: 14px 15px 12px;
       border-bottom: 1px solid var(--line-soft);
-      background: rgba(17, 23, 32, 0.76);
+      background: rgba(41, 50, 65, 0.76);
     }
 
     .panel-header h2 {
@@ -496,7 +551,7 @@
       height: 8px;
       border: 1px solid rgba(132, 146, 166, 0.18);
       border-radius: 999px;
-      background: rgba(7, 9, 13, 0.9);
+      background: rgba(41, 50, 65, 0.9);
       overflow: hidden;
     }
 
@@ -536,7 +591,7 @@
       font-weight: 800;
       letter-spacing: 0.07em;
       text-transform: uppercase;
-      background: rgba(17, 23, 32, 0.82);
+      background: rgba(41, 50, 65, 0.82);
     }
 
     tbody tr:hover {
@@ -551,7 +606,7 @@
       padding: 3px 8px;
       border: 1px solid var(--line);
       border-radius: 999px;
-      background: rgba(7, 9, 13, 0.72);
+      background: rgba(41, 50, 65, 0.72);
       color: var(--text);
       font-weight: 800;
     }
@@ -567,18 +622,57 @@
       font-size: 12px;
     }
 
+    @media (min-width: 1101px) {
+      body {
+        overflow: hidden;
+      }
+
+      .shell {
+        height: 100vh;
+        padding: 12px 0;
+        display: grid;
+        grid-template-rows: auto auto auto 1fr auto;
+        gap: 10px;
+      }
+
+      .hero-panel,
+      .panel,
+      .panel-grid,
+      .table-wrap {
+        min-height: 0;
+      }
+
+      .hero-panel {
+        margin-top: 0;
+      }
+
+      .stats-grid {
+        margin: 0;
+      }
+
+      .panel {
+        display: grid;
+        grid-template-rows: auto 1fr;
+      }
+
+      .panel-body,
+      .table-wrap {
+        overflow: auto;
+      }
+
+      .footer {
+        margin-top: 0;
+      }
+    }
+
     @media (max-width: 1100px) {
       .stats-grid,
       .panel-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
-      .hero-head {
-        grid-template-columns: 1fr;
-      }
-
-      .legend {
-        justify-content: flex-start;
+      .hero-controls {
+        flex-wrap: wrap;
       }
 
     }
@@ -596,8 +690,17 @@
         grid-template-columns: 1fr;
       }
 
-      .header-count {
-        text-align: left;
+      .app-header {
+        display: grid;
+        justify-items: start;
+        gap: 8px;
+        min-height: 0;
+      }
+
+      .header-logo {
+        position: static;
+        transform: none;
+        width: 82px;
       }
 
       .line-chart {
@@ -617,9 +720,11 @@
 <body>
   <main class="shell">
     <header class="app-header">
-      <div>
+      <div class="app-title-block">
         <h1><span class="title-initial">A</span>ssumir <span class="title-initial">R</span>esponsabilidades</h1>
+        <p class="app-subtitle">Rui Costa 2021-2029</p>
       </div>
+      <img class="header-logo" src="slb-logo-new.svg" alt="Logótipo do SLB">
     </header>
 
     <div class="notice" id="notice"></div>
@@ -630,15 +735,16 @@
           <div class="hero-title-row">
             <div class="hero-title-block">
               <h2>Percentagem de Competições Ganhas por Época</h2>
-              <p id="chartCaption">Cada linha mostra a percentagem de competições filtradas ganhas por clube em cada época.</p>
-            </div>
-            <div class="header-count">
-              <span>Entradas visíveis</span>
-              <strong id="visibleCount">0</strong>
             </div>
           </div>
         </div>
-        <div class="legend" id="legend"></div>
+        <div class="hero-controls">
+          <div class="hero-controls-left">
+            <div class="chart-switch" id="chartSwitch"></div>
+            <div class="chart-switch" id="chartMetricSwitch"></div>
+          </div>
+          <div class="legend" id="legend"></div>
+        </div>
       </div>
       <div class="chart-stage">
         <svg class="line-chart" id="mainChart" role="img" aria-label="Percentagem de vitórias por competição e por época"></svg>
@@ -690,6 +796,12 @@
         </div>
       </article>
 
+      <article class="metric wide">
+        <span>Entradas visíveis</span>
+        <strong id="visibleCount">0</strong>
+        <small>No filtro atual</small>
+      </article>
+
       <article class="panel wide">
         <div class="panel-header">
           <h2>Matriz de Resultados</h2>
@@ -722,7 +834,10 @@
       competitions: ["All"],
       football: "include",
       seasonStart: 0,
-      seasonEnd: 0
+      seasonEnd: 0,
+      chartView: "stack",
+      stackMetric: "share",
+      lineMetric: "share"
     };
 
     let rows = [];
@@ -737,6 +852,7 @@
       SCP: "#008047",
       OUTROS: "#ffd400"
     };
+    const stackOrder = ["SLB", "SCP", "FCP", "OUTROS"];
 
     function cleanText(value) {
       return String(value || "").trim();
@@ -898,6 +1014,52 @@
       `).join("");
     }
 
+    function renderChartSwitch() {
+      const views = [
+        {id: "stack", label: "Barras"},
+        {id: "line", label: "Linhas"}
+      ];
+      $("#chartSwitch").innerHTML = views.map((view) => `
+        <button class="chart-switch-btn ${state.chartView === view.id ? "is-active" : ""}" type="button" data-chart-view="${view.id}">
+          ${view.label}
+        </button>
+      `).join("");
+
+      document.querySelectorAll("[data-chart-view]").forEach((button) => {
+        button.addEventListener("click", () => {
+          state.chartView = button.dataset.chartView;
+          render();
+        });
+      });
+    }
+
+    function renderChartMetricSwitch() {
+      const wrap = $("#chartMetricSwitch");
+      if (state.chartView !== "stack" && state.chartView !== "line") {
+        wrap.innerHTML = "";
+        return;
+      }
+
+      const key = state.chartView === "stack" ? "stackMetric" : "lineMetric";
+      const modes = [
+        {id: "share", label: "%"},
+        {id: "titles", label: "Títulos"}
+      ];
+
+      wrap.innerHTML = modes.map((mode) => `
+        <button class="chart-switch-btn ${state[key] === mode.id ? "is-active" : ""}" type="button" data-chart-metric="${mode.id}">
+          ${mode.label}
+        </button>
+      `).join("");
+
+      document.querySelectorAll("[data-chart-metric]").forEach((button) => {
+        button.addEventListener("click", () => {
+          state[key] = button.dataset.chartMetric;
+          render();
+        });
+      });
+    }
+
     function toggleMultiSelection(current, value, allValues) {
       if (value === "All") return ["All"];
 
@@ -930,17 +1092,18 @@
 
       const leftPct = seasonMax ? (state.seasonStart / seasonMax) * 100 : 0;
       const rightPct = seasonMax ? (state.seasonEnd / seasonMax) * 100 : 100;
+      const sameSeason = state.seasonStart === state.seasonEnd;
+      const atMin = state.seasonStart === 0;
+      const atMax = state.seasonEnd === seasonMax;
       const seasonBlock = `
         <div class="filter-row season-filter-row">
           <div class="filter-group-label">Época</div>
           <div class="season-range">
+            <div class="season-handle start ${sameSeason ? "same" : ""} ${atMin ? "at-min" : ""}" style="left:${leftPct}%">${shortSeason(seasonsAll[state.seasonStart] || "")}</div>
+            <div class="season-handle end ${sameSeason ? "same" : ""} ${atMax ? "at-max" : ""}" style="left:${rightPct}%">${shortSeason(seasonsAll[state.seasonEnd] || "")}</div>
             <div class="season-track"><div class="season-track-active" style="left:${leftPct}%;width:${Math.max(0, rightPct - leftPct)}%"></div></div>
             <input id="seasonStart" type="range" min="0" max="${seasonMax}" step="1" value="${state.seasonStart}">
             <input id="seasonEnd" type="range" min="0" max="${seasonMax}" step="1" value="${state.seasonEnd}">
-            <div class="season-range-labels">
-              <span>${shortSeason(seasonsAll[state.seasonStart] || "")}</span>
-              <span>${shortSeason(seasonsAll[state.seasonEnd] || "")}</span>
-            </div>
           </div>
         </div>`;
 
@@ -997,13 +1160,23 @@
       const xInset = 44;
       const effectiveW = Math.max(1, plotW - (xInset * 2));
       const x = (index) => padding.left + xInset + (seasonsList.length === 1 ? effectiveW / 2 : (index / (seasonsList.length - 1)) * effectiveW);
-      const y = (share) => padding.top + plotH - (Math.max(0, Math.min(1, share || 0)) * plotH);
-      const yTicks = [0, 0.25, 0.5, 0.75, 1];
       const data = seriesFor(items, seasonsList);
+      const useTitles = state.lineMetric === "titles";
+
+      const maxWins = Math.max(1, ...data.flatMap((line) => line.points.map((point) => point.wins)));
+      const countStep = Math.max(1, Math.ceil(maxWins / 4));
+      const countMax = countStep * 4;
+      const yTicks = useTitles ? [0, countStep, countStep * 2, countStep * 3, countMax] : [0, 0.25, 0.5, 0.75, 1];
+      const valueFor = (point) => (useTitles ? point.wins : point.share);
+      const y = (value) => {
+        if (useTitles) return padding.top + plotH - ((Math.max(0, value || 0) / countMax) * plotH);
+        return padding.top + plotH - (Math.max(0, Math.min(1, value || 0)) * plotH);
+      };
+      const tickLabel = (tick) => (useTitles ? String(tick) : percent(tick));
 
       const grid = yTicks.map((tick) => `
         <line class="chart-grid" x1="${padding.left}" x2="${width - padding.right}" y1="${y(tick)}" y2="${y(tick)}"></line>
-        <text class="chart-label" x="14" y="${y(tick) + 4}">${percent(tick)}</text>
+        <text class="chart-label" x="14" y="${y(tick) + 4}">${tickLabel(tick)}</text>
       `).join("");
 
       const xLabels = seasonsList.map((season, index) => `
@@ -1012,20 +1185,21 @@
       `).join("");
 
       const series = data.map((line) => {
-        const valid = line.points.filter((point) => Number.isFinite(point.share));
+        const valid = line.points.filter((point) => Number.isFinite(valueFor(point)));
         if (!valid.length) return "";
         const d = line.points
           .map((point, index) => ({...point, index}))
-          .filter((point) => Number.isFinite(point.share))
+          .filter((point) => Number.isFinite(valueFor(point)))
           .map((point, index) => {
             const command = index === 0 ? "M" : "L";
-            return `${command}${x(point.index).toFixed(1)},${y(point.share).toFixed(1)}`;
+            return `${command}${x(point.index).toFixed(1)},${y(valueFor(point)).toFixed(1)}`;
           }).join(" ");
         const points = line.points.map((point, index) => {
-          if (!Number.isFinite(point.share)) return "";
+          if (!Number.isFinite(valueFor(point))) return "";
+          const pointLabel = useTitles ? String(point.wins) : percent(point.share);
           return `
-            <circle class="series-point" cx="${x(index)}" cy="${y(point.share)}" r="5" fill="${line.color}"></circle>
-            <text class="chart-value" x="${x(index)}" y="${y(point.share) - 12}" text-anchor="middle">${percent(point.share)}</text>
+            <circle class="series-point" cx="${x(index)}" cy="${y(valueFor(point))}" r="5" fill="${line.color}"></circle>
+            <text class="chart-value" x="${x(index)}" y="${y(valueFor(point)) - 12}" text-anchor="middle">${pointLabel}</text>
           `;
         }).join("");
         return `
@@ -1036,14 +1210,111 @@
 
       svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
       svg.innerHTML = `
-        <rect x="0" y="0" width="${width}" height="${height}" fill="transparent"></rect>
+        <rect x="0" y="0" width="${width}" height="${height}" fill="#000000"></rect>
         ${grid}
         ${xLabels}
         <line class="chart-axis" x1="${padding.left}" x2="${width - padding.right}" y1="${height - padding.bottom}" y2="${height - padding.bottom}"></line>
         ${series || `<text class="chart-label" x="${width / 2}" y="${height / 2}" text-anchor="middle">Sem entradas para estes filtros</text>`}
       `;
 
-      $("#chartCaption").textContent = `${items.length} competições filtradas. Percentagens representam quota de vitórias em cada época.`;
+    }
+
+    function renderStackBarChart(items) {
+      const svg = $("#mainChart");
+      const width = 1120;
+      const height = 420;
+      const padding = {top: 20, right: 38, bottom: 46, left: 52};
+      const seasonsList = orderedSeasons(items);
+      const plotW = width - padding.left - padding.right;
+      const plotH = height - padding.top - padding.bottom;
+      const xInset = 54;
+      const effectiveW = Math.max(1, plotW - (xInset * 2));
+      const x = (index) => padding.left + xInset + (seasonsList.length === 1 ? effectiveW / 2 : (index / (seasonsList.length - 1)) * effectiveW);
+      const xAreaStart = padding.left;
+      const xAreaEnd = width - padding.right;
+      const y = (share) => padding.top + plotH - (Math.max(0, Math.min(1, share || 0)) * plotH);
+      const yTicks = [0, 0.25, 0.5, 0.75, 1];
+      if (!seasonsList.length) {
+        svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
+        svg.innerHTML = `
+          <rect x="0" y="0" width="${width}" height="${height}" fill="#000000"></rect>
+          <text class="chart-label" x="${width / 2}" y="${height / 2}" text-anchor="middle">Sem entradas para estes filtros</text>
+        `;
+        return;
+      }
+      const seasonsData = seasonsList.map((season) => {
+        const seasonRows = items.filter((row) => row.season === season);
+        const total = seasonRows.length;
+        const counts = Object.fromEntries(stackOrder.map((club) => {
+          const wins = seasonRows.filter((row) => row.winner === club).length;
+          return [club, wins];
+        }));
+        const shares = Object.fromEntries(stackOrder.map((club) => {
+          const wins = counts[club];
+          return [club, total ? (wins / total) : 0];
+        }));
+        return {season, total, shares, counts};
+      });
+
+      const grid = yTicks.map((tick) => `
+        <line class="chart-grid" x1="${padding.left}" x2="${width - padding.right}" y1="${y(tick)}" y2="${y(tick)}"></line>
+        <text class="chart-label" x="14" y="${y(tick) + 4}">${percent(tick)}</text>
+      `).join("");
+
+      const layers = [];
+      let cumulative = new Array(seasonsList.length).fill(0);
+      stackOrder.forEach((club) => {
+        const lower = [...cumulative];
+        const upper = cumulative.map((value, index) => value + seasonsData[index].shares[club]);
+        cumulative = upper;
+        const topPathPoints = [
+          `${xAreaStart.toFixed(1)},${y(upper[0]).toFixed(1)}`,
+          ...upper.map((value, index) => `${x(index).toFixed(1)},${y(value).toFixed(1)}`),
+          `${xAreaEnd.toFixed(1)},${y(upper[upper.length - 1]).toFixed(1)}`
+        ];
+        const bottomPathPoints = [
+          `${xAreaEnd.toFixed(1)},${y(lower[lower.length - 1]).toFixed(1)}`,
+          ...lower.slice().reverse().map((value, idx) => {
+            const index = lower.length - 1 - idx;
+            return `${x(index).toFixed(1)},${y(value).toFixed(1)}`;
+          }),
+          `${xAreaStart.toFixed(1)},${y(lower[0]).toFixed(1)}`
+        ];
+        const topPath = topPathPoints.join(" L ");
+        const bottomPath = bottomPathPoints.join(" L ");
+
+        const labels = upper.map((topValue, index) => {
+          const bottomValue = lower[index];
+          const share = topValue - bottomValue;
+          const segmentHeight = Math.abs(y(topValue) - y(bottomValue));
+          if (share <= 0 || segmentHeight < 20) return "";
+          const midY = (y(topValue) + y(bottomValue)) / 2;
+          const label = state.stackMetric === "titles"
+            ? String(seasonsData[index].counts[club])
+            : percent(share);
+          return `<text class="chart-value" x="${x(index)}" y="${midY + 4}" text-anchor="middle">${label}</text>`;
+        }).join("");
+
+        layers.push(`
+          <path d="M ${topPath} L ${bottomPath} Z" fill="${colors[club]}" fill-opacity="0.92"></path>
+          ${labels}
+        `);
+      });
+
+      const separators = seasonsList.map((season, index) => `
+        <line class="chart-axis" x1="${x(index)}" x2="${x(index)}" y1="${padding.top}" y2="${height - padding.bottom}"></line>
+        <text class="chart-label" x="${x(index)}" y="${height - 16}" text-anchor="middle">${shortSeason(season)}</text>
+      `).join("");
+
+      svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
+      svg.innerHTML = `
+        <rect x="0" y="0" width="${width}" height="${height}" fill="#000000"></rect>
+        ${grid}
+        ${separators}
+        <line class="chart-axis" x1="${padding.left}" x2="${width - padding.right}" y1="${height - padding.bottom}" y2="${height - padding.bottom}"></line>
+        ${layers.join("") || `<text class="chart-label" x="${width / 2}" y="${height / 2}" text-anchor="middle">Sem entradas para estes filtros</text>`}
+      `;
+
     }
 
     function renderStats(items) {
@@ -1128,9 +1399,12 @@
 
     function render() {
       const items = filteredRows();
+      renderChartSwitch();
+      renderChartMetricSwitch();
       renderLegend();
       renderFilters();
-      renderLineChart(items);
+      if (state.chartView === "stack") renderStackBarChart(items);
+      else renderLineChart(items);
       renderStats(items);
       renderWinnerBreakdown(items);
       renderSportBreakdown(items);
@@ -1178,6 +1452,7 @@
         const seasonsAll = orderedSeasons(rows);
         state.seasonStart = 0;
         state.seasonEnd = Math.max(0, seasonsAll.length - 1);
+        state.chartView = "stack";
         render();
       } catch (error) {
         showNotice("Arranca esta pasta num servidor web local e abre o URL localhost. Esta página usa data.csv diretamente e a maioria dos browsers bloqueia leitura CSV em file://.");
