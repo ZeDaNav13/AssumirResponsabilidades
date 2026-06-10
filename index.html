@@ -438,6 +438,8 @@
     }
 
     .pill {
+      appearance: none;
+      -webkit-appearance: none;
       min-height: 34px;
       border: 1px solid var(--line);
       border-radius: 10px;
@@ -458,6 +460,11 @@
       background: #eaf2ff;
       color: #0b1018;
       font-weight: 600;
+    }
+
+    .pill:focus-visible {
+      outline: 2px solid rgba(219, 232, 249, 0.55);
+      outline-offset: 2px;
     }
 
     .stats-grid {
@@ -806,6 +813,7 @@
                 <th>Género</th>
                 <th>Desporto</th>
                 <th>Competição</th>
+                <th>Presidente</th>
                 <th>Vencedor</th>
               </tr>
             </thead>
@@ -824,6 +832,7 @@
       sports: ["All"],
       competitions: ["All"],
       football: "include",
+      president: "All",
       seasonStart: 0,
       seasonEnd: 0,
       chartView: "stack",
@@ -837,6 +846,7 @@
     const clubOrder = ["SLB", "FCP", "SCP", "OUTROS"];
     const genderOrder = ["Masculino", "Feminino"];
     const competitionOrder = ["Campeonato", "Taca Portugal", "Taca Liga", "Supertaca", "Europa"];
+    const presidentOrder = ["Manuel Vilarinho", "Luís Filipe Vieira", "Rui Costa"];
     const colors = {
       SLB: "#ed1c24",
       FCP: "#0072bc",
@@ -856,6 +866,19 @@
         .toLowerCase()
         .replace(/[^a-z0-9]+/g, "_")
         .replace(/^_|_$/g, "");
+    }
+
+    function findHeaderIndex(headers, ...aliases) {
+      return headers.findIndex((header) => aliases.includes(header));
+    }
+
+    function normalizeWinner(value) {
+      const winner = normalize(value);
+      if (["slb", "sl_benfica", "benfica", "sl_benfica_feminino"].includes(winner)) return "SLB";
+      if (["fcp", "fc_porto", "porto"].includes(winner)) return "FCP";
+      if (["scp", "sporting_cp", "sporting", "sporting_clube_de_portugal"].includes(winner)) return "SCP";
+      if (["outro", "outros", "sem_campeao", "sem_campeao_atribuido"].includes(winner)) return "OUTROS";
+      return cleanText(value).toUpperCase();
     }
 
     function csvToRows(text) {
@@ -898,17 +921,31 @@
 
       const headers = table[0].map(normalize);
       const headerIndex = {
-        gender: headers.indexOf("genero"),
-        season: headers.indexOf("epoca"),
-        sport: headers.indexOf("desporto"),
-        competition: headers.indexOf("competicao"),
-        winner: headers.indexOf("vencedor")
+        gender: findHeaderIndex(headers, "genero", "gender"),
+        season: findHeaderIndex(headers, "epoca", "season"),
+        sport: findHeaderIndex(headers, "desporto", "modalidade", "sport"),
+        competition: findHeaderIndex(headers, "competicao", "competition"),
+        president: findHeaderIndex(headers, "presidente", "president"),
+        winner: findHeaderIndex(headers, "vencedor", "winner")
       };
-      const hasHeader = Object.values(headerIndex).every((value) => value !== -1);
+      const requiredHeaderIndex = (({gender, season, sport, competition, winner}) => ({
+        gender,
+        season,
+        sport,
+        competition,
+        winner
+      }))(headerIndex);
+      const hasHeader = Object.values(requiredHeaderIndex).every((value) => value !== -1);
 
+      const fallbackHasPresident = !hasHeader && table.some((line) => line.length >= 6);
       const index = hasHeader
-        ? headerIndex
-        : {gender: 0, season: 1, sport: 2, competition: 3, winner: 4};
+        ? {
+            ...headerIndex,
+            president: headerIndex.president
+          }
+        : fallbackHasPresident
+          ? {gender: 0, season: 1, sport: 2, competition: 3, president: 4, winner: 5}
+          : {gender: 0, season: 1, sport: 2, competition: 3, president: -1, winner: 4};
 
       const startAt = hasHeader ? 1 : 0;
       return table.slice(startAt).map((line) => ({
@@ -916,7 +953,8 @@
         season: cleanText(line[index.season]),
         sport: cleanText(line[index.sport]),
         competition: cleanText(line[index.competition]),
-        winner: cleanText(line[index.winner]).toUpperCase()
+        president: index.president === -1 ? "" : cleanText(line[index.president]),
+        winner: normalizeWinner(line[index.winner])
       })).filter((row) => clubOrder.includes(row.winner));
     }
 
@@ -938,7 +976,15 @@
     }
 
     function shortSeason(value) {
-      return value.replace("20", "").replace("/20", "/");
+      const parts = cleanText(value).split("/");
+      if (parts.length < 2) return cleanText(value);
+      return `${parts[0].slice(-2)}/${parts[1].slice(-2)}`;
+    }
+
+    function compactSeasonLabel(value) {
+      const parts = cleanText(value).split("/");
+      const endYear = parts[parts.length - 1] || "";
+      return endYear.slice(-2);
     }
 
     function orderedSeasons(items) {
@@ -960,6 +1006,7 @@
         if (!state.sports.includes("All") && !state.sports.includes(row.sport)) return false;
         if (!state.competitions.includes("All") && !state.competitions.includes(row.competition)) return false;
         if (state.football === "exclude" && row.sport === "Futebol") return false;
+        if (state.president !== "All" && row.president !== state.president) return false;
         const idx = seasonsAll.indexOf(row.season);
         if (idx === -1) return false;
         if (idx < state.seasonStart || idx > state.seasonEnd) return false;
@@ -1065,20 +1112,59 @@
       return picked;
     }
 
-    function renderFilters() {
+    function updateSeasonRangeUI(seasonsAll) {
+      const seasonMax = Math.max(0, seasonsAll.length - 1);
+      const startInput = $("#seasonStart");
+      const endInput = $("#seasonEnd");
+      const startHandle = document.querySelector(".season-handle.start");
+      const endHandle = document.querySelector(".season-handle.end");
+      const activeTrack = document.querySelector(".season-track-active");
+      if (!startInput || !endInput || !startHandle || !endHandle || !activeTrack) return;
+
+      startInput.max = String(seasonMax);
+      endInput.max = String(seasonMax);
+      startInput.value = String(state.seasonStart);
+      endInput.value = String(state.seasonEnd);
+
+      const leftPct = seasonMax ? (state.seasonStart / seasonMax) * 100 : 0;
+      const rightPct = seasonMax ? (state.seasonEnd / seasonMax) * 100 : 100;
+      const sameSeason = state.seasonStart === state.seasonEnd;
+      const atMin = state.seasonStart === 0;
+      const atMax = state.seasonEnd === seasonMax;
+
+      startHandle.style.left = `${leftPct}%`;
+      startHandle.textContent = shortSeason(seasonsAll[state.seasonStart] || "");
+      startHandle.className = `season-handle start ${sameSeason ? "same" : ""} ${atMin ? "at-min" : ""}`.trim();
+
+      endHandle.style.left = `${rightPct}%`;
+      endHandle.textContent = shortSeason(seasonsAll[state.seasonEnd] || "");
+      endHandle.className = `season-handle end ${sameSeason ? "same" : ""} ${atMax ? "at-max" : ""}`.trim();
+
+      activeTrack.style.left = `${leftPct}%`;
+      activeTrack.style.width = `${Math.max(0, rightPct - leftPct)}%`;
+    }
+
+    function renderFilters(force = false) {
       const seasonsAll = orderedSeasons(rows);
       const seasonMax = Math.max(0, seasonsAll.length - 1);
       if (state.seasonStart < 0 || state.seasonStart > seasonMax) state.seasonStart = 0;
       if (state.seasonEnd < 0 || state.seasonEnd > seasonMax) state.seasonEnd = seasonMax;
       if (state.seasonStart > state.seasonEnd) state.seasonStart = state.seasonEnd;
 
+      if ($("#seasonStart") && !force) {
+        updateSeasonRangeUI(seasonsAll);
+        return;
+      }
+
       const sportValues = sortByOrder(unique(rows.map((row) => row.sport)), ["Futebol", "Basquetebol", "Voleibol", "Hoquei", "Andebol", "Futsal"]);
       const competitionValues = sortByOrder(unique(rows.map((row) => row.competition)), competitionOrder);
+      const presidentValues = sortByOrder(unique(rows.map((row) => row.president)), presidentOrder);
       const groups = [
         {label: "Género", key: "gender", values: ["All", ...genderOrder], names: {All: "Todos", Masculino: "Masculino", Feminino: "Feminino"}, multi: false},
         {label: "Desporto", key: "sports", values: ["All", ...sportValues], names: {All: "Todos"}, multi: true, allValues: sportValues},
         {label: "Competição", key: "competitions", values: ["All", ...competitionValues], names: {All: "Todas"}, multi: true, allValues: competitionValues},
-        {label: "Futebol", key: "football", values: ["include", "exclude"], names: {include: "Incluir", exclude: "Excluir"}, multi: false}
+        {label: "Futebol", key: "football", values: ["include", "exclude"], names: {include: "Incluir", exclude: "Excluir"}, multi: false},
+        {label: "Presidente", key: "president", values: ["All", ...presidentValues], names: {All: "Todos"}, multi: false}
       ];
 
       const leftPct = seasonMax ? (state.seasonStart / seasonMax) * 100 : 0;
@@ -1122,7 +1208,7 @@
           const group = groups.find((item) => item.key === key);
           if (group && group.multi) state[key] = toggleMultiSelection(state[key], value, group.allValues);
           else state[key] = value;
-          render();
+          render(true);
         });
       });
 
@@ -1131,12 +1217,14 @@
       startInput.addEventListener("input", () => {
         const next = Number(startInput.value);
         state.seasonStart = Math.min(next, state.seasonEnd);
-        render();
+        updateSeasonRangeUI(seasonsAll);
+        render(false);
       });
       endInput.addEventListener("input", () => {
         const next = Number(endInput.value);
         state.seasonEnd = Math.max(next, state.seasonStart);
-        render();
+        updateSeasonRangeUI(seasonsAll);
+        render(false);
       });
     }
 
@@ -1172,7 +1260,7 @@
 
       const xLabels = seasonsList.map((season, index) => `
         <line class="chart-axis" x1="${x(index)}" x2="${x(index)}" y1="${padding.top}" y2="${height - padding.bottom}"></line>
-        <text class="chart-label" x="${x(index)}" y="${height - 16}" text-anchor="middle">${shortSeason(season)}</text>
+        <text class="chart-label" x="${x(index)}" y="${height - 16}" text-anchor="middle">${compactSeasonLabel(season)}</text>
       `).join("");
 
       const series = data.map((line) => {
@@ -1294,7 +1382,7 @@
 
       const separators = seasonsList.map((season, index) => `
         <line class="chart-axis" x1="${x(index)}" x2="${x(index)}" y1="${padding.top}" y2="${height - padding.bottom}"></line>
-        <text class="chart-label" x="${x(index)}" y="${height - 16}" text-anchor="middle">${shortSeason(season)}</text>
+        <text class="chart-label" x="${x(index)}" y="${height - 16}" text-anchor="middle">${compactSeasonLabel(season)}</text>
       `).join("");
 
       svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
@@ -1324,7 +1412,7 @@
       $("#statLeaderSub").textContent = leader ? `${leader.count} vitórias no filtro atual` : "Sem entradas visíveis";
       $("#statPeak").textContent = peak ? peak.club : "-";
       $("#statPeakSub").textContent = peak ? `${percent(peak.share)} em ${shortSeason(peak.season)} (${peak.wins}/${peak.total})` : "Sem dados por época";
-      $("#statScope").textContent = unique(items.map((row) => `${row.season}|${row.gender}|${row.sport}|${row.competition}`)).length;
+      $("#statScope").textContent = unique(items.map((row) => `${row.season}|${row.gender}|${row.sport}|${row.competition}|${row.president}`)).length;
       $("#statScopeSub").textContent = `${unique(items.map((row) => row.sport)).length} desportos, ${unique(items.map((row) => row.competition)).length} competições`;
     }
 
@@ -1374,7 +1462,9 @@
         if (sportDiff) return sportDiff;
         const ai = competitionOrder.findIndex((item) => normalize(item) === normalize(a.competition));
         const bi = competitionOrder.findIndex((item) => normalize(item) === normalize(b.competition));
-        return (ai === -1 ? 999 : ai) - (bi === -1 ? 999 : bi);
+        const competitionDiff = (ai === -1 ? 999 : ai) - (bi === -1 ? 999 : bi);
+        if (competitionDiff) return competitionDiff;
+        return a.president.localeCompare(b.president);
       });
 
       $("#matrixCount").textContent = `${sorted.length} entradas`;
@@ -1384,16 +1474,17 @@
           <td>${row.gender}</td>
           <td>${row.sport}</td>
           <td>${row.competition}</td>
+          <td>${row.president || "-"}</td>
           <td>${chip(row.winner)}</td>
         </tr>`).join("");
     }
 
-    function render() {
+    function render(refreshFilters = true) {
       const items = filteredRows();
       renderChartSwitch();
       renderChartMetricSwitch();
       renderLegend();
-      renderFilters();
+      if (refreshFilters) renderFilters(true);
       if (state.chartView === "stack") renderStackBarChart(items);
       else renderLineChart(items);
       renderStats(items);

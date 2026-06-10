@@ -1,303 +1,1039 @@
-Género,Época,Desporto,Competição,Vencedor
-Feminino,2021/2022,Andebol,Campeonato,SLB
-Feminino,2021/2022,Andebol,Europa,
-Feminino,2021/2022,Andebol,Supertaça,OUTROS
-Feminino,2021/2022,Andebol,Taça Liga,
-Feminino,2021/2022,Andebol,Taça Portugal,SLB
-Feminino,2021/2022,Basquetebol,Campeonato,SLB
-Feminino,2021/2022,Basquetebol,Europa,
-Feminino,2021/2022,Basquetebol,Supertaça,SLB
-Feminino,2021/2022,Basquetebol,Taça Liga,SLB
-Feminino,2021/2022,Basquetebol,Taça Portugal,SLB
-Feminino,2021/2022,Futebol,Campeonato,SLB
-Feminino,2021/2022,Futebol,Europa,
-Feminino,2021/2022,Futebol,Supertaça,SCP
-Feminino,2021/2022,Futebol,Taça Liga,OUTROS
-Feminino,2021/2022,Futebol,Taça Portugal,SCP
-Feminino,2021/2022,Futsal,Campeonato,SLB
-Feminino,2021/2022,Futsal,Europa,
-Feminino,2021/2022,Futsal,Supertaça,SLB
-Feminino,2021/2022,Futsal,Taça Liga,OUTROS
-Feminino,2021/2022,Futsal,Taça Portugal,OUTROS
-Feminino,2021/2022,Hoquei,Campeonato,SLB
-Feminino,2021/2022,Hoquei,Europa,
-Feminino,2021/2022,Hoquei,Supertaça,SLB
-Feminino,2021/2022,Hoquei,Taça Liga,SLB
-Feminino,2021/2022,Hoquei,Taça Portugal,SLB
-Feminino,2021/2022,Voleibol,Campeonato,FCP
-Feminino,2021/2022,Voleibol,Europa,
-Feminino,2021/2022,Voleibol,Supertaça,FCP
-Feminino,2021/2022,Voleibol,Taça Liga,
-Feminino,2021/2022,Voleibol,Taça Portugal,OUTROS
-Masculino,2021/2022,Andebol,Campeonato,FCP
-Masculino,2021/2022,Andebol,Europa,SLB
-Masculino,2021/2022,Andebol,Supertaça,FCP
-Masculino,2021/2022,Andebol,Taça Liga,
-Masculino,2021/2022,Andebol,Taça Portugal,SCP
-Masculino,2021/2022,Basquetebol,Campeonato,SLB
-Masculino,2021/2022,Basquetebol,Europa,
-Masculino,2021/2022,Basquetebol,Supertaça,SCP
-Masculino,2021/2022,Basquetebol,Taça Liga,SCP
-Masculino,2021/2022,Basquetebol,Taça Portugal,SCP
-Masculino,2021/2022,Futebol,Campeonato,FCP
-Masculino,2021/2022,Futebol,Europa,
-Masculino,2021/2022,Futebol,Supertaça,SCP
-Masculino,2021/2022,Futebol,Taça Liga,SCP
-Masculino,2021/2022,Futebol,Taça Portugal,FCP
-Masculino,2021/2022,Futsal,Campeonato,SCP
-Masculino,2021/2022,Futsal,Europa,
-Masculino,2021/2022,Futsal,Supertaça,SCP
-Masculino,2021/2022,Futsal,Taça Liga,SCP
-Masculino,2021/2022,Futsal,Taça Portugal,SCP
-Masculino,2021/2022,Hoquei,Campeonato,SLB
-Masculino,2021/2022,Hoquei,Europa,
-Masculino,2021/2022,Hoquei,Supertaça,SLB
-Masculino,2021/2022,Hoquei,Taça Liga,SLB
-Masculino,2021/2022,Hoquei,Taça Portugal,SCP
-Masculino,2021/2022,Voleibol,Campeonato,SLB
-Masculino,2021/2022,Voleibol,Europa,
-Masculino,2021/2022,Voleibol,Supertaça,SLB
-Masculino,2021/2022,Voleibol,Taça Liga,
-Masculino,2021/2022,Voleibol,Taça Portugal,SLB
-Feminino,2022/2023,Andebol,Campeonato,SLB
-Feminino,2022/2023,Andebol,Europa,
-Feminino,2022/2023,Andebol,Supertaça,SLB
-Feminino,2022/2023,Andebol,Taça Liga,OUTROS
-Feminino,2022/2023,Andebol,Taça Portugal,SLB
-Feminino,2022/2023,Basquetebol,Campeonato,OUTROS
-Feminino,2022/2023,Basquetebol,Europa,SLB
-Feminino,2022/2023,Basquetebol,Supertaça,SLB
-Feminino,2022/2023,Basquetebol,Taça Liga,SLB
-Feminino,2022/2023,Basquetebol,Taça Portugal,OUTROS
-Feminino,2022/2023,Futebol,Campeonato,SLB
-Feminino,2022/2023,Futebol,Europa,
-Feminino,2022/2023,Futebol,Supertaça,SLB
-Feminino,2022/2023,Futebol,Taça Liga,SLB
-Feminino,2022/2023,Futebol,Taça Portugal,OUTROS
-Feminino,2022/2023,Futsal,Campeonato,SLB
-Feminino,2022/2023,Futsal,Europa,
-Feminino,2022/2023,Futsal,Supertaça,SLB
-Feminino,2022/2023,Futsal,Taça Liga,SLB
-Feminino,2022/2023,Futsal,Taça Portugal,SLB
-Feminino,2022/2023,Hoquei,Campeonato,SLB
-Feminino,2022/2023,Hoquei,Europa,
-Feminino,2022/2023,Hoquei,Supertaça,SLB
-Feminino,2022/2023,Hoquei,Taça Liga,SLB
-Feminino,2022/2023,Hoquei,Taça Portugal,SLB
-Feminino,2022/2023,Voleibol,Campeonato,OUTROS
-Feminino,2022/2023,Voleibol,Europa,
-Feminino,2022/2023,Voleibol,Supertaça,OUTROS
-Feminino,2022/2023,Voleibol,Taça Liga,
-Feminino,2022/2023,Voleibol,Taça Portugal,SCP
-Masculino,2022/2023,Andebol,Campeonato,FCP
-Masculino,2022/2023,Andebol,Europa,
-Masculino,2022/2023,Andebol,Supertaça,SLB
-Masculino,2022/2023,Andebol,Taça Liga,
-Masculino,2022/2023,Andebol,Taça Portugal,SCP
-Masculino,2022/2023,Basquetebol,Campeonato,SLB
-Masculino,2022/2023,Basquetebol,Europa,
-Masculino,2022/2023,Basquetebol,Supertaça,SCP
-Masculino,2022/2023,Basquetebol,Taça Liga,SCP
-Masculino,2022/2023,Basquetebol,Taça Portugal,SLB
-Masculino,2022/2023,Futebol,Campeonato,SLB
-Masculino,2022/2023,Futebol,Europa,
-Masculino,2022/2023,Futebol,Supertaça,FCP
-Masculino,2022/2023,Futebol,Taça Liga,FCP
-Masculino,2022/2023,Futebol,Taça Portugal,FCP
-Masculino,2022/2023,Futsal,Campeonato,SCP
-Masculino,2022/2023,Futsal,Europa,
-Masculino,2022/2023,Futsal,Supertaça,SCP
-Masculino,2022/2023,Futsal,Taça Liga,SLB
-Masculino,2022/2023,Futsal,Taça Portugal,SLB
-Masculino,2022/2023,Hoquei,Campeonato,SLB
-Masculino,2022/2023,Hoquei,Europa,FCP
-Masculino,2022/2023,Hoquei,Supertaça,SLB
-Masculino,2022/2023,Hoquei,Taça Liga,FCP
-Masculino,2022/2023,Hoquei,Taça Portugal,OUTROS
-Masculino,2022/2023,Voleibol,Campeonato,SLB
-Masculino,2022/2023,Voleibol,Europa,
-Masculino,2022/2023,Voleibol,Supertaça,OUTROS
-Masculino,2022/2023,Voleibol,Taça Liga,
-Masculino,2022/2023,Voleibol,Taça Portugal,SLB
-Feminino,2023/2024,Andebol,Campeonato,SLB
-Feminino,2023/2024,Andebol,Europa,
-Feminino,2023/2024,Andebol,Supertaça,SLB
-Feminino,2023/2024,Andebol,Taça Liga,SLB
-Feminino,2023/2024,Andebol,Taça Portugal,OUTROS
-Feminino,2023/2024,Basquetebol,Campeonato,SLB
-Feminino,2023/2024,Basquetebol,Europa,SLB
-Feminino,2023/2024,Basquetebol,Supertaça,OUTROS
-Feminino,2023/2024,Basquetebol,Taça Liga,OUTROS
-Feminino,2023/2024,Basquetebol,Taça Portugal,SLB
-Feminino,2023/2024,Futebol,Campeonato,SLB
-Feminino,2023/2024,Futebol,Europa,
-Feminino,2023/2024,Futebol,Supertaça,SLB
-Feminino,2023/2024,Futebol,Taça Liga,SLB
-Feminino,2023/2024,Futebol,Taça Portugal,SLB
-Feminino,2023/2024,Futsal,Campeonato,SLB
-Feminino,2023/2024,Futsal,Europa,SLB
-Feminino,2023/2024,Futsal,Supertaça,SLB
-Feminino,2023/2024,Futsal,Taça Liga,OUTROS
-Feminino,2023/2024,Futsal,Taça Portugal,SLB
-Feminino,2023/2024,Hoquei,Campeonato,SLB
-Feminino,2023/2024,Hoquei,Europa,
-Feminino,2023/2024,Hoquei,Supertaça,SLB
-Feminino,2023/2024,Hoquei,Taça Liga,SLB
-Feminino,2023/2024,Hoquei,Taça Portugal,SLB
-Feminino,2023/2024,Voleibol,Campeonato,FCP
-Feminino,2023/2024,Voleibol,Europa,
-Feminino,2023/2024,Voleibol,Supertaça,OUTROS
-Feminino,2023/2024,Voleibol,Taça Liga,
-Feminino,2023/2024,Voleibol,Taça Portugal,SLB
-Masculino,2023/2024,Andebol,Campeonato,SCP
-Masculino,2023/2024,Andebol,Europa,
-Masculino,2023/2024,Andebol,Supertaça,SCP
-Masculino,2023/2024,Andebol,Taça Liga,
-Masculino,2023/2024,Andebol,Taça Portugal,SCP
-Masculino,2023/2024,Basquetebol,Campeonato,SLB
-Masculino,2023/2024,Basquetebol,Europa,
-Masculino,2023/2024,Basquetebol,Supertaça,SLB
-Masculino,2023/2024,Basquetebol,Taça Liga,SLB
-Masculino,2023/2024,Basquetebol,Taça Portugal,FCP
-Masculino,2023/2024,Futebol,Campeonato,SCP
-Masculino,2023/2024,Futebol,Europa,
-Masculino,2023/2024,Futebol,Supertaça,SLB
-Masculino,2023/2024,Futebol,Taça Liga,OUTROS
-Masculino,2023/2024,Futebol,Taça Portugal,FCP
-Masculino,2023/2024,Futsal,Campeonato,SCP
-Masculino,2023/2024,Futsal,Europa,
-Masculino,2023/2024,Futsal,Supertaça,SLB
-Masculino,2023/2024,Futsal,Taça Liga,SCP
-Masculino,2023/2024,Futsal,Taça Portugal,OUTROS
-Masculino,2023/2024,Hoquei,Campeonato,FCP
-Masculino,2023/2024,Hoquei,Europa,FCP
-Masculino,2023/2024,Hoquei,Europa,SCP
-Masculino,2023/2024,Hoquei,Supertaça,SLB
-Masculino,2023/2024,Hoquei,Taça Liga,SLB
-Masculino,2023/2024,Hoquei,Taça Portugal,FCP
-Masculino,2023/2024,Voleibol,Campeonato,SLB
-Masculino,2023/2024,Voleibol,Europa,
-Masculino,2023/2024,Voleibol,Supertaça,SLB
-Masculino,2023/2024,Voleibol,Taça Liga,
-Masculino,2023/2024,Voleibol,Taça Portugal,SCP
-Feminino,2024/2025,Andebol,Campeonato,SLB
-Feminino,2024/2025,Andebol,Europa,
-Feminino,2024/2025,Andebol,Supertaça,OUTROS
-Feminino,2024/2025,Andebol,Taça Liga,
-Feminino,2024/2025,Andebol,Taça Portugal,SLB
-Feminino,2024/2025,Basquetebol,Campeonato,SLB
-Feminino,2024/2025,Basquetebol,Europa,SLB
-Feminino,2024/2025,Basquetebol,Supertaça,SLB
-Feminino,2024/2025,Basquetebol,Taça Liga,OUTROS
-Feminino,2024/2025,Basquetebol,Taça Portugal,OUTROS
-Feminino,2024/2025,Futebol,Campeonato,SLB
-Feminino,2024/2025,Futebol,Europa,
-Feminino,2024/2025,Futebol,Supertaça,SCP
-Feminino,2024/2025,Futebol,Taça Liga,SLB
-Feminino,2024/2025,Futebol,Taça Portugal,OUTROS
-Feminino,2024/2025,Futsal,Campeonato,OUTROS
-Feminino,2024/2025,Futsal,Europa,
-Feminino,2024/2025,Futsal,Supertaça,SLB
-Feminino,2024/2025,Futsal,Taça Liga,SLB
-Feminino,2024/2025,Futsal,Taça Portugal,SLB
-Feminino,2024/2025,Hoquei,Campeonato,SLB
-Feminino,2024/2025,Hoquei,Europa,
-Feminino,2024/2025,Hoquei,Supertaça,SLB
-Feminino,2024/2025,Hoquei,Taça Liga,SLB
-Feminino,2024/2025,Hoquei,Taça Portugal,SLB
-Feminino,2024/2025,Voleibol,Campeonato,SLB
-Feminino,2024/2025,Voleibol,Europa,
-Feminino,2024/2025,Voleibol,Supertaça,SLB
-Feminino,2024/2025,Voleibol,Taça Liga,
-Feminino,2024/2025,Voleibol,Taça Portugal,SCP
-Masculino,2024/2025,Andebol,Campeonato,SCP
-Masculino,2024/2025,Andebol,Europa,
-Masculino,2024/2025,Andebol,Supertaça,SCP
-Masculino,2024/2025,Andebol,Taça Liga,
-Masculino,2024/2025,Andebol,Taça Portugal,SCP
-Masculino,2024/2025,Basquetebol,Campeonato,SLB
-Masculino,2024/2025,Basquetebol,Europa,
-Masculino,2024/2025,Basquetebol,Supertaça,FCP
-Masculino,2024/2025,Basquetebol,Taça Liga,OUTROS
-Masculino,2024/2025,Basquetebol,Taça Portugal,FCP
-Masculino,2024/2025,Futebol,Campeonato,SCP
-Masculino,2024/2025,Futebol,Europa,
-Masculino,2024/2025,Futebol,Supertaça,FCP
-Masculino,2024/2025,Futebol,Taça Liga,SLB
-Masculino,2024/2025,Futebol,Taça Portugal,SCP
-Masculino,2024/2025,Futsal,Campeonato,SLB
-Masculino,2024/2025,Futsal,Europa,
-Masculino,2024/2025,Futsal,Supertaça,OUTROS
-Masculino,2024/2025,Futsal,Taça Liga,SCP
-Masculino,2024/2025,Futsal,Taça Portugal,SCP
-Masculino,2024/2025,Hoquei,Campeonato,FCP
-Masculino,2024/2025,Hoquei,Europa,OUTROS
-Masculino,2024/2025,Hoquei,Europa,
-Masculino,2024/2025,Hoquei,Supertaça,OUTROS
-Masculino,2024/2025,Hoquei,Taça Liga,SLB
-Masculino,2024/2025,Hoquei,Taça Portugal,SCP
-Masculino,2024/2025,Voleibol,Campeonato,SCP
-Masculino,2024/2025,Voleibol,Europa,
-Masculino,2024/2025,Voleibol,Supertaça,SCP
-Masculino,2024/2025,Voleibol,Taça Liga,
-Masculino,2024/2025,Voleibol,Taça Portugal,SLB
-Feminino,2025/2026,Andebol,Campeonato,
-Feminino,2025/2026,Andebol,Europa,
-Feminino,2025/2026,Andebol,Supertaça,SLB
-Feminino,2025/2026,Andebol,Taça Liga,
-Feminino,2025/2026,Andebol,Taça Portugal,
-Feminino,2025/2026,Basquetebol,Campeonato,
-Feminino,2025/2026,Basquetebol,Europa,
-Feminino,2025/2026,Basquetebol,Supertaça,OUTROS
-Feminino,2025/2026,Basquetebol,Taça Liga,SLB
-Feminino,2025/2026,Basquetebol,Taça Portugal,SLB
-Feminino,2025/2026,Futebol,Campeonato,SLB
-Feminino,2025/2026,Futebol,Europa,
-Feminino,2025/2026,Futebol,Supertaça,OUTROS
-Feminino,2025/2026,Futebol,Taça Liga,OUTROS
-Feminino,2025/2026,Futebol,Taça Portugal,
-Feminino,2025/2026,Futsal,Campeonato,
-Feminino,2025/2026,Futsal,Europa,
-Feminino,2025/2026,Futsal,Supertaça,OUTROS
-Feminino,2025/2026,Futsal,Taça Liga,OUTROS
-Feminino,2025/2026,Futsal,Taça Portugal,SLB
-Feminino,2025/2026,Hoquei,Campeonato,SLB
-Feminino,2025/2026,Hoquei,Europa,
-Feminino,2025/2026,Hoquei,Supertaça,SLB
-Feminino,2025/2026,Hoquei,Taça Liga,
-Feminino,2025/2026,Hoquei,Taça Portugal,SLB
-Feminino,2025/2026,Voleibol,Campeonato,
-Feminino,2025/2026,Voleibol,Europa,
-Feminino,2025/2026,Voleibol,Supertaça,SLB
-Feminino,2025/2026,Voleibol,Taça Liga,
-Feminino,2025/2026,Voleibol,Taça Portugal,FCP
-Masculino,2025/2026,Andebol,Campeonato,
-Masculino,2025/2026,Andebol,Europa,
-Masculino,2025/2026,Andebol,Supertaça,SCP
-Masculino,2025/2026,Andebol,Taça Liga,
-Masculino,2025/2026,Andebol,Taça Portugal,
-Masculino,2025/2026,Basquetebol,Campeonato,
-Masculino,2025/2026,Basquetebol,Europa,
-Masculino,2025/2026,Basquetebol,Supertaça,SLB
-Masculino,2025/2026,Basquetebol,Taça Liga,SCP
-Masculino,2025/2026,Basquetebol,Taça Portugal,SCP
-Masculino,2025/2026,Futebol,Campeonato,FCP
-Masculino,2025/2026,Futebol,Europa,
-Masculino,2025/2026,Futebol,Supertaça,SLB
-Masculino,2025/2026,Futebol,Taça Liga,OUTROS
-Masculino,2025/2026,Futebol,Taça Portugal,
-Masculino,2025/2026,Futsal,Campeonato,
-Masculino,2025/2026,Futsal,Europa,
-Masculino,2025/2026,Futsal,Supertaça,SCP
-Masculino,2025/2026,Futsal,Taça Liga,SLB
-Masculino,2025/2026,Futsal,Taça Portugal,SLB
-Masculino,2025/2026,Hoquei,Campeonato,
-Masculino,2025/2026,Hoquei,Europa,
-Masculino,2025/2026,Hoquei,Supertaça,SCP
-Masculino,2025/2026,Hoquei,Taça Liga,
-Masculino,2025/2026,Hoquei,Taça Portugal,SCP
-Masculino,2025/2026,Voleibol,Campeonato,
-Masculino,2025/2026,Voleibol,Europa,
-Masculino,2025/2026,Voleibol,Supertaça,SCP
-Masculino,2025/2026,Voleibol,Taça Liga,
-Masculino,2025/2026,Voleibol,Taça Portugal,SCP
+GÉNERO,ÉPOCA,PRESIDENTE,MODALIDADE,COMPETIÇÃO,VENCEDOR
+Feminino,2025/26,Rui Costa,Andebol,Campeonato,SL Benfica
+Feminino,2025/26,Rui Costa,Andebol,Supertaça,SL Benfica
+Feminino,2025/26,Rui Costa,Andebol,Taça,SL Benfica
+Feminino,2024/25,Rui Costa,Andebol,Campeonato,SL Benfica
+Feminino,2024/25,Rui Costa,Andebol,Supertaça,Outro
+Feminino,2024/25,Rui Costa,Andebol,Taça,SL Benfica
+Feminino,2023/24,Rui Costa,Andebol,Campeonato,SL Benfica
+Feminino,2023/24,Rui Costa,Andebol,Supertaça,SL Benfica
+Feminino,2023/24,Rui Costa,Andebol,Taça,Outro
+Feminino,2023/24,Rui Costa,Andebol,Outros,SL Benfica
+Feminino,2022/23,Rui Costa,Andebol,Campeonato,SL Benfica
+Feminino,2022/23,Rui Costa,Andebol,Supertaça,SL Benfica
+Feminino,2022/23,Rui Costa,Andebol,Taça,SL Benfica
+Feminino,2022/23,Rui Costa,Andebol,Outros,Outro
+Feminino,2021/22,Rui Costa,Andebol,Campeonato,SL Benfica
+Feminino,2021/22,Rui Costa,Andebol,Supertaça,Outro
+Feminino,2021/22,Rui Costa,Andebol,Taça,SL Benfica
+Feminino,2020/21,Luís Filipe Vieira,Andebol,Campeonato,Outro
+Feminino,2020/21,Luís Filipe Vieira,Andebol,Supertaça,
+Feminino,2020/21,Luís Filipe Vieira,Andebol,Taça,Outro
+Feminino,2019/20,Luís Filipe Vieira,Andebol,Campeonato,
+Feminino,2019/20,Luís Filipe Vieira,Andebol,Supertaça,Outro
+Feminino,2019/20,Luís Filipe Vieira,Andebol,Taça,
+Feminino,2018/19,Luís Filipe Vieira,Andebol,Campeonato,Outro
+Feminino,2018/19,Luís Filipe Vieira,Andebol,Supertaça,Outro
+Feminino,2018/19,Luís Filipe Vieira,Andebol,Taça,Outro
+Feminino,2017/18,Luís Filipe Vieira,Andebol,Campeonato,Outro
+Feminino,2017/18,Luís Filipe Vieira,Andebol,Supertaça,Outro
+Feminino,2017/18,Luís Filipe Vieira,Andebol,Taça,Outro
+Feminino,2016/17,Luís Filipe Vieira,Andebol,Campeonato,Outro
+Feminino,2016/17,Luís Filipe Vieira,Andebol,Supertaça,Outro
+Feminino,2016/17,Luís Filipe Vieira,Andebol,Taça,Outro
+Feminino,2015/16,Luís Filipe Vieira,Andebol,Campeonato,Outro
+Feminino,2015/16,Luís Filipe Vieira,Andebol,Supertaça,Outro
+Feminino,2015/16,Luís Filipe Vieira,Andebol,Taça,Outro
+Feminino,2014/15,Luís Filipe Vieira,Andebol,Campeonato,Outro
+Feminino,2014/15,Luís Filipe Vieira,Andebol,Supertaça,Outro
+Feminino,2014/15,Luís Filipe Vieira,Andebol,Taça,Outro
+Feminino,2013/14,Luís Filipe Vieira,Andebol,Campeonato,Outro
+Feminino,2013/14,Luís Filipe Vieira,Andebol,Supertaça,Outro
+Feminino,2013/14,Luís Filipe Vieira,Andebol,Taça,Outro
+Feminino,2012/13,Luís Filipe Vieira,Andebol,Campeonato,Outro
+Feminino,2012/13,Luís Filipe Vieira,Andebol,Supertaça,Outro
+Feminino,2012/13,Luís Filipe Vieira,Andebol,Taça,Outro
+Feminino,2011/12,Luís Filipe Vieira,Andebol,Campeonato,Outro
+Feminino,2011/12,Luís Filipe Vieira,Andebol,Supertaça,Outro
+Feminino,2011/12,Luís Filipe Vieira,Andebol,Taça,Outro
+Feminino,2010/11,Luís Filipe Vieira,Andebol,Campeonato,Outro
+Feminino,2010/11,Luís Filipe Vieira,Andebol,Supertaça,Outro
+Feminino,2010/11,Luís Filipe Vieira,Andebol,Taça,Outro
+Feminino,2009/10,Luís Filipe Vieira,Andebol,Campeonato,Outro
+Feminino,2009/10,Luís Filipe Vieira,Andebol,Supertaça,Outro
+Feminino,2009/10,Luís Filipe Vieira,Andebol,Taça,Outro
+Feminino,2008/09,Luís Filipe Vieira,Andebol,Campeonato,Outro
+Feminino,2008/09,Luís Filipe Vieira,Andebol,Supertaça,Outro
+Feminino,2008/09,Luís Filipe Vieira,Andebol,Taça,Outro
+Feminino,2007/08,Luís Filipe Vieira,Andebol,Campeonato,Outro
+Feminino,2007/08,Luís Filipe Vieira,Andebol,Supertaça,Outro
+Feminino,2007/08,Luís Filipe Vieira,Andebol,Taça,Outro
+Feminino,2006/07,Luís Filipe Vieira,Andebol,Campeonato,Outro
+Feminino,2006/07,Luís Filipe Vieira,Andebol,Supertaça,Outro
+Feminino,2006/07,Luís Filipe Vieira,Andebol,Taça,Outro
+Feminino,2005/06,Luís Filipe Vieira,Andebol,Campeonato,Outro
+Feminino,2005/06,Luís Filipe Vieira,Andebol,Supertaça,Outro
+Feminino,2005/06,Luís Filipe Vieira,Andebol,Taça,Outro
+Feminino,2004/05,Luís Filipe Vieira,Andebol,Campeonato,Outro
+Feminino,2004/05,Luís Filipe Vieira,Andebol,Supertaça,Outro
+Feminino,2004/05,Luís Filipe Vieira,Andebol,Taça,Outro
+Feminino,2003/04,Luís Filipe Vieira,Andebol,Campeonato,Outro
+Feminino,2003/04,Luís Filipe Vieira,Andebol,Supertaça,Outro
+Feminino,2003/04,Luís Filipe Vieira,Andebol,Taça,Outro
+Feminino,2002/03,Manuel Vilarinho,Andebol,Campeonato,Outro
+Feminino,2002/03,Manuel Vilarinho,Andebol,Supertaça,Outro
+Feminino,2002/03,Manuel Vilarinho,Andebol,Taça,Outro
+Feminino,2001/02,Manuel Vilarinho,Andebol,Campeonato,Outro
+Feminino,2001/02,Manuel Vilarinho,Andebol,Supertaça,Outro
+Feminino,2001/02,Manuel Vilarinho,Andebol,Taça,Outro
+Feminino,2000/01,Manuel Vilarinho,Andebol,Campeonato,Outro
+Feminino,2000/01,Manuel Vilarinho,Andebol,Supertaça,Outro
+Feminino,2000/01,Manuel Vilarinho,Andebol,Taça,Outro
+Feminino,2025/26,Rui Costa,Basquetebol,Campeonato,SL Benfica
+Feminino,2025/26,Rui Costa,Basquetebol,Supertaça,Outro
+Feminino,2025/26,Rui Costa,Basquetebol,Taça,SL Benfica
+Feminino,2025/26,Rui Costa,Basquetebol,Outros,SL Benfica
+Feminino,2024/25,Rui Costa,Basquetebol,Campeonato,SL Benfica
+Feminino,2024/25,Rui Costa,Basquetebol,Supertaça,SL Benfica
+Feminino,2024/25,Rui Costa,Basquetebol,Taça,Outro
+Feminino,2024/25,Rui Costa,Basquetebol,Outros,Outro
+Feminino,2024/25,Rui Costa,Basquetebol,Outros,SL Benfica
+Feminino,2023/24,Rui Costa,Basquetebol,Campeonato,SL Benfica
+Feminino,2023/24,Rui Costa,Basquetebol,Supertaça,Outro
+Feminino,2023/24,Rui Costa,Basquetebol,Taça,SL Benfica
+Feminino,2023/24,Rui Costa,Basquetebol,Outros,Outro
+Feminino,2023/24,Rui Costa,Basquetebol,Outros,SL Benfica
+Feminino,2022/23,Rui Costa,Basquetebol,Campeonato,Outro
+Feminino,2022/23,Rui Costa,Basquetebol,Supertaça,SL Benfica
+Feminino,2022/23,Rui Costa,Basquetebol,Taça,Outro
+Feminino,2022/23,Rui Costa,Basquetebol,Outros,SL Benfica
+Feminino,2022/23,Rui Costa,Basquetebol,Outros,SL Benfica
+Feminino,2021/22,Rui Costa,Basquetebol,Campeonato,SL Benfica
+Feminino,2021/22,Rui Costa,Basquetebol,Supertaça,SL Benfica
+Feminino,2021/22,Rui Costa,Basquetebol,Taça,SL Benfica
+Feminino,2021/22,Rui Costa,Basquetebol,Outros,SL Benfica
+Feminino,2021/22,Rui Costa,Basquetebol,Outros,
+Feminino,2020/21,Luís Filipe Vieira,Basquetebol,Campeonato,SL Benfica
+Feminino,2020/21,Luís Filipe Vieira,Basquetebol,Supertaça,
+Feminino,2020/21,Luís Filipe Vieira,Basquetebol,Taça,SL Benfica
+Feminino,2020/21,Luís Filipe Vieira,Basquetebol,Outros,
+Feminino,2020/21,Luís Filipe Vieira,Basquetebol,Outros,
+Feminino,2019/20,Luís Filipe Vieira,Basquetebol,Campeonato,
+Feminino,2019/20,Luís Filipe Vieira,Basquetebol,Supertaça,Outro
+Feminino,2019/20,Luís Filipe Vieira,Basquetebol,Taça,Outro
+Feminino,2019/20,Luís Filipe Vieira,Basquetebol,Outros,Outro
+Feminino,2019/20,Luís Filipe Vieira,Basquetebol,Outros,SL Benfica
+Feminino,2018/19,Luís Filipe Vieira,Basquetebol,Campeonato,Outro
+Feminino,2018/19,Luís Filipe Vieira,Basquetebol,Supertaça,Outro
+Feminino,2018/19,Luís Filipe Vieira,Basquetebol,Taça,Outro
+Feminino,2018/19,Luís Filipe Vieira,Basquetebol,Outros,Outro
+Feminino,2018/19,Luís Filipe Vieira,Basquetebol,Outros,Outro
+Feminino,2017/18,Luís Filipe Vieira,Basquetebol,Campeonato,Outro
+Feminino,2017/18,Luís Filipe Vieira,Basquetebol,Supertaça,Outro
+Feminino,2017/18,Luís Filipe Vieira,Basquetebol,Taça,Outro
+Feminino,2017/18,Luís Filipe Vieira,Basquetebol,Outros,Outro
+Feminino,2017/18,Luís Filipe Vieira,Basquetebol,Outros,Outro
+Feminino,2016/17,Luís Filipe Vieira,Basquetebol,Campeonato,Outro
+Feminino,2016/17,Luís Filipe Vieira,Basquetebol,Supertaça,Outro
+Feminino,2016/17,Luís Filipe Vieira,Basquetebol,Taça,Outro
+Feminino,2016/17,Luís Filipe Vieira,Basquetebol,Outros,Outro
+Feminino,2016/17,Luís Filipe Vieira,Basquetebol,Outros,Outro
+Feminino,2015/16,Luís Filipe Vieira,Basquetebol,Campeonato,Outro
+Feminino,2015/16,Luís Filipe Vieira,Basquetebol,Supertaça,Outro
+Feminino,2015/16,Luís Filipe Vieira,Basquetebol,Taça,Outro
+Feminino,2015/16,Luís Filipe Vieira,Basquetebol,Outros,Outro
+Feminino,2015/16,Luís Filipe Vieira,Basquetebol,Outros,Outro
+Feminino,2014/15,Luís Filipe Vieira,Basquetebol,Campeonato,Outro
+Feminino,2014/15,Luís Filipe Vieira,Basquetebol,Supertaça,Outro
+Feminino,2014/15,Luís Filipe Vieira,Basquetebol,Taça,Outro
+Feminino,2014/15,Luís Filipe Vieira,Basquetebol,Outros,Outro
+Feminino,2014/15,Luís Filipe Vieira,Basquetebol,Outros,Outro
+Feminino,2013/14,Luís Filipe Vieira,Basquetebol,Campeonato,Outro
+Feminino,2013/14,Luís Filipe Vieira,Basquetebol,Supertaça,Outro
+Feminino,2013/14,Luís Filipe Vieira,Basquetebol,Taça,Outro
+Feminino,2013/14,Luís Filipe Vieira,Basquetebol,Outros,Outro
+Feminino,2013/14,Luís Filipe Vieira,Basquetebol,Outros,Outro
+Feminino,2012/13,Luís Filipe Vieira,Basquetebol,Campeonato,Outro
+Feminino,2012/13,Luís Filipe Vieira,Basquetebol,Supertaça,Outro
+Feminino,2012/13,Luís Filipe Vieira,Basquetebol,Taça,Outro
+Feminino,2012/13,Luís Filipe Vieira,Basquetebol,Outros,Outro
+Feminino,2012/13,Luís Filipe Vieira,Basquetebol,Outros,Outro
+Feminino,2011/12,Luís Filipe Vieira,Basquetebol,Campeonato,Outro
+Feminino,2011/12,Luís Filipe Vieira,Basquetebol,Supertaça,Outro
+Feminino,2011/12,Luís Filipe Vieira,Basquetebol,Taça,Outro
+Feminino,2011/12,Luís Filipe Vieira,Basquetebol,Outros,Outro
+Feminino,2011/12,Luís Filipe Vieira,Basquetebol,Outros,Outro
+Feminino,2010/11,Luís Filipe Vieira,Basquetebol,Campeonato,Outro
+Feminino,2010/11,Luís Filipe Vieira,Basquetebol,Supertaça,Outro
+Feminino,2010/11,Luís Filipe Vieira,Basquetebol,Taça,Outro
+Feminino,2010/11,Luís Filipe Vieira,Basquetebol,Outros,Outro
+Feminino,2010/11,Luís Filipe Vieira,Basquetebol,Outros,Outro
+Feminino,2009/10,Luís Filipe Vieira,Basquetebol,Campeonato,Outro
+Feminino,2009/10,Luís Filipe Vieira,Basquetebol,Supertaça,Outro
+Feminino,2009/10,Luís Filipe Vieira,Basquetebol,Taça,Outro
+Feminino,2009/10,Luís Filipe Vieira,Basquetebol,Outros,Outro
+Feminino,2009/10,Luís Filipe Vieira,Basquetebol,Outros,Outro
+Feminino,2008/09,Luís Filipe Vieira,Basquetebol,Campeonato,Outro
+Feminino,2008/09,Luís Filipe Vieira,Basquetebol,Supertaça,Outro
+Feminino,2008/09,Luís Filipe Vieira,Basquetebol,Taça,Outro
+Feminino,2008/09,Luís Filipe Vieira,Basquetebol,Outros,Outro
+Feminino,2007/08,Luís Filipe Vieira,Basquetebol,Campeonato,Outro
+Feminino,2007/08,Luís Filipe Vieira,Basquetebol,Supertaça,Outro
+Feminino,2007/08,Luís Filipe Vieira,Basquetebol,Taça,Outro
+Feminino,2007/08,Luís Filipe Vieira,Basquetebol,Outros,Outro
+Feminino,2006/07,Luís Filipe Vieira,Basquetebol,Campeonato,Outro
+Feminino,2006/07,Luís Filipe Vieira,Basquetebol,Supertaça,Outro
+Feminino,2006/07,Luís Filipe Vieira,Basquetebol,Taça,Outro
+Feminino,2005/06,Luís Filipe Vieira,Basquetebol,Campeonato,Outro
+Feminino,2005/06,Luís Filipe Vieira,Basquetebol,Supertaça,Outro
+Feminino,2005/06,Luís Filipe Vieira,Basquetebol,Taça,Outro
+Feminino,2004/05,Luís Filipe Vieira,Basquetebol,Campeonato,Outro
+Feminino,2004/05,Luís Filipe Vieira,Basquetebol,Supertaça,Outro
+Feminino,2004/05,Luís Filipe Vieira,Basquetebol,Taça,Outro
+Feminino,2003/04,Luís Filipe Vieira,Basquetebol,Campeonato,Outro
+Feminino,2003/04,Luís Filipe Vieira,Basquetebol,Supertaça,Outro
+Feminino,2003/04,Luís Filipe Vieira,Basquetebol,Taça,Outro
+Feminino,2002/03,Manuel Vilarinho,Basquetebol,Campeonato,Outro
+Feminino,2002/03,Manuel Vilarinho,Basquetebol,Supertaça,Outro
+Feminino,2002/03,Manuel Vilarinho,Basquetebol,Taça,Outro
+Feminino,2001/02,Manuel Vilarinho,Basquetebol,Campeonato,Outro
+Feminino,2001/02,Manuel Vilarinho,Basquetebol,Supertaça,Outro
+Feminino,2001/02,Manuel Vilarinho,Basquetebol,Taça,Outro
+Feminino,2000/01,Manuel Vilarinho,Basquetebol,Campeonato,Outro
+Feminino,2000/01,Manuel Vilarinho,Basquetebol,Supertaça,Outro
+Feminino,2000/01,Manuel Vilarinho,Basquetebol,Taça,Outro
+Feminino,2025/26,Rui Costa,Futebol,Campeonato,SL Benfica
+Feminino,2025/26,Rui Costa,Futebol,Supertaça,Outro
+Feminino,2025/26,Rui Costa,Futebol,Outros,Outro
+Feminino,2025/26,Rui Costa,Futebol,Taça,SL Benfica
+Feminino,2024/25,Rui Costa,Futebol,Campeonato,SL Benfica
+Feminino,2024/25,Rui Costa,Futebol,Supertaça,Sporting CP
+Feminino,2024/25,Rui Costa,Futebol,Outros,SL Benfica
+Feminino,2024/25,Rui Costa,Futebol,Taça,Outro
+Feminino,2023/24,Rui Costa,Futebol,Campeonato,SL Benfica
+Feminino,2023/24,Rui Costa,Futebol,Supertaça,SL Benfica
+Feminino,2023/24,Rui Costa,Futebol,Outros,SL Benfica
+Feminino,2023/24,Rui Costa,Futebol,Taça,SL Benfica
+Feminino,2022/23,Rui Costa,Futebol,Campeonato,SL Benfica
+Feminino,2022/23,Rui Costa,Futebol,Supertaça,SL Benfica
+Feminino,2022/23,Rui Costa,Futebol,Outros,SL Benfica
+Feminino,2022/23,Rui Costa,Futebol,Taça,Outro
+Feminino,2021/22,Rui Costa,Futebol,Campeonato,SL Benfica
+Feminino,2021/22,Rui Costa,Futebol,Supertaça,Sporting CP
+Feminino,2021/22,Rui Costa,Futebol,Outros,Outro
+Feminino,2021/22,Rui Costa,Futebol,Taça,Sporting CP
+Feminino,2020/21,Luís Filipe Vieira,Futebol,Campeonato,SL Benfica
+Feminino,2020/21,Luís Filipe Vieira,Futebol,Supertaça,
+Feminino,2020/21,Luís Filipe Vieira,Futebol,Outros,SL Benfica
+Feminino,2020/21,Luís Filipe Vieira,Futebol,Taça,
+Feminino,2019/20,Luís Filipe Vieira,Futebol,Campeonato,
+Feminino,2019/20,Luís Filipe Vieira,Futebol,Supertaça,SL Benfica
+Feminino,2019/20,Luís Filipe Vieira,Futebol,Outros,SL Benfica
+Feminino,2019/20,Luís Filipe Vieira,Futebol,Taça,Outro
+Feminino,2018/19,Luís Filipe Vieira,Futebol,Campeonato,Outro
+Feminino,2018/19,Luís Filipe Vieira,Futebol,Supertaça,Outro
+Feminino,2018/19,Luís Filipe Vieira,Futebol,Taça,SL Benfica
+Feminino,2017/18,Luís Filipe Vieira,Futebol,Campeonato,Sporting CP
+Feminino,2017/18,Luís Filipe Vieira,Futebol,Supertaça,Sporting CP
+Feminino,2017/18,Luís Filipe Vieira,Futebol,Taça,Sporting CP
+Feminino,2016/17,Luís Filipe Vieira,Futebol,Campeonato,Sporting CP
+Feminino,2016/17,Luís Filipe Vieira,Futebol,Supertaça,Outro
+Feminino,2016/17,Luís Filipe Vieira,Futebol,Taça,Sporting CP
+Feminino,2015/16,Luís Filipe Vieira,Futebol,Campeonato,Outro
+Feminino,2015/16,Luís Filipe Vieira,Futebol,Supertaça,Outro
+Feminino,2015/16,Luís Filipe Vieira,Futebol,Taça,Outro
+Feminino,2014/15,Luís Filipe Vieira,Futebol,Campeonato,Outro
+Feminino,2014/15,Luís Filipe Vieira,Futebol,Taça,Outro
+Feminino,2013/14,Luís Filipe Vieira,Futebol,Campeonato,Outro
+Feminino,2013/14,Luís Filipe Vieira,Futebol,Taça,Outro
+Feminino,2012/13,Luís Filipe Vieira,Futebol,Campeonato,Outro
+Feminino,2012/13,Luís Filipe Vieira,Futebol,Taça,Outro
+Feminino,2011/12,Luís Filipe Vieira,Futebol,Campeonato,Outro
+Feminino,2011/12,Luís Filipe Vieira,Futebol,Taça,Outro
+Feminino,2010/11,Luís Filipe Vieira,Futebol,Campeonato,Outro
+Feminino,2010/11,Luís Filipe Vieira,Futebol,Taça,Outro
+Feminino,2009/10,Luís Filipe Vieira,Futebol,Campeonato,Outro
+Feminino,2009/10,Luís Filipe Vieira,Futebol,Taça,Outro
+Feminino,2008/09,Luís Filipe Vieira,Futebol,Campeonato,Outro
+Feminino,2008/09,Luís Filipe Vieira,Futebol,Taça,Outro
+Feminino,2007/08,Luís Filipe Vieira,Futebol,Campeonato,Outro
+Feminino,2007/08,Luís Filipe Vieira,Futebol,Taça,Outro
+Feminino,2006/07,Luís Filipe Vieira,Futebol,Campeonato,Outro
+Feminino,2006/07,Luís Filipe Vieira,Futebol,Taça,Outro
+Feminino,2005/06,Luís Filipe Vieira,Futebol,Campeonato,Outro
+Feminino,2005/06,Luís Filipe Vieira,Futebol,Taça,Outro
+Feminino,2004/05,Luís Filipe Vieira,Futebol,Campeonato,Outro
+Feminino,2004/05,Luís Filipe Vieira,Futebol,Taça,Outro
+Feminino,2003/04,Luís Filipe Vieira,Futebol,Campeonato,Outro
+Feminino,2003/04,Luís Filipe Vieira,Futebol,Taça,Outro
+Feminino,2002/03,Manuel Vilarinho,Futebol,Campeonato,Outro
+Feminino,2001/02,Manuel Vilarinho,Futebol,Campeonato,Outro
+Feminino,2000/01,Manuel Vilarinho,Futebol,Campeonato,Outro
+Feminino,2025/26,Rui Costa,Futsal,Campeonato,
+Feminino,2025/26,Rui Costa,Futsal,Supertaça,Outro
+Feminino,2025/26,Rui Costa,Futsal,Outros,Outro
+Feminino,2025/26,Rui Costa,Futsal,Taça,SL Benfica
+Feminino,2024/25,Rui Costa,Futsal,Campeonato,Outro
+Feminino,2024/25,Rui Costa,Futsal,Supertaça,SL Benfica
+Feminino,2024/25,Rui Costa,Futsal,Outros,SL Benfica
+Feminino,2024/25,Rui Costa,Futsal,Taça,SL Benfica
+Feminino,2023/24,Rui Costa,Futsal,Campeonato,SL Benfica
+Feminino,2023/24,Rui Costa,Futsal,Supertaça,SL Benfica
+Feminino,2023/24,Rui Costa,Futsal,Outros,Outro
+Feminino,2023/24,Rui Costa,Futsal,Taça,SL Benfica
+Feminino,2023/24,Rui Costa,Futsal,Europa,SL Benfica
+Feminino,2022/23,Rui Costa,Futsal,Campeonato,SL Benfica
+Feminino,2022/23,Rui Costa,Futsal,Supertaça,SL Benfica
+Feminino,2022/23,Rui Costa,Futsal,Outros,SL Benfica
+Feminino,2022/23,Rui Costa,Futsal,Taça,SL Benfica
+Feminino,2021/22,Rui Costa,Futsal,Campeonato,SL Benfica
+Feminino,2021/22,Rui Costa,Futsal,Supertaça,SL Benfica
+Feminino,2021/22,Rui Costa,Futsal,Outros,SL Benfica
+Feminino,2021/22,Rui Costa,Futsal,Taça,Outro
+Feminino,2020/21,Luís Filipe Vieira,Futsal,Campeonato,SL Benfica
+Feminino,2020/21,Luís Filipe Vieira,Futsal,Supertaça,
+Feminino,2020/21,Luís Filipe Vieira,Futsal,Outros,SL Benfica
+Feminino,2020/21,Luís Filipe Vieira,Futsal,Taça,
+Feminino,2019/20,Luís Filipe Vieira,Futsal,Campeonato,
+Feminino,2019/20,Luís Filipe Vieira,Futsal,Supertaça,SL Benfica
+Feminino,2019/20,Luís Filipe Vieira,Futsal,Taça,SL Benfica
+Feminino,2018/19,Luís Filipe Vieira,Futsal,Campeonato,SL Benfica
+Feminino,2018/19,Luís Filipe Vieira,Futsal,Supertaça,SL Benfica
+Feminino,2018/19,Luís Filipe Vieira,Futsal,Taça,SL Benfica
+Feminino,2017/18,Luís Filipe Vieira,Futsal,Campeonato,SL Benfica
+Feminino,2017/18,Luís Filipe Vieira,Futsal,Supertaça,SL Benfica
+Feminino,2017/18,Luís Filipe Vieira,Futsal,Taça,SL Benfica
+Feminino,2016/17,Luís Filipe Vieira,Futsal,Campeonato,SL Benfica
+Feminino,2016/17,Luís Filipe Vieira,Futsal,Supertaça,SL Benfica
+Feminino,2016/17,Luís Filipe Vieira,Futsal,Taça,SL Benfica
+Feminino,2015/16,Luís Filipe Vieira,Futsal,Campeonato,Outro
+Feminino,2015/16,Luís Filipe Vieira,Futsal,Supertaça,Outro
+Feminino,2015/16,Luís Filipe Vieira,Futsal,Taça,SL Benfica
+Feminino,2014/15,Luís Filipe Vieira,Futsal,Campeonato,Outro
+Feminino,2014/15,Luís Filipe Vieira,Futsal,Supertaça,SL Benfica
+Feminino,2014/15,Luís Filipe Vieira,Futsal,Taça,Outro
+Feminino,2013/14,Luís Filipe Vieira,Futsal,Campeonato,Outro
+Feminino,2013/14,Luís Filipe Vieira,Futsal,Taça,SL Benfica
+Feminino,2025/26,Rui Costa,Hóquei em Patins,Campeonato,
+Feminino,2025/26,Rui Costa,Hóquei em Patins,Outros,SL Benfica
+Feminino,2025/26,Rui Costa,Hóquei em Patins,Supertaça,SL Benfica
+Feminino,2025/26,Rui Costa,Hóquei em Patins,Taça,SL Benfica
+Feminino,2025/26,Rui Costa,Hóquei em Patins,Europa,Outro
+Feminino,2025/26,Rui Costa,Hóquei em Patins,Europa,Outro
+Feminino,2024/25,Rui Costa,Hóquei em Patins,Campeonato,SL Benfica
+Feminino,2024/25,Rui Costa,Hóquei em Patins,Outros,SL Benfica
+Feminino,2024/25,Rui Costa,Hóquei em Patins,Supertaça,SL Benfica
+Feminino,2024/25,Rui Costa,Hóquei em Patins,Taça,SL Benfica
+Feminino,2023/24,Rui Costa,Hóquei em Patins,Campeonato,SL Benfica
+Feminino,2023/24,Rui Costa,Hóquei em Patins,Outros,SL Benfica
+Feminino,2023/24,Rui Costa,Hóquei em Patins,Supertaça,SL Benfica
+Feminino,2023/24,Rui Costa,Hóquei em Patins,Taça,SL Benfica
+Feminino,2022/23,Rui Costa,Hóquei em Patins,Campeonato,SL Benfica
+Feminino,2022/23,Rui Costa,Hóquei em Patins,Outros,SL Benfica
+Feminino,2022/23,Rui Costa,Hóquei em Patins,Supertaça,SL Benfica
+Feminino,2022/23,Rui Costa,Hóquei em Patins,Taça,SL Benfica
+Feminino,2021/22,Rui Costa,Hóquei em Patins,Campeonato,SL Benfica
+Feminino,2021/22,Rui Costa,Hóquei em Patins,Supertaça,SL Benfica
+Feminino,2021/22,Rui Costa,Hóquei em Patins,Taça,SL Benfica
+Feminino,2020/21,Luís Filipe Vieira,Hóquei em Patins,Campeonato,SL Benfica
+Feminino,2020/21,Luís Filipe Vieira,Hóquei em Patins,Supertaça,
+Feminino,2020/21,Luís Filipe Vieira,Hóquei em Patins,Taça,SL Benfica
+Feminino,2019/20,Luís Filipe Vieira,Hóquei em Patins,Campeonato,
+Feminino,2019/20,Luís Filipe Vieira,Hóquei em Patins,Supertaça,SL Benfica
+Feminino,2019/20,Luís Filipe Vieira,Hóquei em Patins,Taça,
+Feminino,2018/19,Luís Filipe Vieira,Hóquei em Patins,Campeonato,SL Benfica
+Feminino,2018/19,Luís Filipe Vieira,Hóquei em Patins,Supertaça,SL Benfica
+Feminino,2018/19,Luís Filipe Vieira,Hóquei em Patins,Taça,SL Benfica
+Feminino,2017/18,Luís Filipe Vieira,Hóquei em Patins,Campeonato,SL Benfica
+Feminino,2017/18,Luís Filipe Vieira,Hóquei em Patins,Supertaça,SL Benfica
+Feminino,2017/18,Luís Filipe Vieira,Hóquei em Patins,Taça,SL Benfica
+Feminino,2016/17,Luís Filipe Vieira,Hóquei em Patins,Campeonato,SL Benfica
+Feminino,2016/17,Luís Filipe Vieira,Hóquei em Patins,Supertaça,SL Benfica
+Feminino,2016/17,Luís Filipe Vieira,Hóquei em Patins,Taça,SL Benfica
+Feminino,2015/16,Luís Filipe Vieira,Hóquei em Patins,Campeonato,SL Benfica
+Feminino,2015/16,Luís Filipe Vieira,Hóquei em Patins,Supertaça,SL Benfica
+Feminino,2015/16,Luís Filipe Vieira,Hóquei em Patins,Taça,SL Benfica
+Feminino,2014/15,Luís Filipe Vieira,Hóquei em Patins,Campeonato,SL Benfica
+Feminino,2014/15,Luís Filipe Vieira,Hóquei em Patins,Europa,SL Benfica
+Feminino,2014/15,Luís Filipe Vieira,Hóquei em Patins,Supertaça,SL Benfica
+Feminino,2014/15,Luís Filipe Vieira,Hóquei em Patins,Taça,SL Benfica
+Feminino,2013/14,Luís Filipe Vieira,Hóquei em Patins,Campeonato,SL Benfica
+Feminino,2013/14,Luís Filipe Vieira,Hóquei em Patins,Supertaça,SL Benfica
+Feminino,2013/14,Luís Filipe Vieira,Hóquei em Patins,Taça,SL Benfica
+Feminino,2012/13,Luís Filipe Vieira,Hóquei em Patins,Campeonato,SL Benfica
+Feminino,2012/13,Luís Filipe Vieira,Hóquei em Patins,Supertaça,Outro
+Feminino,2012/13,Luís Filipe Vieira,Hóquei em Patins,Taça,Outro
+Feminino,2011/12,Luís Filipe Vieira,Hóquei em Patins,Campeonato,Outro
+Feminino,2011/12,Luís Filipe Vieira,Hóquei em Patins,Supertaça,Outro
+Feminino,2011/12,Luís Filipe Vieira,Hóquei em Patins,Taça,Outro
+Feminino,2010/11,Luís Filipe Vieira,Hóquei em Patins,Campeonato,Outro
+Feminino,2010/11,Luís Filipe Vieira,Hóquei em Patins,Supertaça,Outro
+Feminino,2010/11,Luís Filipe Vieira,Hóquei em Patins,Taça,Outro
+Feminino,2009/10,Luís Filipe Vieira,Hóquei em Patins,Campeonato,Outro
+Feminino,2009/10,Luís Filipe Vieira,Hóquei em Patins,Supertaça,Outro
+Feminino,2009/10,Luís Filipe Vieira,Hóquei em Patins,Taça,Outro
+Feminino,2008/09,Luís Filipe Vieira,Hóquei em Patins,Campeonato,Outro
+Feminino,2008/09,Luís Filipe Vieira,Hóquei em Patins,Supertaça,Outro
+Feminino,2008/09,Luís Filipe Vieira,Hóquei em Patins,Taça,Outro
+Feminino,2007/08,Luís Filipe Vieira,Hóquei em Patins,Campeonato,Outro
+Feminino,2007/08,Luís Filipe Vieira,Hóquei em Patins,Supertaça,Outro
+Feminino,2007/08,Luís Filipe Vieira,Hóquei em Patins,Taça,Outro
+Feminino,2006/07,Luís Filipe Vieira,Hóquei em Patins,Campeonato,Outro
+Feminino,2006/07,Luís Filipe Vieira,Hóquei em Patins,Supertaça,Outro
+Feminino,2006/07,Luís Filipe Vieira,Hóquei em Patins,Taça,Outro
+Feminino,2005/06,Luís Filipe Vieira,Hóquei em Patins,Campeonato,Outro
+Feminino,2005/06,Luís Filipe Vieira,Hóquei em Patins,Supertaça,Outro
+Feminino,2005/06,Luís Filipe Vieira,Hóquei em Patins,Taça,Outro
+Feminino,2004/05,Luís Filipe Vieira,Hóquei em Patins,Campeonato,Outro
+Feminino,2004/05,Luís Filipe Vieira,Hóquei em Patins,Supertaça,Outro
+Feminino,2004/05,Luís Filipe Vieira,Hóquei em Patins,Taça,Outro
+Feminino,2003/04,Luís Filipe Vieira,Hóquei em Patins,Campeonato,Outro
+Feminino,2003/04,Luís Filipe Vieira,Hóquei em Patins,Supertaça,Outro
+Feminino,2003/04,Luís Filipe Vieira,Hóquei em Patins,Taça,Outro
+Feminino,2002/03,Manuel Vilarinho,Hóquei em Patins,Campeonato,Outro
+Feminino,2002/03,Manuel Vilarinho,Hóquei em Patins,Supertaça,Outro
+Feminino,2002/03,Manuel Vilarinho,Hóquei em Patins,Taça,Outro
+Feminino,2001/02,Manuel Vilarinho,Hóquei em Patins,Campeonato,Outro
+Feminino,2001/02,Manuel Vilarinho,Hóquei em Patins,Supertaça,Outro
+Feminino,2001/02,Manuel Vilarinho,Hóquei em Patins,Taça,Outro
+Feminino,2000/01,Manuel Vilarinho,Hóquei em Patins,Campeonato,Outro
+Feminino,2000/01,Manuel Vilarinho,Hóquei em Patins,Supertaça,Outro
+Feminino,2000/01,Manuel Vilarinho,Hóquei em Patins,Taça,Outro
+Feminino,2025/26,Rui Costa,Voleibol,Campeonato,FC Porto
+Feminino,2025/26,Rui Costa,Voleibol,Supertaça,SL Benfica
+Feminino,2025/26,Rui Costa,Voleibol,Taça,FC Porto
+Feminino,2024/25,Rui Costa,Voleibol,Campeonato,SL Benfica
+Feminino,2024/25,Rui Costa,Voleibol,Supertaça,SL Benfica
+Feminino,2024/25,Rui Costa,Voleibol,Taça,Sporting CP
+Feminino,2024/25,Rui Costa,Voleibol,Supertaça,FC Porto
+Feminino,2023/24,Rui Costa,Voleibol,Campeonato,FC Porto
+Feminino,2023/24,Rui Costa,Voleibol,Supertaça,Outro
+Feminino,2023/24,Rui Costa,Voleibol,Taça,SL Benfica
+Feminino,2022/23,Rui Costa,Voleibol,Campeonato,Outro
+Feminino,2022/23,Rui Costa,Voleibol,Supertaça,Outro
+Feminino,2022/23,Rui Costa,Voleibol,Taça,Sporting CP
+Feminino,2021/22,Rui Costa,Voleibol,Campeonato,Outro
+Feminino,2021/22,Rui Costa,Voleibol,Supertaça,Outro
+Feminino,2021/22,Rui Costa,Voleibol,Taça,Outro
+Feminino,2020/21,Luís Filipe Vieira,Voleibol,Campeonato,Outro
+Feminino,2020/21,Luís Filipe Vieira,Voleibol,Supertaça,Outro
+Feminino,2020/21,Luís Filipe Vieira,Voleibol,Taça,Outro
+Feminino,2019/20,Luís Filipe Vieira,Voleibol,Campeonato,
+Feminino,2019/20,Luís Filipe Vieira,Voleibol,Supertaça,Outro
+Feminino,2019/20,Luís Filipe Vieira,Voleibol,Taça,Outro
+Feminino,2018/19,Luís Filipe Vieira,Voleibol,Campeonato,Outro
+Feminino,2018/19,Luís Filipe Vieira,Voleibol,Supertaça,Outro
+Feminino,2018/19,Luís Filipe Vieira,Voleibol,Taça,Outro
+Feminino,2017/18,Luís Filipe Vieira,Voleibol,Campeonato,Outro
+Feminino,2017/18,Luís Filipe Vieira,Voleibol,Supertaça,Outro
+Feminino,2017/18,Luís Filipe Vieira,Voleibol,Taça,Outro
+Feminino,2016/17,Luís Filipe Vieira,Voleibol,Campeonato,Outro
+Feminino,2016/17,Luís Filipe Vieira,Voleibol,Supertaça,Outro
+Feminino,2016/17,Luís Filipe Vieira,Voleibol,Taça,Outro
+Feminino,2015/16,Luís Filipe Vieira,Voleibol,Campeonato,Outro
+Feminino,2015/16,Luís Filipe Vieira,Voleibol,Supertaça,Outro
+Feminino,2015/16,Luís Filipe Vieira,Voleibol,Taça,Outro
+Feminino,2014/15,Luís Filipe Vieira,Voleibol,Campeonato,Outro
+Feminino,2014/15,Luís Filipe Vieira,Voleibol,Supertaça,
+Feminino,2014/15,Luís Filipe Vieira,Voleibol,Taça,Outro
+Feminino,2013/14,Luís Filipe Vieira,Voleibol,Campeonato,Outro
+Feminino,2013/14,Luís Filipe Vieira,Voleibol,Supertaça,
+Feminino,2013/14,Luís Filipe Vieira,Voleibol,Taça,Outro
+Feminino,2012/13,Luís Filipe Vieira,Voleibol,Campeonato,Outro
+Feminino,2012/13,Luís Filipe Vieira,Voleibol,Supertaça,
+Feminino,2012/13,Luís Filipe Vieira,Voleibol,Taça,Outro
+Feminino,2011/12,Luís Filipe Vieira,Voleibol,Campeonato,Outro
+Feminino,2011/12,Luís Filipe Vieira,Voleibol,Supertaça,
+Feminino,2011/12,Luís Filipe Vieira,Voleibol,Taça,Outro
+Feminino,2010/11,Luís Filipe Vieira,Voleibol,Campeonato,Outro
+Feminino,2010/11,Luís Filipe Vieira,Voleibol,Supertaça,
+Feminino,2010/11,Luís Filipe Vieira,Voleibol,Taça,Outro
+Feminino,2009/10,Luís Filipe Vieira,Voleibol,Campeonato,Outro
+Feminino,2009/10,Luís Filipe Vieira,Voleibol,Supertaça,
+Feminino,2009/10,Luís Filipe Vieira,Voleibol,Taça,Outro
+Feminino,2008/09,Luís Filipe Vieira,Voleibol,Campeonato,Outro
+Feminino,2008/09,Luís Filipe Vieira,Voleibol,Supertaça,
+Feminino,2008/09,Luís Filipe Vieira,Voleibol,Taça,Outro
+Feminino,2007/08,Luís Filipe Vieira,Voleibol,Campeonato,Outro
+Feminino,2007/08,Luís Filipe Vieira,Voleibol,Supertaça,
+Feminino,2007/08,Luís Filipe Vieira,Voleibol,Taça,Outro
+Feminino,2006/07,Luís Filipe Vieira,Voleibol,Campeonato,Outro
+Feminino,2006/07,Luís Filipe Vieira,Voleibol,Supertaça,
+Feminino,2006/07,Luís Filipe Vieira,Voleibol,Taça,Outro
+Feminino,2005/06,Luís Filipe Vieira,Voleibol,Campeonato,Outro
+Feminino,2005/06,Luís Filipe Vieira,Voleibol,Supertaça,
+Feminino,2005/06,Luís Filipe Vieira,Voleibol,Taça,Outro
+Feminino,2004/05,Luís Filipe Vieira,Voleibol,Campeonato,Outro
+Feminino,2004/05,Luís Filipe Vieira,Voleibol,Supertaça,
+Feminino,2004/05,Luís Filipe Vieira,Voleibol,Taça,Outro
+Feminino,2003/04,Luís Filipe Vieira,Voleibol,Campeonato,Outro
+Feminino,2003/04,Luís Filipe Vieira,Voleibol,Supertaça,
+Feminino,2003/04,Luís Filipe Vieira,Voleibol,Taça,Outro
+Feminino,2002/03,Manuel Vilarinho,Voleibol,Campeonato,Outro
+Feminino,2002/03,Manuel Vilarinho,Voleibol,Supertaça,
+Feminino,2002/03,Manuel Vilarinho,Voleibol,Taça,Outro
+Feminino,2001/02,Manuel Vilarinho,Voleibol,Campeonato,Outro
+Feminino,2001/02,Manuel Vilarinho,Voleibol,Supertaça,Outro
+Feminino,2001/02,Manuel Vilarinho,Voleibol,Taça,Outro
+Feminino,2000/01,Manuel Vilarinho,Voleibol,Campeonato,Outro
+Feminino,2000/01,Manuel Vilarinho,Voleibol,Supertaça,Outro
+Feminino,2000/01,Manuel Vilarinho,Voleibol,Taça,Outro
+Masculino,2025/26,Rui Costa,Andebol,Campeonato,Sporting CP
+Masculino,2025/26,Rui Costa,Andebol,Supertaça,Sporting CP
+Masculino,2025/26,Rui Costa,Andebol,Taça,Sporting CP
+Masculino,2024/25,Rui Costa,Andebol,Campeonato,Sporting CP
+Masculino,2024/25,Rui Costa,Andebol,Supertaça,Sporting CP
+Masculino,2024/25,Rui Costa,Andebol,Taça,Sporting CP
+Masculino,2023/24,Rui Costa,Andebol,Campeonato,Sporting CP
+Masculino,2023/24,Rui Costa,Andebol,Supertaça,Sporting CP
+Masculino,2023/24,Rui Costa,Andebol,Taça,Sporting CP
+Masculino,2022/23,Rui Costa,Andebol,Campeonato,FC Porto
+Masculino,2022/23,Rui Costa,Andebol,Supertaça,SL Benfica
+Masculino,2022/23,Rui Costa,Andebol,Taça,Sporting CP
+Masculino,2021/22,Rui Costa,Andebol,Campeonato,FC Porto
+Masculino,2021/22,Rui Costa,Andebol,Europa,SL Benfica
+Masculino,2021/22,Rui Costa,Andebol,Supertaça,FC Porto
+Masculino,2021/22,Rui Costa,Andebol,Taça,Sporting CP
+Masculino,2020/21,Luís Filipe Vieira,Andebol,Campeonato,FC Porto
+Masculino,2020/21,Luís Filipe Vieira,Andebol,Supertaça,
+Masculino,2020/21,Luís Filipe Vieira,Andebol,Taça,FC Porto
+Masculino,2019/20,Luís Filipe Vieira,Andebol,Campeonato,
+Masculino,2019/20,Luís Filipe Vieira,Andebol,Supertaça,FC Porto
+Masculino,2019/20,Luís Filipe Vieira,Andebol,Taça,
+Masculino,2018/19,Luís Filipe Vieira,Andebol,Campeonato,FC Porto
+Masculino,2018/19,Luís Filipe Vieira,Andebol,Supertaça,SL Benfica
+Masculino,2018/19,Luís Filipe Vieira,Andebol,Taça,FC Porto
+Masculino,2017/18,Luís Filipe Vieira,Andebol,Campeonato,Sporting CP
+Masculino,2017/18,Luís Filipe Vieira,Andebol,Supertaça,Outro
+Masculino,2017/18,Luís Filipe Vieira,Andebol,Taça,SL Benfica
+Masculino,2016/17,Luís Filipe Vieira,Andebol,Campeonato,Sporting CP
+Masculino,2016/17,Luís Filipe Vieira,Andebol,Supertaça,SL Benfica
+Masculino,2016/17,Luís Filipe Vieira,Andebol,Taça,Outro
+Masculino,2015/16,Luís Filipe Vieira,Andebol,Campeonato,Outro
+Masculino,2015/16,Luís Filipe Vieira,Andebol,Supertaça,Outro
+Masculino,2015/16,Luís Filipe Vieira,Andebol,Taça,SL Benfica
+Masculino,2014/15,Luís Filipe Vieira,Andebol,Campeonato,FC Porto
+Masculino,2014/15,Luís Filipe Vieira,Andebol,Supertaça,FC Porto
+Masculino,2014/15,Luís Filipe Vieira,Andebol,Taça,Outro
+Masculino,2013/14,Luís Filipe Vieira,Andebol,Campeonato,FC Porto
+Masculino,2013/14,Luís Filipe Vieira,Andebol,Supertaça,Sporting CP
+Masculino,2013/14,Luís Filipe Vieira,Andebol,Taça,Sporting CP
+Masculino,2012/13,Luís Filipe Vieira,Andebol,Campeonato,FC Porto
+Masculino,2012/13,Luís Filipe Vieira,Andebol,Supertaça,SL Benfica
+Masculino,2012/13,Luís Filipe Vieira,Andebol,Taça,Sporting CP
+Masculino,2011/12,Luís Filipe Vieira,Andebol,Campeonato,FC Porto
+Masculino,2011/12,Luís Filipe Vieira,Andebol,Supertaça,
+Masculino,2011/12,Luís Filipe Vieira,Andebol,Taça,Sporting CP
+Masculino,2010/11,Luís Filipe Vieira,Andebol,Campeonato,FC Porto
+Masculino,2010/11,Luís Filipe Vieira,Andebol,Supertaça,SL Benfica
+Masculino,2010/11,Luís Filipe Vieira,Andebol,Taça,SL Benfica
+Masculino,2009/10,Luís Filipe Vieira,Andebol,Campeonato,FC Porto
+Masculino,2009/10,Luís Filipe Vieira,Andebol,Supertaça,FC Porto
+Masculino,2009/10,Luís Filipe Vieira,Andebol,Taça,Outro
+Masculino,2008/09,Luís Filipe Vieira,Andebol,Campeonato,FC Porto
+Masculino,2008/09,Luís Filipe Vieira,Andebol,Supertaça,
+Masculino,2008/09,Luís Filipe Vieira,Andebol,Taça,Outro
+Masculino,2007/08,Luís Filipe Vieira,Andebol,Campeonato,SL Benfica
+Masculino,2007/08,Luís Filipe Vieira,Andebol,Supertaça,
+Masculino,2007/08,Luís Filipe Vieira,Andebol,Taça,Outro
+Masculino,2006/07,Luís Filipe Vieira,Andebol,Campeonato,Outro
+Masculino,2006/07,Luís Filipe Vieira,Andebol,Supertaça,
+Masculino,2006/07,Luís Filipe Vieira,Andebol,Taça,FC Porto
+Masculino,2005/06,Luís Filipe Vieira,Andebol,Campeonato,Sporting CP
+Masculino,2005/06,Luís Filipe Vieira,Andebol,Supertaça,
+Masculino,2005/06,Luís Filipe Vieira,Andebol,Taça,FC Porto
+Masculino,2004/05,Luís Filipe Vieira,Andebol,Campeonato,Sporting CP
+Masculino,2004/05,Luís Filipe Vieira,Andebol,Supertaça,
+Masculino,2004/05,Luís Filipe Vieira,Andebol,Taça,Sporting CP
+Masculino,2003/04,Luís Filipe Vieira,Andebol,Campeonato,Outro
+Masculino,2003/04,Luís Filipe Vieira,Andebol,Supertaça,
+Masculino,2003/04,Luís Filipe Vieira,Andebol,Taça,Sporting CP
+Masculino,2002/03,Manuel Vilarinho,Andebol,Campeonato,Outro
+Masculino,2002/03,Manuel Vilarinho,Andebol,Supertaça,FC Porto
+Masculino,2002/03,Manuel Vilarinho,Andebol,Taça,Sporting CP
+Masculino,2001/02,Manuel Vilarinho,Andebol,Campeonato,FC Porto
+Masculino,2001/02,Manuel Vilarinho,Andebol,Supertaça,Sporting CP
+Masculino,2001/02,Manuel Vilarinho,Andebol,Taça,Outro
+Masculino,2000/01,Manuel Vilarinho,Andebol,Campeonato,Sporting CP
+Masculino,2000/01,Manuel Vilarinho,Andebol,Supertaça,FC Porto
+Masculino,2000/01,Manuel Vilarinho,Andebol,Taça,Sporting CP
+Masculino,2025/26,Rui Costa,Basquetebol,Campeonato,
+Masculino,2025/26,Rui Costa,Basquetebol,Supertaça,SL Benfica
+Masculino,2025/26,Rui Costa,Basquetebol,Taça,Sporting CP
+Masculino,2025/26,Rui Costa,Basquetebol,Outros,Sporting CP
+Masculino,2024/25,Rui Costa,Basquetebol,Campeonato,SL Benfica
+Masculino,2024/25,Rui Costa,Basquetebol,Supertaça,FC Porto
+Masculino,2024/25,Rui Costa,Basquetebol,Taça,FC Porto
+Masculino,2024/25,Rui Costa,Basquetebol,Outros,Outro
+Masculino,2023/24,Rui Costa,Basquetebol,Campeonato,SL Benfica
+Masculino,2023/24,Rui Costa,Basquetebol,Supertaça,SL Benfica
+Masculino,2023/24,Rui Costa,Basquetebol,Taça,FC Porto
+Masculino,2023/24,Rui Costa,Basquetebol,Outros,SL Benfica
+Masculino,2022/23,Rui Costa,Basquetebol,Campeonato,SL Benfica
+Masculino,2022/23,Rui Costa,Basquetebol,Supertaça,Sporting CP
+Masculino,2022/23,Rui Costa,Basquetebol,Taça,SL Benfica
+Masculino,2022/23,Rui Costa,Basquetebol,Outros,Sporting CP
+Masculino,2021/22,Rui Costa,Basquetebol,Campeonato,SL Benfica
+Masculino,2021/22,Rui Costa,Basquetebol,Supertaça,Sporting CP
+Masculino,2021/22,Rui Costa,Basquetebol,Taça,Sporting CP
+Masculino,2021/22,Rui Costa,Basquetebol,Outros,Sporting CP
+Masculino,2020/21,Luís Filipe Vieira,Basquetebol,Campeonato,Sporting CP
+Masculino,2020/21,Luís Filipe Vieira,Basquetebol,Supertaça,
+Masculino,2020/21,Luís Filipe Vieira,Basquetebol,Taça,Sporting CP
+Masculino,2020/21,Luís Filipe Vieira,Basquetebol,Outros,FC Porto
+Masculino,2019/20,Luís Filipe Vieira,Basquetebol,Campeonato,
+Masculino,2019/20,Luís Filipe Vieira,Basquetebol,Supertaça,FC Porto
+Masculino,2019/20,Luís Filipe Vieira,Basquetebol,Taça,Sporting CP
+Masculino,2019/20,Luís Filipe Vieira,Basquetebol,Outros,Outro
+Masculino,2018/19,Luís Filipe Vieira,Basquetebol,Campeonato,Outro
+Masculino,2018/19,Luís Filipe Vieira,Basquetebol,Supertaça,Outro
+Masculino,2018/19,Luís Filipe Vieira,Basquetebol,Taça,FC Porto
+Masculino,2018/19,Luís Filipe Vieira,Basquetebol,Outros,Outro
+Masculino,2017/18,Luís Filipe Vieira,Basquetebol,Campeonato,Outro
+Masculino,2017/18,Luís Filipe Vieira,Basquetebol,Supertaça,SL Benfica
+Masculino,2017/18,Luís Filipe Vieira,Basquetebol,Taça,Outro
+Masculino,2017/18,Luís Filipe Vieira,Basquetebol,Outros,SL Benfica
+Masculino,2016/17,Luís Filipe Vieira,Basquetebol,Campeonato,SL Benfica
+Masculino,2016/17,Luís Filipe Vieira,Basquetebol,Supertaça,FC Porto
+Masculino,2016/17,Luís Filipe Vieira,Basquetebol,Taça,SL Benfica
+Masculino,2016/17,Luís Filipe Vieira,Basquetebol,Outros,SL Benfica
+Masculino,2015/16,Luís Filipe Vieira,Basquetebol,Campeonato,FC Porto
+Masculino,2015/16,Luís Filipe Vieira,Basquetebol,Supertaça,SL Benfica
+Masculino,2015/16,Luís Filipe Vieira,Basquetebol,Taça,SL Benfica
+Masculino,2015/16,Luís Filipe Vieira,Basquetebol,Outros,FC Porto
+Masculino,2014/15,Luís Filipe Vieira,Basquetebol,Campeonato,SL Benfica
+Masculino,2014/15,Luís Filipe Vieira,Basquetebol,Supertaça,SL Benfica
+Masculino,2014/15,Luís Filipe Vieira,Basquetebol,Taça,SL Benfica
+Masculino,2014/15,Luís Filipe Vieira,Basquetebol,Outros,SL Benfica
+Masculino,2013/14,Luís Filipe Vieira,Basquetebol,Campeonato,SL Benfica
+Masculino,2013/14,Luís Filipe Vieira,Basquetebol,Supertaça,SL Benfica
+Masculino,2013/14,Luís Filipe Vieira,Basquetebol,Taça,SL Benfica
+Masculino,2013/14,Luís Filipe Vieira,Basquetebol,Outros,SL Benfica
+Masculino,2012/13,Luís Filipe Vieira,Basquetebol,Campeonato,SL Benfica
+Masculino,2012/13,Luís Filipe Vieira,Basquetebol,Supertaça,SL Benfica
+Masculino,2012/13,Luís Filipe Vieira,Basquetebol,Taça,Outro
+Masculino,2012/13,Luís Filipe Vieira,Basquetebol,Outros,SL Benfica
+Masculino,2011/12,Luís Filipe Vieira,Basquetebol,Campeonato,SL Benfica
+Masculino,2011/12,Luís Filipe Vieira,Basquetebol,Supertaça,FC Porto
+Masculino,2011/12,Luís Filipe Vieira,Basquetebol,Taça,FC Porto
+Masculino,2011/12,Luís Filipe Vieira,Basquetebol,Outros,FC Porto
+Masculino,2010/11,Luís Filipe Vieira,Basquetebol,Campeonato,FC Porto
+Masculino,2010/11,Luís Filipe Vieira,Basquetebol,Supertaça,SL Benfica
+Masculino,2010/11,Luís Filipe Vieira,Basquetebol,Taça,Outro
+Masculino,2010/11,Luís Filipe Vieira,Basquetebol,Outros,SL Benfica
+Masculino,2009/10,Luís Filipe Vieira,Basquetebol,Campeonato,SL Benfica
+Masculino,2009/10,Luís Filipe Vieira,Basquetebol,Supertaça,SL Benfica
+Masculino,2009/10,Luís Filipe Vieira,Basquetebol,Taça,FC Porto
+Masculino,2009/10,Luís Filipe Vieira,Basquetebol,Outros,FC Porto
+Masculino,2008/09,Luís Filipe Vieira,Basquetebol,Campeonato,SL Benfica
+Masculino,2008/09,Luís Filipe Vieira,Basquetebol,Supertaça,Outro
+Masculino,2008/09,Luís Filipe Vieira,Basquetebol,Taça,Outro
+Masculino,2008/09,Luís Filipe Vieira,Basquetebol,Outros,
+Masculino,2007/08,Luís Filipe Vieira,Basquetebol,Campeonato,Outro
+Masculino,2007/08,Luís Filipe Vieira,Basquetebol,Supertaça,Outro
+Masculino,2007/08,Luís Filipe Vieira,Basquetebol,Taça,Outro
+Masculino,2007/08,Luís Filipe Vieira,Basquetebol,Outros,FC Porto
+Masculino,2006/07,Luís Filipe Vieira,Basquetebol,Campeonato,Outro
+Masculino,2006/07,Luís Filipe Vieira,Basquetebol,Supertaça,Outro
+Masculino,2006/07,Luís Filipe Vieira,Basquetebol,Taça,FC Porto
+Masculino,2006/07,Luís Filipe Vieira,Basquetebol,Outros,Outro
+Masculino,2005/06,Luís Filipe Vieira,Basquetebol,Campeonato,Outro
+Masculino,2005/06,Luís Filipe Vieira,Basquetebol,Supertaça,Outro
+Masculino,2005/06,Luís Filipe Vieira,Basquetebol,Taça,FC Porto
+Masculino,2005/06,Luís Filipe Vieira,Basquetebol,Outros,Outro
+Masculino,2004/05,Luís Filipe Vieira,Basquetebol,Campeonato,Outro
+Masculino,2004/05,Luís Filipe Vieira,Basquetebol,Supertaça,FC Porto
+Masculino,2004/05,Luís Filipe Vieira,Basquetebol,Taça,Outro
+Masculino,2004/05,Luís Filipe Vieira,Basquetebol,Outros,Outro
+Masculino,2003/04,Luís Filipe Vieira,Basquetebol,Campeonato,FC Porto
+Masculino,2003/04,Luís Filipe Vieira,Basquetebol,Supertaça,Outro
+Masculino,2003/04,Luís Filipe Vieira,Basquetebol,Taça,FC Porto
+Masculino,2003/04,Luís Filipe Vieira,Basquetebol,Outros,FC Porto
+Masculino,2002/03,Manuel Vilarinho,Basquetebol,Campeonato,Outro
+Masculino,2002/03,Manuel Vilarinho,Basquetebol,Supertaça,Outro
+Masculino,2002/03,Manuel Vilarinho,Basquetebol,Taça,Outro
+Masculino,2002/03,Manuel Vilarinho,Basquetebol,Outros,Outro
+Masculino,2001/02,Manuel Vilarinho,Basquetebol,Campeonato,Outro
+Masculino,2001/02,Manuel Vilarinho,Basquetebol,Supertaça,Outro
+Masculino,2001/02,Manuel Vilarinho,Basquetebol,Taça,Outro
+Masculino,2001/02,Manuel Vilarinho,Basquetebol,Outros,FC Porto
+Masculino,2000/01,Manuel Vilarinho,Basquetebol,Campeonato,Outro
+Masculino,2000/01,Manuel Vilarinho,Basquetebol,Supertaça,Outro
+Masculino,2000/01,Manuel Vilarinho,Basquetebol,Taça,Outro
+Masculino,2000/01,Manuel Vilarinho,Basquetebol,Outros,Outro
+Masculino,2025/26,Rui Costa,Futebol,Campeonato,FC Porto
+Masculino,2025/26,Rui Costa,Futebol,Supertaça,SL Benfica
+Masculino,2025/26,Rui Costa,Futebol,Outros,Outro
+Masculino,2025/26,Rui Costa,Futebol,Taça,Outro
+Masculino,2024/25,Rui Costa,Futebol,Campeonato,Sporting CP
+Masculino,2024/25,Rui Costa,Futebol,Supertaça,FC Porto
+Masculino,2024/25,Rui Costa,Futebol,Outros,SL Benfica
+Masculino,2024/25,Rui Costa,Futebol,Taça,Sporting CP
+Masculino,2023/24,Rui Costa,Futebol,Campeonato,Sporting CP
+Masculino,2023/24,Rui Costa,Futebol,Supertaça,SL Benfica
+Masculino,2023/24,Rui Costa,Futebol,Outros,Outro
+Masculino,2023/24,Rui Costa,Futebol,Taça,FC Porto
+Masculino,2022/23,Rui Costa,Futebol,Campeonato,SL Benfica
+Masculino,2022/23,Rui Costa,Futebol,Supertaça,FC Porto
+Masculino,2022/23,Rui Costa,Futebol,Outros,FC Porto
+Masculino,2022/23,Rui Costa,Futebol,Taça,FC Porto
+Masculino,2021/22,Rui Costa,Futebol,Campeonato,FC Porto
+Masculino,2021/22,Rui Costa,Futebol,Supertaça,Sporting CP
+Masculino,2021/22,Rui Costa,Futebol,Outros,Sporting CP
+Masculino,2021/22,Rui Costa,Futebol,Taça,FC Porto
+Masculino,2020/21,Luís Filipe Vieira,Futebol,Campeonato,Sporting CP
+Masculino,2020/21,Luís Filipe Vieira,Futebol,Supertaça,FC Porto
+Masculino,2020/21,Luís Filipe Vieira,Futebol,Outros,Sporting CP
+Masculino,2020/21,Luís Filipe Vieira,Futebol,Taça,Outro
+Masculino,2019/20,Luís Filipe Vieira,Futebol,Campeonato,FC Porto
+Masculino,2019/20,Luís Filipe Vieira,Futebol,Supertaça,SL Benfica
+Masculino,2019/20,Luís Filipe Vieira,Futebol,Outros,Outro
+Masculino,2019/20,Luís Filipe Vieira,Futebol,Taça,FC Porto
+Masculino,2018/19,Luís Filipe Vieira,Futebol,Campeonato,SL Benfica
+Masculino,2018/19,Luís Filipe Vieira,Futebol,Supertaça,FC Porto
+Masculino,2018/19,Luís Filipe Vieira,Futebol,Outros,Sporting CP
+Masculino,2018/19,Luís Filipe Vieira,Futebol,Taça,Sporting CP
+Masculino,2017/18,Luís Filipe Vieira,Futebol,Campeonato,FC Porto
+Masculino,2017/18,Luís Filipe Vieira,Futebol,Supertaça,SL Benfica
+Masculino,2017/18,Luís Filipe Vieira,Futebol,Outros,Sporting CP
+Masculino,2017/18,Luís Filipe Vieira,Futebol,Taça,Outro
+Masculino,2016/17,Luís Filipe Vieira,Futebol,Campeonato,SL Benfica
+Masculino,2016/17,Luís Filipe Vieira,Futebol,Supertaça,SL Benfica
+Masculino,2016/17,Luís Filipe Vieira,Futebol,Outros,Outro
+Masculino,2016/17,Luís Filipe Vieira,Futebol,Taça,SL Benfica
+Masculino,2015/16,Luís Filipe Vieira,Futebol,Campeonato,SL Benfica
+Masculino,2015/16,Luís Filipe Vieira,Futebol,Supertaça,Sporting CP
+Masculino,2015/16,Luís Filipe Vieira,Futebol,Outros,SL Benfica
+Masculino,2015/16,Luís Filipe Vieira,Futebol,Taça,Outro
+Masculino,2014/15,Luís Filipe Vieira,Futebol,Campeonato,SL Benfica
+Masculino,2014/15,Luís Filipe Vieira,Futebol,Supertaça,SL Benfica
+Masculino,2014/15,Luís Filipe Vieira,Futebol,Outros,SL Benfica
+Masculino,2014/15,Luís Filipe Vieira,Futebol,Taça,Sporting CP
+Masculino,2013/14,Luís Filipe Vieira,Futebol,Campeonato,SL Benfica
+Masculino,2013/14,Luís Filipe Vieira,Futebol,Supertaça,FC Porto
+Masculino,2013/14,Luís Filipe Vieira,Futebol,Outros,SL Benfica
+Masculino,2013/14,Luís Filipe Vieira,Futebol,Taça,SL Benfica
+Masculino,2012/13,Luís Filipe Vieira,Futebol,Campeonato,FC Porto
+Masculino,2012/13,Luís Filipe Vieira,Futebol,Supertaça,FC Porto
+Masculino,2012/13,Luís Filipe Vieira,Futebol,Outros,Outro
+Masculino,2012/13,Luís Filipe Vieira,Futebol,Taça,Outro
+Masculino,2011/12,Luís Filipe Vieira,Futebol,Campeonato,FC Porto
+Masculino,2011/12,Luís Filipe Vieira,Futebol,Supertaça,FC Porto
+Masculino,2011/12,Luís Filipe Vieira,Futebol,Outros,SL Benfica
+Masculino,2011/12,Luís Filipe Vieira,Futebol,Taça,Outro
+Masculino,2010/11,Luís Filipe Vieira,Futebol,Campeonato,FC Porto
+Masculino,2010/11,Luís Filipe Vieira,Futebol,Supertaça,FC Porto
+Masculino,2010/11,Luís Filipe Vieira,Futebol,Outros,SL Benfica
+Masculino,2010/11,Luís Filipe Vieira,Futebol,Taça,FC Porto
+Masculino,2010/11,Luís Filipe Vieira,Futebol,Europa,FC Porto
+Masculino,2009/10,Luís Filipe Vieira,Futebol,Campeonato,SL Benfica
+Masculino,2009/10,Luís Filipe Vieira,Futebol,Supertaça,FC Porto
+Masculino,2009/10,Luís Filipe Vieira,Futebol,Outros,SL Benfica
+Masculino,2009/10,Luís Filipe Vieira,Futebol,Taça,FC Porto
+Masculino,2008/09,Luís Filipe Vieira,Futebol,Campeonato,FC Porto
+Masculino,2008/09,Luís Filipe Vieira,Futebol,Supertaça,Sporting CP
+Masculino,2008/09,Luís Filipe Vieira,Futebol,Outros,SL Benfica
+Masculino,2008/09,Luís Filipe Vieira,Futebol,Taça,FC Porto
+Masculino,2007/08,Luís Filipe Vieira,Futebol,Campeonato,FC Porto
+Masculino,2007/08,Luís Filipe Vieira,Futebol,Supertaça,Sporting CP
+Masculino,2007/08,Luís Filipe Vieira,Futebol,Outros,Outro
+Masculino,2007/08,Luís Filipe Vieira,Futebol,Taça,Sporting CP
+Masculino,2006/07,Luís Filipe Vieira,Futebol,Campeonato,FC Porto
+Masculino,2006/07,Luís Filipe Vieira,Futebol,Supertaça,FC Porto
+Masculino,2006/07,Luís Filipe Vieira,Futebol,Taça,Sporting CP
+Masculino,2005/06,Luís Filipe Vieira,Futebol,Campeonato,FC Porto
+Masculino,2005/06,Luís Filipe Vieira,Futebol,Supertaça,SL Benfica
+Masculino,2005/06,Luís Filipe Vieira,Futebol,Taça,FC Porto
+Masculino,2004/05,Luís Filipe Vieira,Futebol,Campeonato,SL Benfica
+Masculino,2004/05,Luís Filipe Vieira,Futebol,Supertaça,FC Porto
+Masculino,2004/05,Luís Filipe Vieira,Futebol,Taça,Outro
+Masculino,2003/04,Luís Filipe Vieira,Futebol,Campeonato,FC Porto
+Masculino,2003/04,Luís Filipe Vieira,Futebol,Supertaça,FC Porto
+Masculino,2003/04,Luís Filipe Vieira,Futebol,Taça,SL Benfica
+Masculino,2002/03,Manuel Vilarinho,Futebol,Campeonato,FC Porto
+Masculino,2002/03,Manuel Vilarinho,Futebol,Supertaça,Sporting CP
+Masculino,2002/03,Manuel Vilarinho,Futebol,Taça,FC Porto
+Masculino,2002/03,Manuel Vilarinho,Futebol,Europa,FC Porto
+Masculino,2001/02,Manuel Vilarinho,Futebol,Campeonato,Sporting CP
+Masculino,2001/02,Manuel Vilarinho,Futebol,Supertaça,FC Porto
+Masculino,2001/02,Manuel Vilarinho,Futebol,Taça,Sporting CP
+Masculino,2000/01,Manuel Vilarinho,Futebol,Campeonato,Outro
+Masculino,2000/01,Manuel Vilarinho,Futebol,Supertaça,Sporting CP
+Masculino,2000/01,Manuel Vilarinho,Futebol,Taça,FC Porto
+Masculino,2025/26,Rui Costa,Futsal,Campeonato,
+Masculino,2025/26,Rui Costa,Futsal,Supertaça,Sporting CP
+Masculino,2025/26,Rui Costa,Futsal,Outros,SL Benfica
+Masculino,2025/26,Rui Costa,Futsal,Taça,SL Benfica
+Masculino,2025/26,Rui Costa,Futsal,Europa,Sporting CP
+Masculino,2024/25,Rui Costa,Futsal,Campeonato,SL Benfica
+Masculino,2024/25,Rui Costa,Futsal,Supertaça,Outro
+Masculino,2024/25,Rui Costa,Futsal,Outros,Sporting CP
+Masculino,2024/25,Rui Costa,Futsal,Taça,Sporting CP
+Masculino,2023/24,Rui Costa,Futsal,Campeonato,Sporting CP
+Masculino,2023/24,Rui Costa,Futsal,Supertaça,SL Benfica
+Masculino,2023/24,Rui Costa,Futsal,Outros,Sporting CP
+Masculino,2023/24,Rui Costa,Futsal,Taça,Outro
+Masculino,2022/23,Rui Costa,Futsal,Campeonato,Sporting CP
+Masculino,2022/23,Rui Costa,Futsal,Supertaça,Sporting CP
+Masculino,2022/23,Rui Costa,Futsal,Outros,SL Benfica
+Masculino,2022/23,Rui Costa,Futsal,Taça,SL Benfica
+Masculino,2021/22,Rui Costa,Futsal,Campeonato,Sporting CP
+Masculino,2021/22,Rui Costa,Futsal,Supertaça,Sporting CP
+Masculino,2021/22,Rui Costa,Futsal,Outros,Sporting CP
+Masculino,2021/22,Rui Costa,Futsal,Taça,Sporting CP
+Masculino,2020/21,Luís Filipe Vieira,Futsal,Campeonato,Sporting CP
+Masculino,2020/21,Luís Filipe Vieira,Futsal,Supertaça,
+Masculino,2020/21,Luís Filipe Vieira,Futsal,Outros,Sporting CP
+Masculino,2020/21,Luís Filipe Vieira,Futsal,Taça,
+Masculino,2020/21,Luís Filipe Vieira,Futsal,Europa,Sporting CP
+Masculino,2019/20,Luís Filipe Vieira,Futsal,Campeonato,
+Masculino,2019/20,Luís Filipe Vieira,Futsal,Supertaça,Sporting CP
+Masculino,2019/20,Luís Filipe Vieira,Futsal,Outros,SL Benfica
+Masculino,2019/20,Luís Filipe Vieira,Futsal,Taça,Sporting CP
+Masculino,2018/19,Luís Filipe Vieira,Futsal,Campeonato,SL Benfica
+Masculino,2018/19,Luís Filipe Vieira,Futsal,Supertaça,Sporting CP
+Masculino,2018/19,Luís Filipe Vieira,Futsal,Outros,SL Benfica
+Masculino,2018/19,Luís Filipe Vieira,Futsal,Taça,Sporting CP
+Masculino,2018/19,Luís Filipe Vieira,Futsal,Europa,Sporting CP
+Masculino,2017/18,Luís Filipe Vieira,Futsal,Campeonato,Sporting CP
+Masculino,2017/18,Luís Filipe Vieira,Futsal,Supertaça,Sporting CP
+Masculino,2017/18,Luís Filipe Vieira,Futsal,Outros,SL Benfica
+Masculino,2017/18,Luís Filipe Vieira,Futsal,Taça,Sporting CP
+Masculino,2016/17,Luís Filipe Vieira,Futsal,Campeonato,Sporting CP
+Masculino,2016/17,Luís Filipe Vieira,Futsal,Supertaça,SL Benfica
+Masculino,2016/17,Luís Filipe Vieira,Futsal,Outros,Sporting CP
+Masculino,2016/17,Luís Filipe Vieira,Futsal,Taça,SL Benfica
+Masculino,2015/16,Luís Filipe Vieira,Futsal,Campeonato,Sporting CP
+Masculino,2015/16,Luís Filipe Vieira,Futsal,Supertaça,SL Benfica
+Masculino,2015/16,Luís Filipe Vieira,Futsal,Outros,Sporting CP
+Masculino,2015/16,Luís Filipe Vieira,Futsal,Taça,Sporting CP
+Masculino,2014/15,Luís Filipe Vieira,Futsal,Campeonato,SL Benfica
+Masculino,2014/15,Luís Filipe Vieira,Futsal,Supertaça,Sporting CP
+Masculino,2014/15,Luís Filipe Vieira,Futsal,Taça,SL Benfica
+Masculino,2013/14,Luís Filipe Vieira,Futsal,Campeonato,Sporting CP
+Masculino,2013/14,Luís Filipe Vieira,Futsal,Supertaça,Sporting CP
+Masculino,2013/14,Luís Filipe Vieira,Futsal,Taça,Outro
+Masculino,2012/13,Luís Filipe Vieira,Futsal,Campeonato,Sporting CP
+Masculino,2012/13,Luís Filipe Vieira,Futsal,Supertaça,SL Benfica
+Masculino,2012/13,Luís Filipe Vieira,Futsal,Taça,Sporting CP
+Masculino,2011/12,Luís Filipe Vieira,Futsal,Campeonato,SL Benfica
+Masculino,2011/12,Luís Filipe Vieira,Futsal,Supertaça,SL Benfica
+Masculino,2011/12,Luís Filipe Vieira,Futsal,Taça,SL Benfica
+Masculino,2010/11,Luís Filipe Vieira,Futsal,Campeonato,Sporting CP
+Masculino,2010/11,Luís Filipe Vieira,Futsal,Supertaça,Sporting CP
+Masculino,2010/11,Luís Filipe Vieira,Futsal,Taça,Sporting CP
+Masculino,2009/10,Luís Filipe Vieira,Futsal,Campeonato,Sporting CP
+Masculino,2009/10,Luís Filipe Vieira,Futsal,Supertaça,SL Benfica
+Masculino,2009/10,Luís Filipe Vieira,Futsal,Taça,Outro
+Masculino,2009/10,Luís Filipe Vieira,Futsal,Europa,SL Benfica
+Masculino,2008/09,Luís Filipe Vieira,Futsal,Campeonato,SL Benfica
+Masculino,2008/09,Luís Filipe Vieira,Futsal,Supertaça,Sporting CP
+Masculino,2008/09,Luís Filipe Vieira,Futsal,Taça,SL Benfica
+Masculino,2007/08,Luís Filipe Vieira,Futsal,Campeonato,SL Benfica
+Masculino,2007/08,Luís Filipe Vieira,Futsal,Supertaça,SL Benfica
+Masculino,2007/08,Luís Filipe Vieira,Futsal,Taça,Sporting CP
+Masculino,2006/07,Luís Filipe Vieira,Futsal,Campeonato,SL Benfica
+Masculino,2006/07,Luís Filipe Vieira,Futsal,Supertaça,SL Benfica
+Masculino,2006/07,Luís Filipe Vieira,Futsal,Taça,SL Benfica
+Masculino,2005/06,Luís Filipe Vieira,Futsal,Campeonato,Sporting CP
+Masculino,2005/06,Luís Filipe Vieira,Futsal,Supertaça,Outro
+Masculino,2005/06,Luís Filipe Vieira,Futsal,Taça,Sporting CP
+Masculino,2004/05,Luís Filipe Vieira,Futsal,Campeonato,SL Benfica
+Masculino,2004/05,Luís Filipe Vieira,Futsal,Supertaça,Sporting CP
+Masculino,2004/05,Luís Filipe Vieira,Futsal,Taça,SL Benfica
+Masculino,2003/04,Luís Filipe Vieira,Futsal,Campeonato,Sporting CP
+Masculino,2003/04,Luís Filipe Vieira,Futsal,Supertaça,SL Benfica
+Masculino,2003/04,Luís Filipe Vieira,Futsal,Taça,Outro
+Masculino,2002/03,Manuel Vilarinho,Futsal,Campeonato,SL Benfica
+Masculino,2002/03,Manuel Vilarinho,Futsal,Supertaça,Outro
+Masculino,2002/03,Manuel Vilarinho,Futsal,Taça,SL Benfica
+Masculino,2001/02,Manuel Vilarinho,Futsal,Campeonato,Outro
+Masculino,2001/02,Manuel Vilarinho,Futsal,Supertaça,Sporting CP
+Masculino,2001/02,Manuel Vilarinho,Futsal,Taça,Outro
+Masculino,2000/01,Manuel Vilarinho,Futsal,Campeonato,Sporting CP
+Masculino,2000/01,Manuel Vilarinho,Futsal,Supertaça,Outro
+Masculino,2000/01,Manuel Vilarinho,Futsal,Taça,Outro
+Masculino,2025/26,Rui Costa,Hóquei em Patins,Campeonato,
+Masculino,2025/26,Rui Costa,Hóquei em Patins,Outros,SL Benfica
+Masculino,2025/26,Rui Costa,Hóquei em Patins,Supertaça,Sporting CP
+Masculino,2025/26,Rui Costa,Hóquei em Patins,Taça,Sporting CP
+Masculino,2025/26,Rui Costa,Hóquei em Patins,Europa,FC Porto
+Masculino,2025/26,Rui Costa,Hóquei em Patins,Europa,Outro
+Masculino,2025/26,Rui Costa,Hóquei em Patins,Europa,Outro
+Masculino,2024/25,Rui Costa,Hóquei em Patins,Campeonato,FC Porto
+Masculino,2024/25,Rui Costa,Hóquei em Patins,Outros,SL Benfica
+Masculino,2024/25,Rui Costa,Hóquei em Patins,Supertaça,Outro
+Masculino,2024/25,Rui Costa,Hóquei em Patins,Taça,Sporting CP
+Masculino,2024/25,Rui Costa,Hóquei em Patins,Europa,Outro
+Masculino,2024/25,Rui Costa,Hóquei em Patins,Europa,Outro
+Masculino,2023/24,Rui Costa,Hóquei em Patins,Campeonato,FC Porto
+Masculino,2023/24,Rui Costa,Hóquei em Patins,Outros,SL Benfica
+Masculino,2023/24,Rui Costa,Hóquei em Patins,Supertaça,SL Benfica
+Masculino,2023/24,Rui Costa,Hóquei em Patins,Taça,FC Porto
+Masculino,2023/24,Rui Costa,Hóquei em Patins,Europa,Sporting CP
+Masculino,2023/24,Rui Costa,Hóquei em Patins,Europa,FC Porto
+Masculino,2022/23,Rui Costa,Hóquei em Patins,Campeonato,SL Benfica
+Masculino,2022/23,Rui Costa,Hóquei em Patins,Outros,FC Porto
+Masculino,2022/23,Rui Costa,Hóquei em Patins,Supertaça,SL Benfica
+Masculino,2022/23,Rui Costa,Hóquei em Patins,Taça,Outro
+Masculino,2022/23,Rui Costa,Hóquei em Patins,Europa,FC Porto
+Masculino,2022/23,Rui Costa,Hóquei em Patins,Europa,Outro
+Masculino,2021/22,Rui Costa,Hóquei em Patins,Campeonato,FC Porto
+Masculino,2021/22,Rui Costa,Hóquei em Patins,Outros,Outro
+Masculino,2021/22,Rui Costa,Hóquei em Patins,Supertaça,
+Masculino,2021/22,Rui Costa,Hóquei em Patins,Taça,FC Porto
+Masculino,2021/22,Rui Costa,Hóquei em Patins,Europa,Sporting CP
+Masculino,2021/22,Rui Costa,Hóquei em Patins,Europa,FC Porto
+Masculino,2021/22,Rui Costa,Hóquei em Patins,Europa,Sporting CP
+Masculino,2020/21,Luís Filipe Vieira,Hóquei em Patins,Campeonato,Sporting CP
+Masculino,2020/21,Luís Filipe Vieira,Hóquei em Patins,Europa,Sporting CP
+Masculino,2020/21,Luís Filipe Vieira,Hóquei em Patins,Supertaça,
+Masculino,2020/21,Luís Filipe Vieira,Hóquei em Patins,Taça,
+Masculino,2020/21,Luís Filipe Vieira,Hóquei em Patins,Europa,
+Masculino,2020/21,Luís Filipe Vieira,Hóquei em Patins,Europa,
+Masculino,2019/20,Luís Filipe Vieira,Hóquei em Patins,Campeonato,
+Masculino,2019/20,Luís Filipe Vieira,Hóquei em Patins,Europa,
+Masculino,2019/20,Luís Filipe Vieira,Hóquei em Patins,Supertaça,FC Porto
+Masculino,2019/20,Luís Filipe Vieira,Hóquei em Patins,Taça,
+Masculino,2019/20,Luís Filipe Vieira,Hóquei em Patins,Europa,
+Masculino,2019/20,Luís Filipe Vieira,Hóquei em Patins,Europa,Sporting CP
+Masculino,2018/19,Luís Filipe Vieira,Hóquei em Patins,Campeonato,FC Porto
+Masculino,2018/19,Luís Filipe Vieira,Hóquei em Patins,Europa,Sporting CP
+Masculino,2018/19,Luís Filipe Vieira,Hóquei em Patins,Supertaça,FC Porto
+Masculino,2018/19,Luís Filipe Vieira,Hóquei em Patins,Taça,Outro
+Masculino,2017/18,Luís Filipe Vieira,Hóquei em Patins,Campeonato,Sporting CP
+Masculino,2017/18,Luís Filipe Vieira,Hóquei em Patins,Supertaça,FC Porto
+Masculino,2017/18,Luís Filipe Vieira,Hóquei em Patins,Taça,FC Porto
+Masculino,2017/18,Luís Filipe Vieira,Hóquei em Patins,Europa,SL Benfica
+Masculino,2017/18,Luís Filipe Vieira,Hóquei em Patins,Europa,Outro
+Masculino,2016/17,Luís Filipe Vieira,Hóquei em Patins,Campeonato,FC Porto
+Masculino,2016/17,Luís Filipe Vieira,Hóquei em Patins,Europa,Outro
+Masculino,2016/17,Luís Filipe Vieira,Hóquei em Patins,Supertaça,FC Porto
+Masculino,2016/17,Luís Filipe Vieira,Hóquei em Patins,Taça,FC Porto
+Masculino,2016/17,Luís Filipe Vieira,Hóquei em Patins,Europa,SL Benfica
+Masculino,2015/16,Luís Filipe Vieira,Hóquei em Patins,Campeonato,SL Benfica
+Masculino,2015/16,Luís Filipe Vieira,Hóquei em Patins,Europa,Outro
+Masculino,2015/16,Luís Filipe Vieira,Hóquei em Patins,Europa,SL Benfica
+Masculino,2015/16,Luís Filipe Vieira,Hóquei em Patins,Supertaça,Sporting CP
+Masculino,2015/16,Luís Filipe Vieira,Hóquei em Patins,Taça,FC Porto
+Masculino,2015/16,Luís Filipe Vieira,Hóquei em Patins,Europa,
+Masculino,2014/15,Luís Filipe Vieira,Hóquei em Patins,Campeonato,SL Benfica
+Masculino,2014/15,Luís Filipe Vieira,Hóquei em Patins,Europa,Sporting CP
+Masculino,2014/15,Luís Filipe Vieira,Hóquei em Patins,Supertaça,Outro
+Masculino,2014/15,Luís Filipe Vieira,Hóquei em Patins,Taça,SL Benfica
+Masculino,2013/14,Luís Filipe Vieira,Hóquei em Patins,Campeonato,Outro
+Masculino,2013/14,Luís Filipe Vieira,Hóquei em Patins,Supertaça,FC Porto
+Masculino,2013/14,Luís Filipe Vieira,Hóquei em Patins,Taça,SL Benfica
+Masculino,2013/14,Luís Filipe Vieira,Hóquei em Patins,Europa,SL Benfica
+Masculino,2013/14,Luís Filipe Vieira,Hóquei em Patins,Europa,SL Benfica
+Masculino,2012/13,Luís Filipe Vieira,Hóquei em Patins,Campeonato,FC Porto
+Masculino,2012/13,Luís Filipe Vieira,Hóquei em Patins,Europa,SL Benfica
+Masculino,2012/13,Luís Filipe Vieira,Hóquei em Patins,Supertaça,SL Benfica
+Masculino,2012/13,Luís Filipe Vieira,Hóquei em Patins,Taça,FC Porto
+Masculino,2011/12,Luís Filipe Vieira,Hóquei em Patins,Campeonato,SL Benfica
+Masculino,2011/12,Luís Filipe Vieira,Hóquei em Patins,Supertaça,FC Porto
+Masculino,2011/12,Luís Filipe Vieira,Hóquei em Patins,Taça,Outro
+Masculino,2011/12,Luís Filipe Vieira,Hóquei em Patins,Europa,SL Benfica
+Masculino,2010/11,Luís Filipe Vieira,Hóquei em Patins,Campeonato,FC Porto
+Masculino,2010/11,Luís Filipe Vieira,Hóquei em Patins,Europa,SL Benfica
+Masculino,2010/11,Luís Filipe Vieira,Hóquei em Patins,Supertaça,SL Benfica
+Masculino,2010/11,Luís Filipe Vieira,Hóquei em Patins,Taça,Outro
+Masculino,2009/10,Luís Filipe Vieira,Hóquei em Patins,Campeonato,FC Porto
+Masculino,2009/10,Luís Filipe Vieira,Hóquei em Patins,Supertaça,FC Porto
+Masculino,2009/10,Luís Filipe Vieira,Hóquei em Patins,Taça,SL Benfica
+Masculino,2008/09,Luís Filipe Vieira,Hóquei em Patins,Campeonato,FC Porto
+Masculino,2008/09,Luís Filipe Vieira,Hóquei em Patins,Supertaça,FC Porto
+Masculino,2008/09,Luís Filipe Vieira,Hóquei em Patins,Taça,FC Porto
+Masculino,2007/08,Luís Filipe Vieira,Hóquei em Patins,Campeonato,FC Porto
+Masculino,2007/08,Luís Filipe Vieira,Hóquei em Patins,Supertaça,FC Porto
+Masculino,2007/08,Luís Filipe Vieira,Hóquei em Patins,Taça,FC Porto
+Masculino,2006/07,Luís Filipe Vieira,Hóquei em Patins,Campeonato,FC Porto
+Masculino,2006/07,Luís Filipe Vieira,Hóquei em Patins,Supertaça,FC Porto
+Masculino,2006/07,Luís Filipe Vieira,Hóquei em Patins,Taça,Outro
+Masculino,2005/06,Luís Filipe Vieira,Hóquei em Patins,Campeonato,FC Porto
+Masculino,2005/06,Luís Filipe Vieira,Hóquei em Patins,Supertaça,FC Porto
+Masculino,2005/06,Luís Filipe Vieira,Hóquei em Patins,Taça,FC Porto
+Masculino,2004/05,Luís Filipe Vieira,Hóquei em Patins,Campeonato,FC Porto
+Masculino,2004/05,Luís Filipe Vieira,Hóquei em Patins,Supertaça,Outro
+Masculino,2004/05,Luís Filipe Vieira,Hóquei em Patins,Taça,FC Porto
+Masculino,2003/04,Luís Filipe Vieira,Hóquei em Patins,Campeonato,FC Porto
+Masculino,2003/04,Luís Filipe Vieira,Hóquei em Patins,Supertaça,Outro
+Masculino,2003/04,Luís Filipe Vieira,Hóquei em Patins,Taça,Outro
+Masculino,2002/03,Manuel Vilarinho,Hóquei em Patins,Campeonato,FC Porto
+Masculino,2002/03,Manuel Vilarinho,Hóquei em Patins,Supertaça,SL Benfica
+Masculino,2002/03,Manuel Vilarinho,Hóquei em Patins,Taça,Outro
+Masculino,2001/02,Manuel Vilarinho,Hóquei em Patins,Campeonato,FC Porto
+Masculino,2001/02,Manuel Vilarinho,Hóquei em Patins,Supertaça,SL Benfica
+Masculino,2001/02,Manuel Vilarinho,Hóquei em Patins,Taça,SL Benfica
+Masculino,2000/01,Manuel Vilarinho,Hóquei em Patins,Campeonato,Outro
+Masculino,2000/01,Manuel Vilarinho,Hóquei em Patins,Supertaça,FC Porto
+Masculino,2000/01,Manuel Vilarinho,Hóquei em Patins,Taça,SL Benfica
+Masculino,2025/26,Rui Costa,Voleibol,Campeonato,Sporting CP
+Masculino,2025/26,Rui Costa,Voleibol,Supertaça,Sporting CP
+Masculino,2025/26,Rui Costa,Voleibol,Taça,Sporting CP
+Masculino,2024/25,Rui Costa,Voleibol,Campeonato,Sporting CP
+Masculino,2024/25,Rui Costa,Voleibol,Supertaça,Sporting CP
+Masculino,2024/25,Rui Costa,Voleibol,Taça,SL Benfica
+Masculino,2024/25,Rui Costa,Voleibol,Supertaça,Sporting CP
+Masculino,2023/24,Rui Costa,Voleibol,Campeonato,SL Benfica
+Masculino,2023/24,Rui Costa,Voleibol,Supertaça,SL Benfica
+Masculino,2023/24,Rui Costa,Voleibol,Taça,Sporting CP
+Masculino,2022/23,Rui Costa,Voleibol,Campeonato,SL Benfica
+Masculino,2022/23,Rui Costa,Voleibol,Supertaça,Outro
+Masculino,2022/23,Rui Costa,Voleibol,Taça,SL Benfica
+Masculino,2021/22,Rui Costa,Voleibol,Campeonato,SL Benfica
+Masculino,2021/22,Rui Costa,Voleibol,Supertaça,SL Benfica
+Masculino,2021/22,Rui Costa,Voleibol,Taça,SL Benfica
+Masculino,2020/21,Luís Filipe Vieira,Voleibol,Campeonato,SL Benfica
+Masculino,2020/21,Luís Filipe Vieira,Voleibol,Supertaça,SL Benfica
+Masculino,2020/21,Luís Filipe Vieira,Voleibol,Taça,Sporting CP
+Masculino,2019/20,Luís Filipe Vieira,Voleibol,Campeonato,
+Masculino,2019/20,Luís Filipe Vieira,Voleibol,Supertaça,SL Benfica
+Masculino,2019/20,Luís Filipe Vieira,Voleibol,Taça,
+Masculino,2018/19,Luís Filipe Vieira,Voleibol,Campeonato,SL Benfica
+Masculino,2018/19,Luís Filipe Vieira,Voleibol,Supertaça,SL Benfica
+Masculino,2018/19,Luís Filipe Vieira,Voleibol,Taça,SL Benfica
+Masculino,2017/18,Luís Filipe Vieira,Voleibol,Campeonato,Sporting CP
+Masculino,2017/18,Luís Filipe Vieira,Voleibol,Supertaça,Outro
+Masculino,2017/18,Luís Filipe Vieira,Voleibol,Taça,SL Benfica
+Masculino,2016/17,Luís Filipe Vieira,Voleibol,Campeonato,SL Benfica
+Masculino,2016/17,Luís Filipe Vieira,Voleibol,Supertaça,SL Benfica
+Masculino,2016/17,Luís Filipe Vieira,Voleibol,Taça,Outro
+Masculino,2015/16,Luís Filipe Vieira,Voleibol,Campeonato,Outro
+Masculino,2015/16,Luís Filipe Vieira,Voleibol,Supertaça,SL Benfica
+Masculino,2015/16,Luís Filipe Vieira,Voleibol,Taça,SL Benfica
+Masculino,2014/15,Luís Filipe Vieira,Voleibol,Campeonato,SL Benfica
+Masculino,2014/15,Luís Filipe Vieira,Voleibol,Supertaça,SL Benfica
+Masculino,2014/15,Luís Filipe Vieira,Voleibol,Taça,SL Benfica
+Masculino,2013/14,Luís Filipe Vieira,Voleibol,Campeonato,SL Benfica
+Masculino,2013/14,Luís Filipe Vieira,Voleibol,Supertaça,SL Benfica
+Masculino,2013/14,Luís Filipe Vieira,Voleibol,Taça,Outro
+Masculino,2012/13,Luís Filipe Vieira,Voleibol,Campeonato,SL Benfica
+Masculino,2012/13,Luís Filipe Vieira,Voleibol,Supertaça,SL Benfica
+Masculino,2012/13,Luís Filipe Vieira,Voleibol,Taça,Outro
+Masculino,2011/12,Luís Filipe Vieira,Voleibol,Campeonato,Outro
+Masculino,2011/12,Luís Filipe Vieira,Voleibol,Supertaça,SL Benfica
+Masculino,2011/12,Luís Filipe Vieira,Voleibol,Taça,SL Benfica
+Masculino,2010/11,Luís Filipe Vieira,Voleibol,Campeonato,Outro
+Masculino,2010/11,Luís Filipe Vieira,Voleibol,Supertaça,Outro
+Masculino,2010/11,Luís Filipe Vieira,Voleibol,Taça,SL Benfica
+Masculino,2009/10,Luís Filipe Vieira,Voleibol,Campeonato,Outro
+Masculino,2009/10,Luís Filipe Vieira,Voleibol,Supertaça,
+Masculino,2009/10,Luís Filipe Vieira,Voleibol,Taça,Outro
+Masculino,2008/09,Luís Filipe Vieira,Voleibol,Campeonato,Outro
+Masculino,2008/09,Luís Filipe Vieira,Voleibol,Supertaça,
+Masculino,2008/09,Luís Filipe Vieira,Voleibol,Taça,Outro
+Masculino,2007/08,Luís Filipe Vieira,Voleibol,Campeonato,Outro
+Masculino,2007/08,Luís Filipe Vieira,Voleibol,Supertaça,
+Masculino,2007/08,Luís Filipe Vieira,Voleibol,Taça,Outro
+Masculino,2006/07,Luís Filipe Vieira,Voleibol,Campeonato,Outro
+Masculino,2006/07,Luís Filipe Vieira,Voleibol,Supertaça,
+Masculino,2006/07,Luís Filipe Vieira,Voleibol,Taça,SL Benfica
+Masculino,2005/06,Luís Filipe Vieira,Voleibol,Campeonato,Outro
+Masculino,2005/06,Luís Filipe Vieira,Voleibol,Supertaça,
+Masculino,2005/06,Luís Filipe Vieira,Voleibol,Taça,SL Benfica
+Masculino,2004/05,Luís Filipe Vieira,Voleibol,Campeonato,SL Benfica
+Masculino,2004/05,Luís Filipe Vieira,Voleibol,Supertaça,
+Masculino,2004/05,Luís Filipe Vieira,Voleibol,Taça,SL Benfica
+Masculino,2003/04,Luís Filipe Vieira,Voleibol,Campeonato,Outro
+Masculino,2003/04,Luís Filipe Vieira,Voleibol,Supertaça,
+Masculino,2003/04,Luís Filipe Vieira,Voleibol,Taça,Outro
+Masculino,2002/03,Manuel Vilarinho,Voleibol,Campeonato,Outro
+Masculino,2002/03,Manuel Vilarinho,Voleibol,Supertaça,
+Masculino,2002/03,Manuel Vilarinho,Voleibol,Taça,Outro
+Masculino,2001/02,Manuel Vilarinho,Voleibol,Campeonato,Outro
+Masculino,2001/02,Manuel Vilarinho,Voleibol,Supertaça,
+Masculino,2001/02,Manuel Vilarinho,Voleibol,Taça,Outro
+Masculino,2000/01,Manuel Vilarinho,Voleibol,Campeonato,Outro
+Masculino,2000/01,Manuel Vilarinho,Voleibol,Supertaça,Outro
+Masculino,2000/01,Manuel Vilarinho,Voleibol,Taça,Outro
