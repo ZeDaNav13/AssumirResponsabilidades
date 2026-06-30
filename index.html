@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rui Costa 2021-2029 - Assumir Responsabilidades</title>
+  <title>Títulos Colectivos</title>
   <link rel="icon" type="image/svg+xml" href="slb-logo-new.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -277,6 +277,26 @@
       shape-rendering: crispEdges;
     }
 
+    .chart-band-line {
+      stroke: rgba(255, 255, 255, 0.14);
+      stroke-width: 1;
+      shape-rendering: crispEdges;
+    }
+
+    .chart-band-label {
+      fill: #000000;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .chart-band-label-bg {
+      fill: #ffffff;
+      rx: 6;
+      ry: 6;
+    }
+
     .chart-label {
       fill: var(--text);
       font-size: 15px;
@@ -498,6 +518,7 @@
       display: grid;
       grid-template-columns: 0.9fr 1.1fr;
       gap: 12px;
+      margin-top: 12px;
     }
 
     .panel {
@@ -532,6 +553,23 @@
 
     .panel-body {
       padding: 15px;
+    }
+
+    .panel-copy {
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .panel-copy a,
+    .footer a {
+      color: var(--text);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .panel-copy a:hover,
+    .footer a:hover {
+      text-decoration: underline;
     }
 
     .bar-list {
@@ -626,8 +664,10 @@
 
     .footer {
       margin-top: 14px;
-      color: var(--muted-2);
-      font-size: 12px;
+      color: var(--text);
+      font-size: 14px;
+      text-align: center;
+      line-height: 1.7;
     }
 
     @media (min-width: 1101px) {
@@ -661,6 +701,16 @@
       .footer {
         margin-top: 14px;
       }
+    }
+
+    .footer strong,
+    .footer a {
+      color: var(--text);
+    }
+
+    .footer strong {
+      font-size: 18px;
+      font-weight: 800;
     }
 
     @media (max-width: 1100px) {
@@ -719,8 +769,7 @@
   <main class="shell">
     <header class="app-header">
       <div class="app-title-block">
-        <h1><span class="title-initial">A</span>ssumir <span class="title-initial">R</span>esponsabilidades</h1>
-        <p class="app-subtitle">Rui Costa 2021-2029</p>
+        <h1><span class="title-initial">T</span>ítulos <span class="title-initial">C</span>olectivos</h1>
       </div>
       <img class="header-logo" src="slb-logo-new.svg" alt="Logótipo do SLB">
     </header>
@@ -750,29 +799,6 @@
       <div class="filters" id="filters"></div>
     </section>
 
-    <section class="stats-grid" aria-label="Dashboard totals">
-      <article class="metric">
-        <span>Quota SLB</span>
-        <strong id="statSlbShare">0%</strong>
-        <small id="statSlbSub">0 em 0 vitórias visíveis</small>
-      </article>
-      <article class="metric">
-        <span>Linha líder</span>
-        <strong id="statLeader">-</strong>
-        <small id="statLeaderSub">Sem entradas visíveis</small>
-      </article>
-      <article class="metric">
-        <span>Pico por época</span>
-        <strong id="statPeak">-</strong>
-        <small id="statPeakSub">Sem dados por época</small>
-      </article>
-      <article class="metric">
-        <span>Âmbito filtrado</span>
-        <strong id="statScope">0</strong>
-        <small id="statScopeSub">Competições em vista</small>
-      </article>
-    </section>
-
     <section class="panel-grid">
       <article class="panel">
         <div class="panel-header">
@@ -786,7 +812,7 @@
 
       <article class="panel">
         <div class="panel-header">
-          <h2>Distribuição por Desporto</h2>
+          <h2>Vitórias SLB por Desporto</h2>
           <span>Quota SLB por desporto</span>
         </div>
         <div class="panel-body">
@@ -794,36 +820,41 @@
         </div>
       </article>
 
-      <article class="metric wide">
-        <span>Entradas visíveis</span>
-        <strong id="visibleCount">0</strong>
-        <small>No filtro atual</small>
+      <article class="panel">
+        <div class="panel-header">
+          <h2>Vitórias SLB por Género</h2>
+          <span>Quota SLB por género</span>
+        </div>
+        <div class="panel-body">
+          <div class="bar-list" id="genderBars"></div>
+        </div>
       </article>
 
-      <article class="panel wide">
+      <article class="panel">
         <div class="panel-header">
-          <h2>Matriz de Resultados</h2>
-          <span id="matrixCount">0 entradas</span>
+          <h2>Campeonatos Nacionais</h2>
+          <span>Apenas Campeonato</span>
         </div>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>Época</th>
-                <th>Género</th>
-                <th>Desporto</th>
-                <th>Competição</th>
-                <th>Presidente</th>
-                <th>Vencedor</th>
-              </tr>
-            </thead>
-            <tbody id="matrixBody"></tbody>
-          </table>
+        <div class="panel-body">
+          <div class="bar-list" id="championshipBars"></div>
+        </div>
+      </article>
+
+      <article class="panel">
+        <div class="panel-header">
+          <h2>CSV Completo</h2>
+          <span>Todas as entradas</span>
+        </div>
+        <div class="panel-body">
+          <p class="panel-copy">Full csv available <a href="data.csv" target="_blank" rel="noreferrer">here</a>.</p>
         </div>
       </article>
     </section>
 
-    <div class="footer">Fonte: data.csv</div>
+    <div class="footer">
+      Website done by <a href="https://www.instagram.com/zedanav/" target="_blank" rel="noreferrer"><strong>#43349</strong></a><br>
+      Data collection done by <a href="https://www.linkedin.com/in/anaesparteiro/" target="_blank" rel="noreferrer"><strong>#22065</strong></a>
+    </div>
   </main>
 
   <script>
@@ -841,6 +872,7 @@
     };
 
     let rows = [];
+    let mandates = [];
 
     const $ = (selector) => document.querySelector(selector);
     const clubOrder = ["SLB", "FCP", "SCP", "OUTROS"];
@@ -854,6 +886,11 @@
       OUTROS: "#ffd400"
     };
     const stackOrder = ["SLB", "SCP", "FCP", "OUTROS"];
+    const presidentBandBase = {
+      "Manuel Vilarinho": "#ffffff",
+      "Luís Filipe Vieira": "#ffffff",
+      "Rui Costa": "#ffffff"
+    };
 
     function cleanText(value) {
       return String(value || "").trim();
@@ -870,6 +907,29 @@
 
     function findHeaderIndex(headers, ...aliases) {
       return headers.findIndex((header) => aliases.includes(header));
+    }
+
+    function hexToRgba(hex, alpha) {
+      const value = cleanText(hex).replace("#", "");
+      if (value.length !== 6) return `rgba(132, 146, 166, ${alpha})`;
+      const r = Number.parseInt(value.slice(0, 2), 16);
+      const g = Number.parseInt(value.slice(2, 4), 16);
+      const b = Number.parseInt(value.slice(4, 6), 16);
+      return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+    }
+
+    function parsePtDate(value) {
+      const match = cleanText(value).match(/^(\d{2})\/(\d{2})\/(\d{4})$/);
+      if (!match) return null;
+      const [, dd, mm, yyyy] = match;
+      const date = new Date(Number(yyyy), Number(mm) - 1, Number(dd));
+      return Number.isNaN(date.getTime()) ? null : date;
+    }
+
+    function seasonFromDate(date) {
+      if (!(date instanceof Date) || Number.isNaN(date.getTime())) return "";
+      const year = date.getMonth() >= 6 ? date.getFullYear() : date.getFullYear() - 1;
+      return `${year}/${String(year + 1).slice(-2)}`;
     }
 
     function normalizeWinner(value) {
@@ -958,6 +1018,29 @@
       })).filter((row) => clubOrder.includes(row.winner));
     }
 
+    function normalizeMandatesCsv(text) {
+      const table = csvToRows(text.replace(/^\uFEFF/, ""));
+      if (!table.length) return [];
+      const headers = table[0].map(normalize);
+      const presidentIndex = findHeaderIndex(headers, "presidente", "president");
+      const dateIndex = findHeaderIndex(headers, "data_inicial", "data", "start_date");
+      const reasonIndex = findHeaderIndex(headers, "motivo", "reason");
+      if ([presidentIndex, dateIndex].some((value) => value === -1)) return [];
+
+      return table.slice(1).map((line, mandateIndex) => {
+        const startDate = parsePtDate(line[dateIndex]);
+        return {
+          president: cleanText(line[presidentIndex]),
+          startDate,
+          startDateLabel: cleanText(line[dateIndex]),
+          reason: cleanText(line[reasonIndex]),
+          season: seasonFromDate(startDate),
+          mandateIndex
+        };
+      }).filter((row) => row.president && row.startDate && row.season)
+        .sort((a, b) => a.startDate - b.startDate || a.mandateIndex - b.mandateIndex);
+    }
+
     function unique(values) {
       return [...new Set(values)].filter(Boolean);
     }
@@ -985,6 +1068,143 @@
       const parts = cleanText(value).split("/");
       const endYear = parts[parts.length - 1] || "";
       return endYear.slice(-2);
+    }
+
+    function seasonEndDate(season) {
+      const parts = cleanText(season).split("/");
+      const endPart = parts[1] || "";
+      const startYear = Number(parts[0]);
+      if (!Number.isFinite(startYear) || !endPart) return null;
+      const endYearTwoDigits = Number(endPart);
+      const endYear = endYearTwoDigits < 100
+        ? Math.floor(startYear / 100) * 100 + endYearTwoDigits + (endYearTwoDigits < (startYear % 100) ? 100 : 0)
+        : endYearTwoDigits;
+      const date = new Date(endYear, 5, 30, 12, 0, 0);
+      return Number.isNaN(date.getTime()) ? null : date;
+    }
+
+    function presidentBandColor(president, mandateIndex) {
+      const isStrongBand = mandateIndex % 2 === 0;
+      const base = isStrongBand ? "#000000" : (presidentBandBase[president] || "#ffffff");
+      const alpha = 0.75;
+      return hexToRgba(base, alpha);
+    }
+
+    function presidentForSeason(season) {
+      const endDate = seasonEndDate(season);
+      if (!endDate || !mandates.length) return null;
+      let active = null;
+      mandates.forEach((mandate) => {
+        if (mandate.startDate <= endDate) active = mandate;
+      });
+      return active;
+    }
+
+    function mandateBoundaryIndex(mandate, seasonsList) {
+      const firstAssignedIndex = seasonsList.findIndex((season) => {
+        const active = presidentForSeason(season);
+        return active && active.startDate.getTime() === mandate.startDate.getTime() && active.president === mandate.president;
+      });
+      if (firstAssignedIndex !== -1) return firstAssignedIndex;
+
+      const firstLaterIndex = seasonsList.findIndex((season) => {
+        const endDate = seasonEndDate(season);
+        return endDate && endDate >= mandate.startDate;
+      });
+      return firstLaterIndex === -1 ? seasonsList.length : firstLaterIndex;
+    }
+
+    function addYears(date, years) {
+      return new Date(date.getFullYear() + years, date.getMonth(), date.getDate(), date.getHours(), date.getMinutes(), date.getSeconds());
+    }
+
+    function mandateSeasonDecorations(seasonsList, xPositions, paddingTop, paddingBottom, chartLeft, chartRight) {
+      if (!seasonsList.length || !mandates.length) return {bands: "", labels: "", events: ""};
+
+      const seasonDates = seasonsList.map((season) => seasonEndDate(season));
+      const firstDate = seasonDates[0];
+      const lastDate = seasonDates[seasonDates.length - 1];
+      const axisStartDate = addYears(firstDate, -1);
+      const axisEndDate = addYears(lastDate, 1);
+
+      const positionForDate = (date) => {
+        if (!(date instanceof Date) || Number.isNaN(date.getTime())) return chartLeft;
+        if (seasonDates.length === 1) {
+          const ratio = Math.max(0, Math.min(1, (date - axisStartDate) / (axisEndDate - axisStartDate)));
+          return chartLeft + ((chartRight - chartLeft) * ratio);
+        }
+        if (date <= seasonDates[0]) {
+          const ratio = Math.max(0, Math.min(1, (date - axisStartDate) / (seasonDates[0] - axisStartDate)));
+          return chartLeft + ((xPositions[0] - chartLeft) * ratio);
+        }
+        for (let index = 0; index < seasonDates.length - 1; index += 1) {
+          if (date <= seasonDates[index + 1]) {
+            const leftDate = seasonDates[index];
+            const rightDate = seasonDates[index + 1];
+            const ratio = Math.max(0, Math.min(1, (date - leftDate) / (rightDate - leftDate)));
+            return xPositions[index] + ((xPositions[index + 1] - xPositions[index]) * ratio);
+          }
+        }
+        const ratio = Math.max(0, Math.min(1, (date - seasonDates[seasonDates.length - 1]) / (axisEndDate - seasonDates[seasonDates.length - 1])));
+        return xPositions[xPositions.length - 1] + ((chartRight - xPositions[xPositions.length - 1]) * ratio);
+      };
+
+      const segments = mandates
+        .map((mandate, index) => {
+          const nextMandate = mandates[index + 1];
+          const rawX1 = positionForDate(mandate.startDate);
+          const rawX2 = nextMandate ? positionForDate(nextMandate.startDate) : chartRight;
+          const x1 = Math.max(chartLeft, rawX1);
+          const x2 = Math.min(chartRight, rawX2);
+          if (x2 <= chartLeft || x1 >= chartRight || x2 <= x1) return null;
+          return {
+            mandate,
+            x1,
+            x2,
+            width: x2 - x1
+          };
+        })
+        .filter(Boolean)
+        .filter((segment) => segment.width > 0);
+
+      const bandRects = segments.map((segment) => `
+        <rect class="chart-band" x="${segment.x1}" y="${paddingTop}" width="${segment.width}" height="${paddingBottom - paddingTop}" fill="${presidentBandColor(segment.mandate.president, segment.mandate.mandateIndex)}"></rect>
+        <line class="chart-band-line" x1="${segment.x1}" x2="${segment.x1}" y1="${paddingTop}" y2="${paddingBottom}"></line>
+      `).join("");
+
+      const labelTargets = [];
+      for (let index = 0; index < segments.length; index += 1) {
+        const runStart = index;
+        let runEnd = index;
+        while (runEnd + 1 < segments.length && segments[runEnd + 1].mandate.president === segments[runStart].mandate.president) {
+          runEnd += 1;
+        }
+        const run = segments.slice(runStart, runEnd + 1);
+        const label = run[0].mandate.president.toUpperCase();
+        const labelWidth = (label.length * 6.2) + 6;
+        labelTargets.push({
+          label,
+          labelWidth,
+          startX: run[0].x1,
+          endX: run[run.length - 1].x2
+        });
+        index = runEnd;
+      }
+
+      const labels = labelTargets.map(({startX, endX, label, labelWidth}) => {
+        const labelHeight = 20;
+        const availableWidth = Math.max(28, endX - startX - 2);
+        const finalLabelWidth = Math.min(labelWidth, availableWidth);
+        const labelRectX = Math.max(startX + 1, Math.min(startX + 2, endX - finalLabelWidth - 1));
+        const labelRectY = paddingTop + 6;
+        const textWidth = Math.max(18, finalLabelWidth - 6);
+        return `
+          <rect class="chart-band-label-bg" x="${labelRectX}" y="${labelRectY}" width="${finalLabelWidth}" height="${labelHeight}"></rect>
+          <text class="chart-band-label" x="${labelRectX + (finalLabelWidth / 2)}" y="${labelRectY + 14}" text-anchor="middle" textLength="${textWidth}" lengthAdjust="spacingAndGlyphs">${label}</text>
+        `;
+      }).join("");
+
+      return {bands: bandRects, labels, events: ""};
     }
 
     function orderedSeasons(items) {
@@ -1239,8 +1459,17 @@
       const xInset = 44;
       const effectiveW = Math.max(1, plotW - (xInset * 2));
       const x = (index) => padding.left + xInset + (seasonsList.length === 1 ? effectiveW / 2 : (index / (seasonsList.length - 1)) * effectiveW);
+      const xPositions = seasonsList.map((season, index) => x(index));
       const data = seriesFor(items, seasonsList);
       const useTitles = state.lineMetric === "titles";
+      const {bands, labels, events} = mandateSeasonDecorations(
+        seasonsList,
+        xPositions,
+        padding.top,
+        height - padding.bottom,
+        padding.left,
+        width - padding.right
+      );
 
       const maxWins = Math.max(1, ...data.flatMap((line) => line.points.map((point) => point.wins)));
       const countStep = Math.max(1, Math.ceil(maxWins / 4));
@@ -1263,7 +1492,7 @@
         <text class="chart-label" x="${x(index)}" y="${height - 16}" text-anchor="middle">${compactSeasonLabel(season)}</text>
       `).join("");
 
-      const series = data.map((line) => {
+      const lineShapes = data.map((line) => {
         const valid = line.points.filter((point) => Number.isFinite(valueFor(point)));
         if (!valid.length) return "";
         const d = line.points
@@ -1273,27 +1502,34 @@
             const command = index === 0 ? "M" : "L";
             return `${command}${x(point.index).toFixed(1)},${y(valueFor(point)).toFixed(1)}`;
           }).join(" ");
-        const points = line.points.map((point, index) => {
-          if (!Number.isFinite(valueFor(point))) return "";
-          const pointLabel = useTitles ? String(point.wins) : percent(point.share);
-          return `
-            <circle class="series-point" cx="${x(index)}" cy="${y(valueFor(point))}" r="5" fill="${line.color}"></circle>
-            <text class="chart-value" x="${x(index)}" y="${y(valueFor(point)) - 12}" text-anchor="middle">${pointLabel}</text>
-          `;
-        }).join("");
+        const points = line.points.map((point, index) => (
+          Number.isFinite(valueFor(point))
+            ? `<circle class="series-point" cx="${x(index)}" cy="${y(valueFor(point))}" r="5" fill="${line.color}"></circle>`
+            : ""
+        )).join("");
         return `
           <path class="series-line" d="${d}" stroke="${line.color}"></path>
           ${points}
         `;
       }).join("");
 
+      const lineValueLabels = data.map((line) => line.points.map((point, index) => {
+        if (!Number.isFinite(valueFor(point))) return "";
+        const pointLabel = useTitles ? String(point.wins) : percent(point.share);
+        return `<text class="chart-value" x="${x(index)}" y="${y(valueFor(point)) - 12}" text-anchor="middle">${pointLabel}</text>`;
+      }).join("")).join("");
+
       svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
       svg.innerHTML = `
         <rect x="0" y="0" width="${width}" height="${height}" fill="#000000"></rect>
+        ${bands}
         ${grid}
+        ${events}
         ${xLabels}
         <line class="chart-axis" x1="${padding.left}" x2="${width - padding.right}" y1="${height - padding.bottom}" y2="${height - padding.bottom}"></line>
-        ${series || `<text class="chart-label" x="${width / 2}" y="${height / 2}" text-anchor="middle">Sem entradas para estes filtros</text>`}
+        ${lineShapes || `<text class="chart-label" x="${width / 2}" y="${height / 2}" text-anchor="middle">Sem entradas para estes filtros</text>`}
+        ${labels}
+        ${lineValueLabels}
       `;
 
     }
@@ -1309,10 +1545,19 @@
       const xInset = 54;
       const effectiveW = Math.max(1, plotW - (xInset * 2));
       const x = (index) => padding.left + xInset + (seasonsList.length === 1 ? effectiveW / 2 : (index / (seasonsList.length - 1)) * effectiveW);
+      const xPositions = seasonsList.map((season, index) => x(index));
       const xAreaStart = padding.left;
       const xAreaEnd = width - padding.right;
       const y = (share) => padding.top + plotH - (Math.max(0, Math.min(1, share || 0)) * plotH);
       const yTicks = [0, 0.25, 0.5, 0.75, 1];
+      const {bands, labels, events} = mandateSeasonDecorations(
+        seasonsList,
+        xPositions,
+        padding.top,
+        height - padding.bottom,
+        padding.left,
+        width - padding.right
+      );
       if (!seasonsList.length) {
         svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
         svg.innerHTML = `
@@ -1340,7 +1585,8 @@
         <text class="chart-label" x="14" y="${y(tick) + 4}">${percent(tick)}</text>
       `).join("");
 
-      const layers = [];
+      const areaLayers = [];
+      const areaValueLabels = [];
       let cumulative = new Array(seasonsList.length).fill(0);
       stackOrder.forEach((club) => {
         const lower = [...cumulative];
@@ -1362,7 +1608,7 @@
         const topPath = topPathPoints.join(" L ");
         const bottomPath = bottomPathPoints.join(" L ");
 
-        const labels = upper.map((topValue, index) => {
+        const segmentLabels = upper.map((topValue, index) => {
           const bottomValue = lower[index];
           const share = topValue - bottomValue;
           const segmentHeight = Math.abs(y(topValue) - y(bottomValue));
@@ -1374,10 +1620,10 @@
           return `<text class="chart-value" x="${x(index)}" y="${midY + 4}" text-anchor="middle">${label}</text>`;
         }).join("");
 
-        layers.push(`
+        areaLayers.push(`
           <path d="M ${topPath} L ${bottomPath} Z" fill="${colors[club]}" fill-opacity="0.92"></path>
-          ${labels}
         `);
+        areaValueLabels.push(segmentLabels);
       });
 
       const separators = seasonsList.map((season, index) => `
@@ -1388,32 +1634,16 @@
       svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
       svg.innerHTML = `
         <rect x="0" y="0" width="${width}" height="${height}" fill="#000000"></rect>
+        ${bands}
         ${grid}
+        ${events}
         ${separators}
         <line class="chart-axis" x1="${padding.left}" x2="${width - padding.right}" y1="${height - padding.bottom}" y2="${height - padding.bottom}"></line>
-        ${layers.join("") || `<text class="chart-label" x="${width / 2}" y="${height / 2}" text-anchor="middle">Sem entradas para estes filtros</text>`}
+        ${areaLayers.join("") || `<text class="chart-label" x="${width / 2}" y="${height / 2}" text-anchor="middle">Sem entradas para estes filtros</text>`}
+        ${labels}
+        ${areaValueLabels.join("")}
       `;
 
-    }
-
-    function renderStats(items) {
-      const slbWins = items.filter((row) => row.winner === "SLB").length;
-      const leader = topWinner(items);
-      const seasonsList = orderedSeasons(items);
-      const data = seriesFor(items, seasonsList).flatMap((line) => line.points.map((point) => ({...point, club: line.club})));
-      const peak = data
-        .filter((point) => Number.isFinite(point.share))
-        .sort((a, b) => b.share - a.share || b.wins - a.wins)[0];
-
-      $("#visibleCount").textContent = items.length;
-      $("#statSlbShare").textContent = percent(items.length ? slbWins / items.length : NaN);
-      $("#statSlbSub").textContent = `${slbWins} em ${items.length} vitórias visíveis`;
-      $("#statLeader").textContent = leader ? leader.winner : "-";
-      $("#statLeaderSub").textContent = leader ? `${leader.count} vitórias no filtro atual` : "Sem entradas visíveis";
-      $("#statPeak").textContent = peak ? peak.club : "-";
-      $("#statPeakSub").textContent = peak ? `${percent(peak.share)} em ${shortSeason(peak.season)} (${peak.wins}/${peak.total})` : "Sem dados por época";
-      $("#statScope").textContent = unique(items.map((row) => `${row.season}|${row.gender}|${row.sport}|${row.competition}|${row.president}`)).length;
-      $("#statScopeSub").textContent = `${unique(items.map((row) => row.sport)).length} desportos, ${unique(items.map((row) => row.competition)).length} competições`;
     }
 
     function renderBarList(container, bars, valueKey, formatter) {
@@ -1451,32 +1681,27 @@
       renderBarList($("#sportBars"), bars, "share", (row) => `${percent(row.share)} (${row.wins}/${row.total})`);
     }
 
-    function renderMatrix(items) {
-      const seasonsList = orderedSeasons(rows);
-      const sorted = [...items].sort((a, b) => {
-        const seasonDiff = seasonsList.indexOf(a.season) - seasonsList.indexOf(b.season);
-        if (seasonDiff) return seasonDiff;
-        const genderDiff = genderOrder.indexOf(a.gender) - genderOrder.indexOf(b.gender);
-        if (genderDiff) return genderDiff;
-        const sportDiff = a.sport.localeCompare(b.sport);
-        if (sportDiff) return sportDiff;
-        const ai = competitionOrder.findIndex((item) => normalize(item) === normalize(a.competition));
-        const bi = competitionOrder.findIndex((item) => normalize(item) === normalize(b.competition));
-        const competitionDiff = (ai === -1 ? 999 : ai) - (bi === -1 ? 999 : bi);
-        if (competitionDiff) return competitionDiff;
-        return a.president.localeCompare(b.president);
-      });
+    function renderGenderBreakdown(items) {
+      const bars = Object.entries(groupBy(items, (row) => row.gender)).map(([gender, genderRows]) => {
+        const wins = genderRows.filter((row) => row.winner === "SLB").length;
+        return {
+          label: gender,
+          color: colors.SLB,
+          share: genderRows.length ? wins / genderRows.length : 0,
+          wins,
+          total: genderRows.length
+        };
+      }).sort((a, b) => b.share - a.share || b.wins - a.wins || genderOrder.indexOf(a.label) - genderOrder.indexOf(b.label));
+      renderBarList($("#genderBars"), bars, "share", (row) => `${percent(row.share)} (${row.wins}/${row.total})`);
+    }
 
-      $("#matrixCount").textContent = `${sorted.length} entradas`;
-      $("#matrixBody").innerHTML = sorted.map((row) => `
-        <tr>
-          <td>${row.season}</td>
-          <td>${row.gender}</td>
-          <td>${row.sport}</td>
-          <td>${row.competition}</td>
-          <td>${row.president || "-"}</td>
-          <td>${chip(row.winner)}</td>
-        </tr>`).join("");
+    function renderChampionshipBreakdown(items) {
+      const championshipRows = items.filter((row) => normalize(row.competition) === "campeonato");
+      const bars = clubOrder.map((club) => {
+        const count = championshipRows.filter((row) => row.winner === club).length;
+        return {label: club, color: colors[club], count, share: championshipRows.length ? count / championshipRows.length : 0};
+      }).sort((a, b) => b.count - a.count || clubOrder.indexOf(a.label) - clubOrder.indexOf(b.label));
+      renderBarList($("#championshipBars"), bars, "count", (row) => `${percent(row.share)} (${row.count})`);
     }
 
     function render(refreshFilters = true) {
@@ -1487,10 +1712,10 @@
       if (refreshFilters) renderFilters(true);
       if (state.chartView === "stack") renderStackBarChart(items);
       else renderLineChart(items);
-      renderStats(items);
       renderWinnerBreakdown(items);
       renderSportBreakdown(items);
-      renderMatrix(items);
+      renderGenderBreakdown(items);
+      renderChampionshipBreakdown(items);
     }
 
     function showNotice(message, strong = "Não foi possível carregar data.csv") {
@@ -1499,23 +1724,23 @@
       notice.innerHTML = `<strong>${strong}</strong><br>${message}`;
     }
 
-    function csvCandidateUrls() {
+    function csvCandidateUrls(filename = "data.csv") {
       const origin = window.location.origin;
       const href = window.location.href;
       const pathParts = window.location.pathname.split("/").filter(Boolean);
       const project = pathParts[0] || "";
       const urls = [
-        new URL("data.csv", href).href,
-        new URL("./data.csv", href).href
+        new URL(filename, href).href,
+        new URL(`./${filename}`, href).href
       ];
-      if (project) urls.push(new URL(`/${project}/data.csv`, origin).href);
-      urls.push(new URL("/data.csv", origin).href);
+      if (project) urls.push(new URL(`/${project}/${filename}`, origin).href);
+      urls.push(new URL(`/${filename}`, origin).href);
       return [...new Set(urls)];
     }
 
-    async function fetchCsvText() {
+    async function fetchCsvText(filename = "data.csv") {
       const stamp = Date.now();
-      for (const base of csvCandidateUrls()) {
+      for (const base of csvCandidateUrls(filename)) {
         const sep = base.includes("?") ? "&" : "?";
         const url = `${base}${sep}v=${stamp}`;
         try {
@@ -1530,7 +1755,12 @@
 
     async function boot() {
       try {
-        rows = normalizeCsv(await fetchCsvText());
+        const [dataText, mandatesText] = await Promise.all([
+          fetchCsvText("data.csv"),
+          fetchCsvText("mandatos.csv").catch(() => "")
+        ]);
+        rows = normalizeCsv(dataText);
+        mandates = mandatesText ? normalizeMandatesCsv(mandatesText) : [];
         const seasonsAll = orderedSeasons(rows);
         state.seasonStart = 0;
         state.seasonEnd = Math.max(0, seasonsAll.length - 1);

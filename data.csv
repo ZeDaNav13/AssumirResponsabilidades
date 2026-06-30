@@ -259,7 +259,7 @@ Feminino,2003/04,Luís Filipe Vieira,Futebol,Taça,Outro
 Feminino,2002/03,Manuel Vilarinho,Futebol,Campeonato,Outro
 Feminino,2001/02,Manuel Vilarinho,Futebol,Campeonato,Outro
 Feminino,2000/01,Manuel Vilarinho,Futebol,Campeonato,Outro
-Feminino,2025/26,Rui Costa,Futsal,Campeonato,
+Feminino,2025/26,Rui Costa,Futsal,Campeonato,SL Benfica
 Feminino,2025/26,Rui Costa,Futsal,Supertaça,Outro
 Feminino,2025/26,Rui Costa,Futsal,Outros,Outro
 Feminino,2025/26,Rui Costa,Futsal,Taça,SL Benfica
@@ -278,7 +278,7 @@ Feminino,2022/23,Rui Costa,Futsal,Outros,SL Benfica
 Feminino,2022/23,Rui Costa,Futsal,Taça,SL Benfica
 Feminino,2021/22,Rui Costa,Futsal,Campeonato,SL Benfica
 Feminino,2021/22,Rui Costa,Futsal,Supertaça,SL Benfica
-Feminino,2021/22,Rui Costa,Futsal,Outros,SL Benfica
+Feminino,2021/22,Rui Costa,Futsal,Outros,Outro
 Feminino,2021/22,Rui Costa,Futsal,Taça,Outro
 Feminino,2020/21,Luís Filipe Vieira,Futsal,Campeonato,SL Benfica
 Feminino,2020/21,Luís Filipe Vieira,Futsal,Supertaça,
@@ -304,12 +304,12 @@ Feminino,2014/15,Luís Filipe Vieira,Futsal,Supertaça,SL Benfica
 Feminino,2014/15,Luís Filipe Vieira,Futsal,Taça,Outro
 Feminino,2013/14,Luís Filipe Vieira,Futsal,Campeonato,Outro
 Feminino,2013/14,Luís Filipe Vieira,Futsal,Taça,SL Benfica
-Feminino,2025/26,Rui Costa,Hóquei em Patins,Campeonato,
+Feminino,2025/26,Rui Costa,Hóquei em Patins,Campeonato,SL Benfica
 Feminino,2025/26,Rui Costa,Hóquei em Patins,Outros,SL Benfica
 Feminino,2025/26,Rui Costa,Hóquei em Patins,Supertaça,SL Benfica
 Feminino,2025/26,Rui Costa,Hóquei em Patins,Taça,SL Benfica
 Feminino,2025/26,Rui Costa,Hóquei em Patins,Europa,Outro
-Feminino,2025/26,Rui Costa,Hóquei em Patins,Europa,Outro
+Feminino,2024/25,Rui Costa,Hóquei em Patins,Europa,Outro
 Feminino,2024/25,Rui Costa,Hóquei em Patins,Campeonato,SL Benfica
 Feminino,2024/25,Rui Costa,Hóquei em Patins,Outros,SL Benfica
 Feminino,2024/25,Rui Costa,Hóquei em Patins,Supertaça,SL Benfica
@@ -547,7 +547,7 @@ Masculino,2001/02,Manuel Vilarinho,Andebol,Taça,Outro
 Masculino,2000/01,Manuel Vilarinho,Andebol,Campeonato,Sporting CP
 Masculino,2000/01,Manuel Vilarinho,Andebol,Supertaça,FC Porto
 Masculino,2000/01,Manuel Vilarinho,Andebol,Taça,Sporting CP
-Masculino,2025/26,Rui Costa,Basquetebol,Campeonato,
+Masculino,2025/26,Rui Costa,Basquetebol,Campeonato,FC Porto
 Masculino,2025/26,Rui Costa,Basquetebol,Supertaça,SL Benfica
 Masculino,2025/26,Rui Costa,Basquetebol,Taça,Sporting CP
 Masculino,2025/26,Rui Costa,Basquetebol,Outros,Sporting CP
@@ -750,7 +750,7 @@ Masculino,2001/02,Manuel Vilarinho,Futebol,Taça,Sporting CP
 Masculino,2000/01,Manuel Vilarinho,Futebol,Campeonato,Outro
 Masculino,2000/01,Manuel Vilarinho,Futebol,Supertaça,Sporting CP
 Masculino,2000/01,Manuel Vilarinho,Futebol,Taça,FC Porto
-Masculino,2025/26,Rui Costa,Futsal,Campeonato,
+Masculino,2025/26,Rui Costa,Futsal,Campeonato,SL Benfica
 Masculino,2025/26,Rui Costa,Futsal,Supertaça,Sporting CP
 Masculino,2025/26,Rui Costa,Futsal,Outros,SL Benfica
 Masculino,2025/26,Rui Costa,Futsal,Taça,SL Benfica
@@ -843,7 +843,7 @@ Masculino,2001/02,Manuel Vilarinho,Futsal,Taça,Outro
 Masculino,2000/01,Manuel Vilarinho,Futsal,Campeonato,Sporting CP
 Masculino,2000/01,Manuel Vilarinho,Futsal,Supertaça,Outro
 Masculino,2000/01,Manuel Vilarinho,Futsal,Taça,Outro
-Masculino,2025/26,Rui Costa,Hóquei em Patins,Campeonato,
+Masculino,2025/26,Rui Costa,Hóquei em Patins,Campeonato,SL Benfica
 Masculino,2025/26,Rui Costa,Hóquei em Patins,Outros,SL Benfica
 Masculino,2025/26,Rui Costa,Hóquei em Patins,Supertaça,Sporting CP
 Masculino,2025/26,Rui Costa,Hóquei em Patins,Taça,Sporting CP
